@@ -1,0 +1,72 @@
+
+<form name="editForm" role="form" novalidate ng-submit="save()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="clear()">&times;</button>
+        <h4 class="modal-title" id="myEventsLabel" translate="try1App.events.home.createOrEditLabel">Create or edit a Events</h4>
+    </div>
+    <div class="modal-body">
+        <jh-alert-error></jh-alert-error>
+        <div class="form-group">
+            <label for="id" translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="events.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.events.title" for="field_title">Title</label>
+            <input type="text" class="form-control" name="title" id="field_title"
+                    ng-model="events.title"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.events.description" for="field_description">Description</label>
+            <input type="text" class="form-control" name="description" id="field_description"
+                    ng-model="events.description"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.events.startDate" for="field_startDate">StartDate</label>
+            <input id="field_startDate" type="text" class="form-control" uib-datepicker-popup="{{dateformat}}" ng-model="events.startDate" is-open="datePickerForStartDate.status.opened"
+            />
+            <span class="input-group-btn">
+                <button type="button" class="btn btn-default" ng-click="datePickerForStartDateOpen($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+            </span>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.events.endDate" for="field_endDate">EndDate</label>
+            <input id="field_endDate" type="text" class="form-control" uib-datepicker-popup="{{dateformat}}" ng-model="events.endDate" is-open="datePickerForEndDate.status.opened"
+            />
+            <span class="input-group-btn">
+                <button type="button" class="btn btn-default" ng-click="datePickerForEndDateOpen($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+            </span>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.events.isHoliday" for="field_isHoliday">IsHoliday</label>
+            <input type="checkbox" class="form-control" name="isHoliday" id="field_isHoliday"
+                    ng-model="events.isHoliday"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.events.isCommonToAll" for="field_isCommonToAll">IsCommonToAll</label>
+            <input type="checkbox" class="form-control" name="isCommonToAll" id="field_isCommonToAll"
+                    ng-model="events.isCommonToAll"
+                     />
+        </div>
+
+        <div class="form-group">
+            <label translate="try1App.events.section" for="field_section">section</label>
+            <select class="form-control" id="field_section" name="section" ng-model="events.section" ng-options="section as section.id for section in sections track by section.id">
+                <option value=""></option>
+            </select>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

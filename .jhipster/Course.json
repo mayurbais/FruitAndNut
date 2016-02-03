@@ -1,0 +1,69 @@
+{
+  "relationships": [
+    {
+      "relationshipId": 1,
+      "relationshipName": "subject",
+      "otherEntityName": "subject",
+      "relationshipType": "one-to-many",
+      "otherEntityRelationshipName": "course"
+    },
+    {
+      "relationshipId": 2,
+      "relationshipName": "electiveSubject",
+      "otherEntityName": "electiveSubject",
+      "relationshipType": "one-to-many",
+      "otherEntityRelationshipName": "course"
+    },
+    {
+      "relationshipId": 3,
+      "relationshipName": "acedemicSession",
+      "otherEntityName": "acedemicSession",
+      "relationshipType": "many-to-one",
+      "otherEntityField": "id"
+    }
+  ],
+  "fields": [
+    {
+      "fieldId": 1,
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required",
+        "minlength",
+        "maxlength"
+      ],
+      "fieldValidateRulesMinlength": "5",
+      "fieldValidateRulesMaxlength": "10"
+    },
+    {
+      "fieldId": 2,
+      "fieldName": "code",
+      "javadoc": "<Enter note text here>",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldId": 3,
+      "fieldName": "enableElectiveSelection",
+      "javadoc": "<Enter note text here>",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldId": 4,
+      "fieldName": "description",
+      "javadoc": "<Enter note text here>",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 5,
+      "fieldName": "courseGroup",
+      "fieldType": "CourseGroup",
+      "fieldValues": "LKG,UKG,JRSCHOOL,MIDDLESCHOOL,HIGHSCHOOL"
+    }
+  ],
+  "changelogDate": "20160106194143",
+  "dto": "no",
+  "pagination": "no"
+}

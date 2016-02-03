@@ -1,0 +1,41 @@
+{
+    "try1App": {
+        "schoolDetails" : {
+            "home": {
+                "title": "SchoolDetailss",
+                "createLabel": "Créer un nouveau SchoolDetails",
+                "createOrEditLabel": "Créer ou éditer un SchoolDetails"
+            },
+            "created": "Un nouveau SchoolDetails a été créé avec l'identifiant {{ param }}",
+            "updated": "Le SchoolDetails avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le SchoolDetails avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le SchoolDetails {{ id }} ?"
+            },
+            "detail": {
+                "title": "SchoolDetails"
+            },
+            "schoolName": "SchoolName",
+            "address": "Address",
+            "phoneNumber": "PhoneNumber",
+            "attendanceType": "AttendanceType",
+            "startDayOfTheWeek": "StartDayOfTheWeek",
+            "dateFormat": "DateFormat",
+            "financialStartDate": "FinancialStartDate",
+            "financialEndDate": "FinancialEndDate",
+            "logo": "Logo",
+            "gradingSystem": "GradingSystem",
+            "enableAutoIncreamentOfAdmissionNo": "EnableAutoIncreamentOfAdmissionNo",
+            "enableNewsCommentsModeration": "EnableNewsCommentsModeration",
+            "enableSibling": "EnableSibling",
+            "enablePasswordChangeAtFirstLogin": "EnablePasswordChangeAtFirstLogin",
+            "enableRollNumberForStudent": "EnableRollNumberForStudent",
+            "institutionType": "InstitutionType",
+            "user": "User",
+            "languageLOV": "LanguageLOV",
+            "currancyLOV": "CurrancyLOV",
+            "countryLOV": "CountryLOV"
+        }
+    }
+}
+

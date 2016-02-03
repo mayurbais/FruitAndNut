@@ -1,0 +1,24 @@
+{
+    "try1App": {
+        "gradingLevel" : {
+            "home": {
+                "title": "GradingLevels",
+                "createLabel": "Create a new GradingLevel",
+                "createOrEditLabel": "Create or edit a GradingLevel"
+            },
+            "created": "A new GradingLevel is created with identifier {{ param }}",
+            "updated": "A GradingLevel is updated with identifier {{ param }}",
+            "deleted": "A GradingLevel is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete GradingLevel {{ id }}?"
+            },
+            "detail": {
+                "title": "GradingLevel"
+            },
+            "name": "Name",
+            "minScore": "MinScore",
+            "description": "Description",
+            "course": "Course"
+        }
+    }
+}

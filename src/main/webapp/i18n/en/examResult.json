@@ -1,0 +1,27 @@
+{
+    "try1App": {
+        "examResult" : {
+            "home": {
+                "title": "ExamResults",
+                "createLabel": "Create a new ExamResult",
+                "createOrEditLabel": "Create or edit a ExamResult"
+            },
+            "created": "A new ExamResult is created with identifier {{ param }}",
+            "updated": "A ExamResult is updated with identifier {{ param }}",
+            "deleted": "A ExamResult is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete ExamResult {{ id }}?"
+            },
+            "detail": {
+                "title": "ExamResult"
+            },
+            "studentId": "StudentId",
+            "percentage": "Percentage",
+            "grade": "Grade",
+            "isPassed": "IsPassed",
+            "isAbsent": "IsAbsent",
+            "remark": "Remark",
+            "exam": "Exam"
+        }
+    }
+}

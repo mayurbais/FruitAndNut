@@ -1,0 +1,47 @@
+{
+  "relationships": [
+    {
+      "relationshipId": 1,
+      "relationshipName": "examSubjects",
+      "otherEntityName": "examSubjects",
+      "relationshipType": "many-to-one",
+      "otherEntityField": "id"
+    }
+  ],
+  "fields": [
+    {
+      "fieldId": 1,
+      "fieldName": "studentId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldId": 2,
+      "fieldName": "marksObtained",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldId": 3,
+      "fieldName": "grade",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 4,
+      "fieldName": "isPassed",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldId": 5,
+      "fieldName": "isAbsent",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldId": 6,
+      "fieldName": "remark",
+      "javadoc": "<Enter note text here>",
+      "fieldType": "String"
+    }
+  ],
+  "changelogDate": "20160113052659",
+  "dto": "no",
+  "pagination": "no"
+}

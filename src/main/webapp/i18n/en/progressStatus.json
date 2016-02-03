@@ -1,0 +1,10 @@
+{
+    "try1App": {
+        "ProgressStatus" : {
+            "null": "",
+            "IN_PROGRESS": "IN_PROGRESS",
+            "NEW": "NEW",
+            "COMPLETED": "COMPLETED"
+        }
+    }
+}

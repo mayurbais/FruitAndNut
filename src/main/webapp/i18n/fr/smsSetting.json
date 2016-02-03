@@ -1,0 +1,24 @@
+{
+    "try1App": {
+        "smsSetting" : {
+            "home": {
+                "title": "SmsSettings",
+                "createLabel": "Créer un nouveau SmsSetting",
+                "createOrEditLabel": "Créer ou éditer un SmsSetting"
+            },
+            "created": "Un nouveau SmsSetting a été créé avec l'identifiant {{ param }}",
+            "updated": "Le SmsSetting avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le SmsSetting avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le SmsSetting {{ id }} ?"
+            },
+            "detail": {
+                "title": "SmsSetting"
+            },
+            "name": "Name",
+            "code": "Code",
+            "isEnabled": "IsEnabled"
+        }
+    }
+}
+

@@ -1,0 +1,65 @@
+{
+  "relationships": [
+    {
+      "relationshipId": 1,
+      "relationshipName": "course",
+      "otherEntityName": "course",
+      "relationshipType": "one-to-one",
+      "otherEntityField": "id",
+      "ownerSide": true,
+      "otherEntityRelationshipName": "section"
+    },
+    {
+      "relationshipId": 2,
+      "relationshipName": "teacher",
+      "otherEntityName": "teacher",
+      "relationshipType": "one-to-one",
+      "otherEntityField": "id",
+      "ownerSide": true,
+      "otherEntityRelationshipName": "section"
+    },
+    {
+      "relationshipId": 3,
+      "relationshipName": "room",
+      "otherEntityName": "room",
+      "relationshipType": "many-to-one",
+      "otherEntityField": "id"
+    },
+    {
+      "relationshipId": 4,
+      "relationshipName": "timeTable",
+      "otherEntityName": "timeTable",
+      "relationshipType": "many-to-many",
+      "ownerSide": false,
+      "otherEntityRelationshipName": "section"
+    }
+  ],
+  "fields": [
+    {
+      "fieldId": 1,
+      "fieldName": "name",
+      "javadoc": "<Enter note text here>",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "minlength",
+        "maxlength",
+        "required"
+      ],
+      "fieldValidateRulesMinlength": "2",
+      "fieldValidateRulesMaxlength": "10"
+    },
+    {
+      "fieldId": 2,
+      "fieldName": "code",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 3,
+      "fieldName": "strength",
+      "fieldType": "Integer"
+    }
+  ],
+  "changelogDate": "20160106194143",
+  "dto": "no",
+  "pagination": "no"
+}

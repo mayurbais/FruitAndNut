@@ -1,0 +1,82 @@
+<div>
+    <h2 translate="try1App.examSubjects.home.title">ExamSubjectss</h2>
+    <jh-alert></jh-alert>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <button class="btn btn-primary" ui-sref="examSubjects.new">
+                    <span class="glyphicon glyphicon-flash"></span> <span translate="try1App.examSubjects.home.createLabel">Create a new ExamSubjects</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th><span translate="global.field.id">ID</span></th>
+                    <th><span translate="try1App.examSubjects.maxMarks">MaxMarks</span></th>
+                    <th><span translate="try1App.examSubjects.minPassMark">MinPassMark</span></th>
+                    <th><span translate="try1App.examSubjects.isGrade">IsGrade</span></th>
+                    <th><span translate="try1App.examSubjects.startTime">StartTime</span></th>
+                    <th><span translate="try1App.examSubjects.endTime">EndTime</span></th>
+                    <th><span translate="try1App.examSubjects.conductingDate">ConductingDate</span></th>
+                    <th><span translate="try1App.examSubjects.isResultPublished">IsResultPublished</span></th>
+                    <th><span translate="try1App.examSubjects.classAverage">ClassAverage</span></th>
+                    <th><span translate="try1App.examSubjects.remarkByPrincipal">RemarkByPrincipal</span></th>
+                    <th><span translate="try1App.examSubjects.remarkByHeadTeacher">RemarkByHeadTeacher</span></th>
+                    <th><span translate="try1App.examSubjects.exam">exam</span></th>
+                    <th><span translate="try1App.examSubjects.subject">subject</span></th>
+                    <th><span translate="try1App.examSubjects.teacher">teacher</span></th>
+                    <th><span translate="try1App.examSubjects.room">room</span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="examSubjects in examSubjectss track by examSubjects.id">
+                    <td><a ui-sref="examSubjects.detail({id:examSubjects.id})">{{examSubjects.id}}</a></td>
+                    <td>{{examSubjects.maxMarks}}</td>
+                    <td>{{examSubjects.minPassMark}}</td>
+                    <td>{{examSubjects.isGrade}}</td>
+                    <td>{{examSubjects.startTime | date:'medium'}}</td>
+                    <td>{{examSubjects.endTime | date:'medium'}}</td>
+                    <td>{{examSubjects.conductingDate | date:'medium'}}</td>
+                    <td>{{examSubjects.isResultPublished}}</td>
+                    <td>{{examSubjects.classAverage}}</td>
+                    <td>{{examSubjects.remarkByPrincipal}}</td>
+                    <td>{{examSubjects.remarkByHeadTeacher}}</td>
+                    <td>
+                        <a ui-sref="exam.detail({id:examSubjects.exam.id})">{{examSubjects.exam.id}}</a>
+                    </td>
+                    <td>
+                        <a ui-sref="subject.detail({id:examSubjects.subject.id})">{{examSubjects.subject.id}}</a>
+                    </td>
+                    <td>
+                        <a ui-sref="teacher.detail({id:examSubjects.teacher.id})">{{examSubjects.teacher.id}}</a>
+                    </td>
+                    <td>
+                        <a ui-sref="room.detail({id:examSubjects.room.id})">{{examSubjects.room.id}}</a>
+                    </td>
+                    <td>
+                        <button type="submit"
+                                ui-sref="examSubjects.detail({id:examSubjects.id})"
+                                class="btn btn-info btn-sm">
+                            <span class="glyphicon glyphicon-eye-open"></span>&nbsp;<span translate="entity.action.view"> View</span>
+                        </button>
+                        <button type="submit"
+                                ui-sref="examSubjects.edit({id:examSubjects.id})"
+                                class="btn btn-primary btn-sm">
+                            <span class="glyphicon glyphicon-pencil"></span>&nbsp;<span translate="entity.action.edit"> Edit</span>
+                        </button>
+                        <button type="submit"
+                                ui-sref="examSubjects.delete({id:examSubjects.id})"
+                                class="btn btn-danger btn-sm">
+                            <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;<span translate="entity.action.delete"> Delete</span>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

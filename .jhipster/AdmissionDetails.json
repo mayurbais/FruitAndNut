@@ -1,0 +1,44 @@
+{
+  "relationships": [
+    {
+      "relationshipId": 1,
+      "relationshipName": "student",
+      "otherEntityName": "student",
+      "relationshipType": "one-to-one",
+      "otherEntityField": "id",
+      "ownerSide": true,
+      "otherEntityRelationshipName": "admissionDetails"
+    },
+    {
+      "relationshipId": 2,
+      "relationshipName": "prevSchoolDetail",
+      "otherEntityName": "prevSchoolInfo",
+      "relationshipType": "one-to-one",
+      "otherEntityField": "id",
+      "ownerSide": true,
+      "otherEntityRelationshipName": "admissionDetails"
+    }
+  ],
+  "fields": [
+    {
+      "fieldId": 1,
+      "fieldName": "admissionNo",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldId": 2,
+      "fieldName": "admissionDate",
+      "javadoc": "<Enter note text here>",
+      "fieldType": "LocalDate",
+      "fieldValidateRules": [
+        "required"
+      ]
+    }
+  ],
+  "changelogDate": "20160107073929",
+  "dto": "no",
+  "pagination": "no"
+}

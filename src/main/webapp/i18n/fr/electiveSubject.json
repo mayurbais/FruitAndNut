@@ -1,0 +1,25 @@
+{
+    "try1App": {
+        "electiveSubject" : {
+            "home": {
+                "title": "ElectiveSubjects",
+                "createLabel": "Créer un nouveau ElectiveSubject",
+                "createOrEditLabel": "Créer ou éditer un ElectiveSubject"
+            },
+            "created": "Un nouveau ElectiveSubject a été créé avec l'identifiant {{ param }}",
+            "updated": "Le ElectiveSubject avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le ElectiveSubject avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le ElectiveSubject {{ id }} ?"
+            },
+            "detail": {
+                "title": "ElectiveSubject"
+            },
+            "name": "Name",
+            "description": "Description",
+            "code": "Code",
+            "course": "Course"
+        }
+    }
+}
+

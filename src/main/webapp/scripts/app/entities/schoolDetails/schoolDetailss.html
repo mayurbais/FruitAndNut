@@ -1,0 +1,94 @@
+<div>
+    <h2 translate="try1App.schoolDetails.home.title">SchoolDetailss</h2>
+    <jh-alert></jh-alert>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <button class="btn btn-primary" ui-sref="schoolDetails.new">
+                    <span class="glyphicon glyphicon-flash"></span> <span translate="try1App.schoolDetails.home.createLabel">Create a new SchoolDetails</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th><span translate="global.field.id">ID</span></th>
+                    <th><span translate="try1App.schoolDetails.schoolName">SchoolName</span></th>
+                    <th><span translate="try1App.schoolDetails.address">Address</span></th>
+                    <th><span translate="try1App.schoolDetails.phoneNumber">PhoneNumber</span></th>
+                    <th><span translate="try1App.schoolDetails.attendanceType">AttendanceType</span></th>
+                    <th><span translate="try1App.schoolDetails.startDayOfTheWeek">StartDayOfTheWeek</span></th>
+                    <th><span translate="try1App.schoolDetails.dateFormat">DateFormat</span></th>
+                    <th><span translate="try1App.schoolDetails.financialStartDate">FinancialStartDate</span></th>
+                    <th><span translate="try1App.schoolDetails.financialEndDate">FinancialEndDate</span></th>
+                    <th><span translate="try1App.schoolDetails.logo">Logo</span></th>
+                    <th><span translate="try1App.schoolDetails.gradingSystem">GradingSystem</span></th>
+                    <th><span translate="try1App.schoolDetails.enableAutoIncreamentOfAdmissionNo">EnableAutoIncreamentOfAdmissionNo</span></th>
+                    <th><span translate="try1App.schoolDetails.enableNewsCommentsModeration">EnableNewsCommentsModeration</span></th>
+                    <th><span translate="try1App.schoolDetails.enableSibling">EnableSibling</span></th>
+                    <th><span translate="try1App.schoolDetails.enablePasswordChangeAtFirstLogin">EnablePasswordChangeAtFirstLogin</span></th>
+                    <th><span translate="try1App.schoolDetails.enableRollNumberForStudent">EnableRollNumberForStudent</span></th>
+                    <th><span translate="try1App.schoolDetails.institutionType">InstitutionType</span></th>
+                    <th><span translate="try1App.schoolDetails.user">user</span></th>
+                    <th><span translate="try1App.schoolDetails.languageLOV">languageLOV</span></th>
+                    <th><span translate="try1App.schoolDetails.currancyLOV">currancyLOV</span></th>
+                    <th><span translate="try1App.schoolDetails.countryLOV">countryLOV</span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="schoolDetails in schoolDetailss track by schoolDetails.id">
+                    <td><a ui-sref="schoolDetails.detail({id:schoolDetails.id})">{{schoolDetails.id}}</a></td>
+                    <td>{{schoolDetails.schoolName}}</td>
+                    <td>{{schoolDetails.address}}</td>
+                    <td>{{schoolDetails.phoneNumber}}</td>
+                    <td translate="{{'try1App.AttendanceType.' + schoolDetails.attendanceType}}">{{schoolDetails.attendanceType}}</td>
+                    <td translate="{{'try1App.Days.' + schoolDetails.startDayOfTheWeek}}">{{schoolDetails.startDayOfTheWeek}}</td>
+                    <td translate="{{'try1App.DateFormat.' + schoolDetails.dateFormat}}">{{schoolDetails.dateFormat}}</td>
+                        <td>{{schoolDetails.financialStartDate | date:'mediumDate'}}</td>
+                        <td>{{schoolDetails.financialEndDate | date:'mediumDate'}}</td>
+                    <td>{{schoolDetails.logo}}</td>
+                    <td translate="{{'try1App.GradingType.' + schoolDetails.gradingSystem}}">{{schoolDetails.gradingSystem}}</td>
+                    <td>{{schoolDetails.enableAutoIncreamentOfAdmissionNo}}</td>
+                    <td>{{schoolDetails.enableNewsCommentsModeration}}</td>
+                    <td>{{schoolDetails.enableSibling}}</td>
+                    <td>{{schoolDetails.enablePasswordChangeAtFirstLogin}}</td>
+                    <td>{{schoolDetails.enableRollNumberForStudent}}</td>
+                    <td translate="{{'try1App.InstitutionType.' + schoolDetails.institutionType}}">{{schoolDetails.institutionType}}</td>
+                    <td>
+                        {{schoolDetails.user.id}}
+                    </td>
+                    <td>
+                        <a ui-sref="languageLOV.detail({id:schoolDetails.languageLOV.id})">{{schoolDetails.languageLOV.id}}</a>
+                    </td>
+                    <td>
+                        <a ui-sref="currancyLOV.detail({id:schoolDetails.currancyLOV.id})">{{schoolDetails.currancyLOV.id}}</a>
+                    </td>
+                    <td>
+                        <a ui-sref="countryLOV.detail({id:schoolDetails.countryLOV.id})">{{schoolDetails.countryLOV.id}}</a>
+                    </td>
+                    <td>
+                        <button type="submit"
+                                ui-sref="schoolDetails.detail({id:schoolDetails.id})"
+                                class="btn btn-info btn-sm">
+                            <span class="glyphicon glyphicon-eye-open"></span>&nbsp;<span translate="entity.action.view"> View</span>
+                        </button>
+                        <button type="submit"
+                                ui-sref="schoolDetails.edit({id:schoolDetails.id})"
+                                class="btn btn-primary btn-sm">
+                            <span class="glyphicon glyphicon-pencil"></span>&nbsp;<span translate="entity.action.edit"> Edit</span>
+                        </button>
+                        <button type="submit"
+                                ui-sref="schoolDetails.delete({id:schoolDetails.id})"
+                                class="btn btn-danger btn-sm">
+                            <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;<span translate="entity.action.delete"> Delete</span>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

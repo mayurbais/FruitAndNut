@@ -1,0 +1,68 @@
+
+<form name="editForm" role="form" novalidate ng-submit="save()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="clear()">&times;</button>
+        <h4 class="modal-title" id="mySessionLabel" translate="try1App.session.home.createOrEditLabel">Create or edit a Session</h4>
+    </div>
+    <div class="modal-body">
+        <jh-alert-error></jh-alert-error>
+        <div class="form-group">
+            <label for="id" translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="session.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.session.sessionName" for="field_sessionName">SessionName</label>
+            <input type="text" class="form-control" name="sessionName" id="field_sessionName"
+                    ng-model="session.sessionName"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.session.startTime" for="field_startTime">StartTime</label>
+            <input type="text" class="form-control" name="startTime" id="field_startTime"
+                    ng-model="session.startTime"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.session.endTime" for="field_endTime">EndTime</label>
+            <input type="text" class="form-control" name="endTime" id="field_endTime"
+                    ng-model="session.endTime"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.session.isBreak" for="field_isBreak">IsBreak</label>
+            <input type="checkbox" class="form-control" name="isBreak" id="field_isBreak"
+                    ng-model="session.isBreak"
+                     />
+        </div>
+
+        <div class="form-group">
+            <label translate="try1App.session.employee" for="field_employee">employee</label>
+            <select class="form-control" id="field_employee" name="employee" ng-model="session.employee" ng-options="employee as employee.id for employee in employees | orderBy:'id' track by employee.id">
+                <option value=""></option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label translate="try1App.session.section" for="field_section">section</label>
+            <select class="form-control" id="field_section" name="section" ng-model="session.section" ng-options="section as section.id for section in sections track by section.id">
+                <option value=""></option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label translate="try1App.session.timeTable" for="field_timeTable">timeTable</label>
+            <select class="form-control" id="field_timeTable" name="timeTable" ng-model="session.timeTable" ng-options="timeTable as timeTable.id for timeTable in timetables track by timeTable.id">
+                <option value=""></option>
+            </select>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

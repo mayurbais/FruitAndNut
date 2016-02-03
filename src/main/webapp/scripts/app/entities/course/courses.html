@@ -1,0 +1,60 @@
+<div>
+    <h2 translate="try1App.course.home.title">Courses</h2>
+    <jh-alert></jh-alert>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <button class="btn btn-primary" ui-sref="course.new">
+                    <span class="glyphicon glyphicon-flash"></span> <span translate="try1App.course.home.createLabel">Create a new Course</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th><span translate="global.field.id">ID</span></th>
+                    <th><span translate="try1App.course.name">Name</span></th>
+                    <th><span translate="try1App.course.code">Code</span></th>
+                    <th><span translate="try1App.course.enableElectiveSelection">EnableElectiveSelection</span></th>
+                    <th><span translate="try1App.course.description">Description</span></th>
+                    <th><span translate="try1App.course.courseGroup">CourseGroup</span></th>
+                    <th><span translate="try1App.course.acedemicSession">acedemicSession</span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="course in courses track by course.id">
+                    <td><a ui-sref="course.detail({id:course.id})">{{course.id}}</a></td>
+                    <td>{{course.name}}</td>
+                    <td>{{course.code}}</td>
+                    <td>{{course.enableElectiveSelection}}</td>
+                    <td>{{course.description}}</td>
+                    <td translate="{{'try1App.CourseGroup.' + course.courseGroup}}">{{course.courseGroup}}</td>
+                    <td>
+                        <a ui-sref="acedemicSession.detail({id:course.acedemicSession.id})">{{course.acedemicSession.id}}</a>
+                    </td>
+                    <td>
+                        <button type="submit"
+                                ui-sref="course.detail({id:course.id})"
+                                class="btn btn-info btn-sm">
+                            <span class="glyphicon glyphicon-eye-open"></span>&nbsp;<span translate="entity.action.view"> View</span>
+                        </button>
+                        <button type="submit"
+                                ui-sref="course.edit({id:course.id})"
+                                class="btn btn-primary btn-sm">
+                            <span class="glyphicon glyphicon-pencil"></span>&nbsp;<span translate="entity.action.edit"> Edit</span>
+                        </button>
+                        <button type="submit"
+                                ui-sref="course.delete({id:course.id})"
+                                class="btn btn-danger btn-sm">
+                            <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;<span translate="entity.action.delete"> Delete</span>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+{
+    "try1App": {
+        "moduleLOV" : {
+            "home": {
+                "title": "ModuleLOVs",
+                "createLabel": "Create a new ModuleLOV",
+                "createOrEditLabel": "Create or edit a ModuleLOV"
+            },
+            "created": "A new ModuleLOV is created with identifier {{ param }}",
+            "updated": "A ModuleLOV is updated with identifier {{ param }}",
+            "deleted": "A ModuleLOV is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete ModuleLOV {{ id }}?"
+            },
+            "detail": {
+                "title": "ModuleLOV"
+            },
+            "type": "Type",
+            "name": "Name",
+            "value": "Value"
+        }
+    }
+}

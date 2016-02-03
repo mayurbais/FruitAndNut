@@ -1,0 +1,49 @@
+{
+  "relationships": [
+    {
+      "relationshipId": 1,
+      "relationshipName": "section",
+      "otherEntityName": "section",
+      "relationshipType": "many-to-one",
+      "otherEntityField": "id"
+    }
+  ],
+  "fields": [
+    {
+      "fieldId": 1,
+      "fieldName": "title",
+      "javadoc": "<Enter note text here>",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 2,
+      "fieldName": "description",
+      "javadoc": "<Enter note text here>",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 3,
+      "fieldName": "startDate",
+      "javadoc": "<Enter note text here>",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldId": 4,
+      "fieldName": "endDate",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldId": 5,
+      "fieldName": "isHoliday",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldId": 6,
+      "fieldName": "isCommonToAll",
+      "fieldType": "Boolean"
+    }
+  ],
+  "changelogDate": "20160113220817",
+  "dto": "no",
+  "pagination": "no"
+}

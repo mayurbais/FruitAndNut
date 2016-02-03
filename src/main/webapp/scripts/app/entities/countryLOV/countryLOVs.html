@@ -1,0 +1,50 @@
+<div>
+    <h2 translate="try1App.countryLOV.home.title">CountryLOVs</h2>
+    <jh-alert></jh-alert>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <button class="btn btn-primary" ui-sref="countryLOV.new">
+                    <span class="glyphicon glyphicon-flash"></span> <span translate="try1App.countryLOV.home.createLabel">Create a new CountryLOV</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th><span translate="global.field.id">ID</span></th>
+                    <th><span translate="try1App.countryLOV.value">Value</span></th>
+                    <th><span translate="try1App.countryLOV.name">Name</span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="countryLOV in countryLOVs track by countryLOV.id">
+                    <td><a ui-sref="countryLOV.detail({id:countryLOV.id})">{{countryLOV.id}}</a></td>
+                    <td>{{countryLOV.value}}</td>
+                    <td>{{countryLOV.name}}</td>
+                    <td>
+                        <button type="submit"
+                                ui-sref="countryLOV.detail({id:countryLOV.id})"
+                                class="btn btn-info btn-sm">
+                            <span class="glyphicon glyphicon-eye-open"></span>&nbsp;<span translate="entity.action.view"> View</span>
+                        </button>
+                        <button type="submit"
+                                ui-sref="countryLOV.edit({id:countryLOV.id})"
+                                class="btn btn-primary btn-sm">
+                            <span class="glyphicon glyphicon-pencil"></span>&nbsp;<span translate="entity.action.edit"> Edit</span>
+                        </button>
+                        <button type="submit"
+                                ui-sref="countryLOV.delete({id:countryLOV.id})"
+                                class="btn btn-danger btn-sm">
+                            <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;<span translate="entity.action.delete"> Delete</span>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

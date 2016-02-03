@@ -1,0 +1,67 @@
+{
+  "relationships": [
+    {
+      "relationshipId": 1,
+      "relationshipName": "employee",
+      "otherEntityName": "employee",
+      "relationshipType": "one-to-one",
+      "otherEntityField": "id",
+      "ownerSide": true,
+      "otherEntityRelationshipName": "classRoomSession"
+    },
+    {
+      "relationshipId": 2,
+      "relationshipName": "section",
+      "otherEntityName": "section",
+      "relationshipType": "many-to-one",
+      "otherEntityField": "id"
+    },
+    {
+      "relationshipId": 3,
+      "relationshipName": "room",
+      "otherEntityName": "room",
+      "relationshipType": "many-to-one",
+      "otherEntityField": "id"
+    },
+    {
+      "relationshipId": 4,
+      "relationshipName": "timeTable",
+      "otherEntityName": "timeTable",
+      "relationshipType": "many-to-many",
+      "ownerSide": false,
+      "otherEntityRelationshipName": "classRoomSession"
+    }
+  ],
+  "fields": [
+    {
+      "fieldId": 1,
+      "fieldName": "sessionName",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 2,
+      "fieldName": "startTime",
+      "javadoc": "<Enter note text here>",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 3,
+      "fieldName": "endTime",
+      "javadoc": "<Enter note text here>",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 4,
+      "fieldName": "isBreak",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldId": 5,
+      "fieldName": "attribute",
+      "fieldType": "String"
+    }
+  ],
+  "changelogDate": "20160112042446",
+  "dto": "no",
+  "pagination": "no"
+}

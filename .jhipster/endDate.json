@@ -1,0 +1,49 @@
+{
+  "relationships": [
+    {
+      "relationshipId": 1,
+      "relationshipName": "timeSlot",
+      "otherEntityName": "timeSlot",
+      "relationshipType": "many-to-many",
+      "otherEntityField": "id",
+      "ownerSide": true
+    },
+    {
+      "relationshipId": 2,
+      "relationshipName": "classRoomSession",
+      "otherEntityName": "classRoomSession",
+      "relationshipType": "many-to-many",
+      "otherEntityField": "id",
+      "ownerSide": true
+    },
+    {
+      "relationshipId": 3,
+      "relationshipName": "section",
+      "otherEntityName": "section",
+      "relationshipType": "many-to-many",
+      "otherEntityField": "id",
+      "ownerSide": true
+    }
+  ],
+  "fields": [
+    {
+      "fieldId": 1,
+      "fieldName": "day",
+      "fieldType": "Days",
+      "fieldValues": "MONDAY,TUESDAY,WEDNESDAY,THURSDAY,FRIDAY,SATURDAY,SUNDAY"
+    },
+    {
+      "fieldId": 2,
+      "fieldName": "startDate",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldId": 3,
+      "fieldName": "endDate",
+      "fieldType": "ZonedDateTime"
+    }
+  ],
+  "changelogDate": "20160112071551",
+  "dto": "no",
+  "pagination": "no"
+}

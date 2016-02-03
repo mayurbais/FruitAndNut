@@ -1,0 +1,68 @@
+
+<form name="editForm" role="form" novalidate ng-submit="save()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="clear()">&times;</button>
+        <h4 class="modal-title" id="myAddressLabel" translate="try1App.address.home.createOrEditLabel">Create or edit a Address</h4>
+    </div>
+    <div class="modal-body">
+        <jh-alert-error></jh-alert-error>
+        <div class="form-group">
+            <label for="id" translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="address.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.address.addressLineOne" for="field_addressLineOne">AddressLineOne</label>
+            <input type="text" class="form-control" name="addressLineOne" id="field_addressLineOne"
+                    ng-model="address.addressLineOne"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.address.addressLineTwo" for="field_addressLineTwo">AddressLineTwo</label>
+            <input type="text" class="form-control" name="addressLineTwo" id="field_addressLineTwo"
+                    ng-model="address.addressLineTwo"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.address.city" for="field_city">City</label>
+            <input type="text" class="form-control" name="city" id="field_city"
+                    ng-model="address.city"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.address.state" for="field_state">State</label>
+            <input type="text" class="form-control" name="state" id="field_state"
+                    ng-model="address.state"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.address.pinCode" for="field_pinCode">PinCode</label>
+            <input type="text" class="form-control" name="pinCode" id="field_pinCode"
+                    ng-model="address.pinCode"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.address.country" for="field_country">Country</label>
+            <input type="text" class="form-control" name="country" id="field_country"
+                    ng-model="address.country"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.address.phone" for="field_phone">Phone</label>
+            <input type="number" class="form-control" name="phone" id="field_phone"
+                    ng-model="address.phone"
+                     />
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

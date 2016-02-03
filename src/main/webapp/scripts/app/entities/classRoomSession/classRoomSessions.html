@@ -1,0 +1,68 @@
+<div>
+    <h2 translate="try1App.classRoomSession.home.title">ClassRoomSessions</h2>
+    <jh-alert></jh-alert>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <button class="btn btn-primary" ui-sref="classRoomSession.new">
+                    <span class="glyphicon glyphicon-flash"></span> <span translate="try1App.classRoomSession.home.createLabel">Create a new ClassRoomSession</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th><span translate="global.field.id">ID</span></th>
+                    <th><span translate="try1App.classRoomSession.sessionName">SessionName</span></th>
+                    <th><span translate="try1App.classRoomSession.startTime">StartTime</span></th>
+                    <th><span translate="try1App.classRoomSession.endTime">EndTime</span></th>
+                    <th><span translate="try1App.classRoomSession.isBreak">IsBreak</span></th>
+                    <th><span translate="try1App.classRoomSession.attribute">Attribute</span></th>
+                    <th><span translate="try1App.classRoomSession.employee">employee</span></th>
+                    <th><span translate="try1App.classRoomSession.section">section</span></th>
+                    <th><span translate="try1App.classRoomSession.room">room</span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="classRoomSession in classRoomSessions track by classRoomSession.id">
+                    <td><a ui-sref="classRoomSession.detail({id:classRoomSession.id})">{{classRoomSession.id}}</a></td>
+                    <td>{{classRoomSession.sessionName}}</td>
+                    <td>{{classRoomSession.startTime}}</td>
+                    <td>{{classRoomSession.endTime}}</td>
+                    <td>{{classRoomSession.isBreak}}</td>
+                    <td>{{classRoomSession.attribute}}</td>
+                    <td>
+                        <a ui-sref="employee.detail({id:classRoomSession.employee.id})">{{classRoomSession.employee.id}}</a>
+                    </td>
+                    <td>
+                        <a ui-sref="section.detail({id:classRoomSession.section.id})">{{classRoomSession.section.id}}</a>
+                    </td>
+                    <td>
+                        <a ui-sref="room.detail({id:classRoomSession.room.id})">{{classRoomSession.room.id}}</a>
+                    </td>
+                    <td>
+                        <button type="submit"
+                                ui-sref="classRoomSession.detail({id:classRoomSession.id})"
+                                class="btn btn-info btn-sm">
+                            <span class="glyphicon glyphicon-eye-open"></span>&nbsp;<span translate="entity.action.view"> View</span>
+                        </button>
+                        <button type="submit"
+                                ui-sref="classRoomSession.edit({id:classRoomSession.id})"
+                                class="btn btn-primary btn-sm">
+                            <span class="glyphicon glyphicon-pencil"></span>&nbsp;<span translate="entity.action.edit"> Edit</span>
+                        </button>
+                        <button type="submit"
+                                ui-sref="classRoomSession.delete({id:classRoomSession.id})"
+                                class="btn btn-danger btn-sm">
+                            <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;<span translate="entity.action.delete"> Delete</span>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

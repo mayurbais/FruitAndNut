@@ -1,0 +1,40 @@
+{
+    "try1App": {
+        "schoolDetails" : {
+            "home": {
+                "title": "SchoolDetailss",
+                "createLabel": "Create a new SchoolDetails",
+                "createOrEditLabel": "Create or edit a SchoolDetails"
+            },
+            "created": "A new SchoolDetails is created with identifier {{ param }}",
+            "updated": "A SchoolDetails is updated with identifier {{ param }}",
+            "deleted": "A SchoolDetails is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete SchoolDetails {{ id }}?"
+            },
+            "detail": {
+                "title": "SchoolDetails"
+            },
+            "schoolName": "SchoolName",
+            "address": "Address",
+            "phoneNumber": "PhoneNumber",
+            "attendanceType": "AttendanceType",
+            "startDayOfTheWeek": "StartDayOfTheWeek",
+            "dateFormat": "DateFormat",
+            "financialStartDate": "FinancialStartDate",
+            "financialEndDate": "FinancialEndDate",
+            "logo": "Logo",
+            "gradingSystem": "GradingSystem",
+            "enableAutoIncreamentOfAdmissionNo": "EnableAutoIncreamentOfAdmissionNo",
+            "enableNewsCommentsModeration": "EnableNewsCommentsModeration",
+            "enableSibling": "EnableSibling",
+            "enablePasswordChangeAtFirstLogin": "EnablePasswordChangeAtFirstLogin",
+            "enableRollNumberForStudent": "EnableRollNumberForStudent",
+            "institutionType": "InstitutionType",
+            "user": "User",
+            "languageLOV": "LanguageLOV",
+            "currancyLOV": "CurrancyLOV",
+            "countryLOV": "CountryLOV"
+        }
+    }
+}

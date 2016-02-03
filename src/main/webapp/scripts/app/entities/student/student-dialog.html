@@ -1,0 +1,66 @@
+
+<form name="editForm" role="form" novalidate ng-submit="save()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="clear()">&times;</button>
+        <h4 class="modal-title" id="myStudentLabel" translate="try1App.student.home.createOrEditLabel">Create or edit a Student</h4>
+    </div>
+    <div class="modal-body">
+        <jh-alert-error></jh-alert-error>
+        <div class="form-group">
+            <label for="id" translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="student.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.student.rollNo" for="field_rollNo">RollNo</label>
+            <input type="text" class="form-control" name="rollNo" id="field_rollNo"
+                    ng-model="student.rollNo"
+                     />
+        </div>
+
+        <div class="form-group">
+            <label translate="try1App.student.studentCategory" for="field_studentCategory">studentCategory</label>
+            <select class="form-control" id="field_studentCategory" name="studentCategory" ng-model="student.studentCategory" ng-options="studentCategory as studentCategory.id for studentCategory in studentcategorys | orderBy:'id' track by studentCategory.id">
+                <option value=""></option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label translate="try1App.student.course" for="field_course">course</label>
+            <select class="form-control" id="field_course" name="course" ng-model="student.course" ng-options="course as course.id for course in courses | orderBy:'id' track by course.id">
+                <option value=""></option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label translate="try1App.student.section" for="field_section">section</label>
+            <select class="form-control" id="field_section" name="section" ng-model="student.section" ng-options="section as section.id for section in sections | orderBy:'id' track by section.id">
+                <option value=""></option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label translate="try1App.student.student" for="field_student">student</label>
+            <select class="form-control" id="field_student" name="student" ng-model="student.student" ng-options="student as student.id for student in students track by student.id">
+                <option value=""></option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label translate="try1App.student.irisUser" for="field_irisUser">irisUser</label>
+            <select class="form-control" id="field_irisUser" name="irisUser" ng-model="student.irisUser" ng-options="irisUser as irisUser.id for irisUser in irisusers | orderBy:'id' track by irisUser.id">
+                <option value=""></option>
+            </select>
+        </div>
+         <div class="form-group">
+            <label translate="try1App.student.parent" for="field_parent">Parents</label>
+            <select class="form-control" id="field_parent" multiple name="parent" ng-model="student.parents" ng-options="parent as parent.id for parent in parents track by parent.id"></select>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

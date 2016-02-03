@@ -1,0 +1,42 @@
+{
+  "relationships": [
+    {
+      "relationshipId": 1,
+      "relationshipName": "schoolDetails",
+      "otherEntityName": "schoolDetails",
+      "relationshipType": "one-to-one",
+      "otherEntityField": "id",
+      "ownerSide": true,
+      "otherEntityRelationshipName": "customAdmissionDetails"
+    }
+  ],
+  "fields": [
+    {
+      "fieldId": 1,
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldId": 2,
+      "fieldName": "isActive",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldId": 3,
+      "fieldName": "isMandatory",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldId": 4,
+      "fieldName": "inputMethod",
+      "fieldType": "String"
+    }
+  ],
+  "changelogDate": "20160107073929",
+  "dto": "no",
+  "pagination": "no",
+  "javadoc": "<Enter note text here>"
+}

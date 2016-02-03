@@ -1,0 +1,12 @@
+{
+    "try1App": {
+        "CourseGroup" : {
+            "null": "",
+            "LKG": "LKG",
+            "UKG": "UKG",
+            "JRSCHOOL": "JRSCHOOL",
+            "MIDDLESCHOOL": "MIDDLESCHOOL",
+            "HIGHSCHOOL": "HIGHSCHOOL"
+        }
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "try1App": {
+        "classRoomSession" : {
+            "home": {
+                "title": "ClassRoomSessions",
+                "createLabel": "Create a new ClassRoomSession",
+                "createOrEditLabel": "Create or edit a ClassRoomSession"
+            },
+            "created": "A new ClassRoomSession is created with identifier {{ param }}",
+            "updated": "A ClassRoomSession is updated with identifier {{ param }}",
+            "deleted": "A ClassRoomSession is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete ClassRoomSession {{ id }}?"
+            },
+            "detail": {
+                "title": "ClassRoomSession"
+            },
+            "sessionName": "SessionName",
+            "startTime": "StartTime",
+            "endTime": "EndTime",
+            "isBreak": "IsBreak",
+            "attribute": "Attribute",
+            "employee": "Employee",
+            "section": "Section",
+            "room": "Room",
+            "timeTable": "TimeTable"
+        }
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "try1App": {
+        "notice" : {
+            "home": {
+                "title": "Notices",
+                "createLabel": "Create a new Notice",
+                "createOrEditLabel": "Create or edit a Notice"
+            },
+            "created": "A new Notice is created with identifier {{ param }}",
+            "updated": "A Notice is updated with identifier {{ param }}",
+            "deleted": "A Notice is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Notice {{ id }}?"
+            },
+            "detail": {
+                "title": "Notice"
+            },
+            "noticeType": "NoticeType",
+            "priority": "Priority",
+            "sensitivity": "Sensitivity",
+            "sendDate": "SendDate",
+            "isRead": "IsRead",
+            "subject": "Subject",
+            "sentBy": "SentBy",
+            "sentTo": "SentTo",
+            "message": "Message",
+            "irisUser": "IrisUser"
+        }
+    }
+}

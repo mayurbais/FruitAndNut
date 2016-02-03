@@ -1,0 +1,10 @@
+{
+    "try1App": {
+        "NoticeType" : {
+            "null": "",
+            "NOTIFICATION": "NOTIFICATION",
+            "REMINDER": "REMINDER",
+            "QUERY": "QUERY"
+        }
+    }
+}

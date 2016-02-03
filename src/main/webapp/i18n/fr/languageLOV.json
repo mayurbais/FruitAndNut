@@ -1,0 +1,23 @@
+{
+    "try1App": {
+        "languageLOV" : {
+            "home": {
+                "title": "LanguageLOVs",
+                "createLabel": "Créer un nouveau LanguageLOV",
+                "createOrEditLabel": "Créer ou éditer un LanguageLOV"
+            },
+            "created": "Un nouveau LanguageLOV a été créé avec l'identifiant {{ param }}",
+            "updated": "Le LanguageLOV avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le LanguageLOV avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le LanguageLOV {{ id }} ?"
+            },
+            "detail": {
+                "title": "LanguageLOV"
+            },
+            "name": "Name",
+            "value": "Value"
+        }
+    }
+}
+

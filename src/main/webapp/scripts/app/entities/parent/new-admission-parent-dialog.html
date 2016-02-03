@@ -1,0 +1,165 @@
+
+<form name="editForm" role="form" novalidate ng-submit="save()">
+
+    <div class="modal-header">
+  
+        <h4 class="modal-title" id="myParentLabel" translate="try1App.parent.home.createOrEditLabel">Create or edit a Parent</h4>
+    </div>
+    <div class="modal-body">
+        <jh-alert-error></jh-alert-error>
+        <div class="form-group">
+            <label for="id" translate="global.field.id">ID</label>
+            <input type="text" class="form-control iris-form-control" id="id" name="id"
+                    ng-model="parent.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.parent.occupation" for="field_occupation">Occupation</label>
+            <input type="text" class="form-control iris-form-control" name="occupation" id="field_occupation"
+                    ng-model="parent.occupation"/>
+        </div>
+
+        <div>
+        
+  
+    <div class="modal-body" ng-controller="AdmissionIrisUserDialogController">
+        <jh-alert-error></jh-alert-error>
+        <div class="form-group">
+            <label for="id" translate="global.field.id">ID</label>
+            <input type="text" class="form-control iris-form-control" id="id" name="id"
+                    ng-model="parent.irisUser.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.irisUser.firstName" for="field_firstName">firstName</label>
+            <input type="text" class="form-control iris-form-control" name="firstName" id="field_firstName"
+                    ng-model="parent.irisUser.firstName"
+                    required ng-minlength="3" ng-maxlength="10" />
+            <div ng-show="editForm.firstName.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.firstName.$error.required" translate="entity.validation.required">
+                    This field is required.
+                </p>
+                <p class="help-block"
+                    ng-show="editForm.firstName.$error.minlength" translate="entity.validation.minlength" translate-value-min="3">
+                    This field is required to be at least 3 characters.
+                </p>
+                <p class="help-block"
+                    ng-show="editForm.firstName.$error.maxlength" translate="entity.validation.maxlength" translate-value-max="10">
+                    This field cannot be longer than 10 characters.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.irisUser.lastName" for="field_lastName">LastName</label>
+            <input type="text" class="form-control iris-form-control" name="lastName" id="field_lastName"
+                    ng-model="parent.irisUser.lastName"
+                    required ng-minlength="3" ng-maxlength="10" />
+            <div ng-show="editForm.lastName.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.lastName.$error.required" translate="entity.validation.required">
+                    This field is required.
+                </p>
+                <p class="help-block"
+                    ng-show="editForm.lastName.$error.minlength" translate="entity.validation.minlength" translate-value-min="3">
+                    This field is required to be at least 3 characters.
+                </p>
+                <p class="help-block"
+                    ng-show="editForm.lastName.$error.maxlength" translate="entity.validation.maxlength" translate-value-max="10">
+                    This field cannot be longer than 10 characters.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.irisUser.middleName" for="field_middleName">MiddleName</label>
+            <input type="text" class="form-control iris-form-control" name="middleName" id="field_middleName"
+                    ng-model="parent.irisUser.middleName"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.irisUser.dateOfBirth" for="field_dateOfBirth">DateOfBirth</label>
+            <input id="field_dateOfBirth" type="text" class="form-control iris-form-control" uib-datepicker-popup="{{dateformat}}" ng-model="parent.irisUser.dateOfBirth" is-open="datePickerForDateOfBirth.status.opened"
+            required/>
+            <span class="input-group-btn">
+                <button type="button" class="btn btn-default" ng-click="datePickerForDateOfBirthOpen($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+            </span>
+            <div ng-show="editForm.dateOfBirth.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.dateOfBirth.$error.required" translate="entity.validation.required">
+                    This field is required.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.irisUser.gender" for="field_gender">Gender</label>
+            <select class="form-control iris-form-control" name="gender" ng-model="parent.irisUser.gender" id="field_gender">
+                <option value="MALE" translate="try1App.Gender.MALE">MALE</option>
+                <option value="FEMALE" translate="try1App.Gender.FEMALE">FEMALE</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.irisUser.bloodGroup" for="field_bloodGroup">BloodGroup</label>
+            <select class="form-control iris-form-control" name="bloodGroup" ng-model="parent.irisUser.bloodGroup" id="field_bloodGroup">
+                <option value="A_PLUS" translate="try1App.BloodGroup.A_PLUS">A_PLUS</option>
+                <option value="A_MINUS" translate="try1App.BloodGroup.A_MINUS">A_MINUS</option>
+                <option value="B_MINUS" translate="try1App.BloodGroup.B_MINUS">B_MINUS</option>
+                <option value="B_PLUS" translate="try1App.BloodGroup.B_PLUS">B_PLUS</option>
+                <option value="O_MINUS" translate="try1App.BloodGroup.O_MINUS">O_MINUS</option>
+                <option value="O_PLUS" translate="try1App.BloodGroup.O_PLUS">O_PLUS</option>
+                <option value="AB_PLUS" translate="try1App.BloodGroup.AB_PLUS">AB_PLUS</option>
+                <option value="AB_MINUS" translate="try1App.BloodGroup.AB_MINUS">AB_MINUS</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.irisUser.birthPlace" for="field_birthPlace">BirthPlace</label>
+            <input type="text" class="form-control iris-form-control" name="birthPlace" id="field_birthPlace"
+                    ng-model="parent.irisUser.birthPlace"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.irisUser.religion" for="field_religion">Religion</label>
+            <input type="text" class="form-control iris-form-control" name="religion" id="field_religion"
+                    ng-model="parent.irisUser.religion"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.irisUser.photo" for="field_photo">Photo</label>
+            <input type="text" class="form-control iris-form-control" name="photo" id="field_photo"
+                    ng-model="parent.irisUser.photo"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.irisUser.phone" for="field_phone">Phone</label>
+            <input type="number" class="form-control iris-form-control" name="phone" id="field_phone"
+                    ng-model="parent.irisUser.phone"
+                     />
+        </div>
+
+        <div class="form-group">
+            <label translate="try1App.irisUser.user" for="field_user">user</label>
+            <select class="form-control iris-form-control" id="field_user" name="user" ng-model="parent.irisUser.user" ng-options="user as user.id for user in users track by user.id">
+                <option value=""></option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label translate="try1App.irisUser.languageLOV" for="field_languageLOV">languageLOV</label>
+            <select class="form-control iris-form-control" id="field_languageLOV" name="languageLOV" ng-model="parent.irisUser.languageLOV" ng-options="languageLOV as languageLOV.id for languageLOV in languagelovs | orderBy:'id' track by languageLOV.id">
+                <option value=""></option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label translate="try1App.irisUser.countryLOV" for="field_countryLOV">countryLOV</label>
+            <select class="form-control iris-form-control" id="field_countryLOV" name="countryLOV" ng-model="parent.irisUser.countryLOV" ng-options="countryLOV as countryLOV.id for countryLOV in countrylovs | orderBy:'id' track by countryLOV.id">
+                <option value=""></option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label translate="try1App.irisUser.address" for="field_address">address</label>
+            <select class="form-control iris-form-control" id="field_address" name="address" ng-model="parent.irisUser.address" ng-options="address as address.id for address in addresss | orderBy:'id' track by address.id">
+                <option value=""></option>
+            </select>
+        </div>
+    </div>
+			
+	</div>
+</div>
+
+</form>

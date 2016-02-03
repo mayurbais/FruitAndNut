@@ -1,0 +1,10 @@
+{
+    "try1App": {
+        "ExamType" : {
+            "null": "",
+            "MARKS": "MARKS",
+            "GRADES": "GRADES",
+            "MARKSANDGRADES": "MARKSANDGRADES"
+        }
+    }
+}

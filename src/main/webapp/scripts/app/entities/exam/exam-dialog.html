@@ -1,0 +1,106 @@
+
+<form name="editForm" role="form" novalidate ng-submit="save()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="clear()">&times;</button>
+        <h4 class="modal-title" id="myExamLabel" translate="try1App.exam.home.createOrEditLabel">Create or edit a Exam</h4>
+    </div>
+    <div class="modal-body">
+        <jh-alert-error></jh-alert-error>
+        <div class="form-group">
+            <label for="id" translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="exam.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.exam.name" for="field_name">Name</label>
+            <input type="text" class="form-control" name="name" id="field_name"
+                    ng-model="exam.name"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.exam.type" for="field_type">Type</label>
+            <select class="form-control" name="type" ng-model="exam.type" id="field_type">
+                <option value="MARKS" translate="try1App.ExamType.MARKS">MARKS</option>
+                <option value="GRADES" translate="try1App.ExamType.GRADES">GRADES</option>
+                <option value="MARKSANDGRADES" translate="try1App.ExamType.MARKSANDGRADES">MARKSANDGRADES</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.exam.startDate" for="field_startDate">StartDate</label>
+            <input id="field_startDate" type="text" class="form-control" uib-datepicker-popup="{{dateformat}}" ng-model="exam.startDate" is-open="datePickerForStartDate.status.opened"
+            />
+            <span class="input-group-btn">
+                <button type="button" class="btn btn-default" ng-click="datePickerForStartDateOpen($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+            </span>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.exam.endDate" for="field_endDate">EndDate</label>
+            <input id="field_endDate" type="text" class="form-control" uib-datepicker-popup="{{dateformat}}" ng-model="exam.endDate" is-open="datePickerForEndDate.status.opened"
+            />
+            <span class="input-group-btn">
+                <button type="button" class="btn btn-default" ng-click="datePickerForEndDateOpen($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+            </span>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.exam.isPublished" for="field_isPublished">IsPublished</label>
+            <input type="checkbox" class="form-control" name="isPublished" id="field_isPublished"
+                    ng-model="exam.isPublished"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.exam.progressStatus" for="field_progressStatus">ProgressStatus</label>
+            <select class="form-control" name="progressStatus" ng-model="exam.progressStatus" id="field_progressStatus">
+                <option value="IN_PROGRESS" translate="try1App.ProgressStatus.IN_PROGRESS">IN_PROGRESS</option>
+                <option value="NEW" translate="try1App.ProgressStatus.NEW">NEW</option>
+                <option value="COMPLETED" translate="try1App.ProgressStatus.COMPLETED">COMPLETED</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.exam.isResultPublished" for="field_isResultPublished">IsResultPublished</label>
+            <input type="checkbox" class="form-control" name="isResultPublished" id="field_isResultPublished"
+                    ng-model="exam.isResultPublished"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.exam.classAverage" for="field_classAverage">ClassAverage</label>
+            <input type="number" class="form-control" name="classAverage" id="field_classAverage"
+                    ng-model="exam.classAverage"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.exam.remarkByPrincipal" for="field_remarkByPrincipal">RemarkByPrincipal</label>
+            <input type="text" class="form-control" name="remarkByPrincipal" id="field_remarkByPrincipal"
+                    ng-model="exam.remarkByPrincipal"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.exam.remarkByHeadTeacher" for="field_remarkByHeadTeacher">RemarkByHeadTeacher</label>
+            <input type="text" class="form-control" name="remarkByHeadTeacher" id="field_remarkByHeadTeacher"
+                    ng-model="exam.remarkByHeadTeacher"
+                     />
+        </div>
+
+        <div class="form-group">
+            <label translate="try1App.exam.course" for="field_course">course</label>
+            <select class="form-control" id="field_course" name="course" ng-model="exam.course" ng-options="course as course.id for course in courses track by course.id">
+                <option value=""></option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label translate="try1App.exam.section" for="field_section">section</label>
+            <select class="form-control" id="field_section" name="section" ng-model="exam.section" ng-options="section as section.id for section in sections track by section.id">
+                <option value=""></option>
+            </select>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

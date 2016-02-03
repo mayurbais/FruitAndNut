@@ -1,0 +1,28 @@
+{
+    "try1App": {
+        "subjectExamResult" : {
+            "home": {
+                "title": "SubjectExamResults",
+                "createLabel": "Créer un nouveau SubjectExamResult",
+                "createOrEditLabel": "Créer ou éditer un SubjectExamResult"
+            },
+            "created": "Un nouveau SubjectExamResult a été créé avec l'identifiant {{ param }}",
+            "updated": "Le SubjectExamResult avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le SubjectExamResult avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le SubjectExamResult {{ id }} ?"
+            },
+            "detail": {
+                "title": "SubjectExamResult"
+            },
+            "studentId": "StudentId",
+            "marksObtained": "MarksObtained",
+            "grade": "Grade",
+            "isPassed": "IsPassed",
+            "isAbsent": "IsAbsent",
+            "remark": "Remark",
+            "examSubjects": "ExamSubjects"
+        }
+    }
+}
+

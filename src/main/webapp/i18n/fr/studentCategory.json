@@ -1,0 +1,24 @@
+{
+    "try1App": {
+        "studentCategory" : {
+            "home": {
+                "title": "StudentCategorys",
+                "createLabel": "Créer un nouveau StudentCategory",
+                "createOrEditLabel": "Créer ou éditer un StudentCategory"
+            },
+            "created": "Un nouveau StudentCategory a été créé avec l'identifiant {{ param }}",
+            "updated": "Le StudentCategory avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le StudentCategory avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le StudentCategory {{ id }} ?"
+            },
+            "detail": {
+                "title": "StudentCategory"
+            },
+            "name": "Name",
+            "value": "Value",
+            "description": "Description"
+        }
+    }
+}
+

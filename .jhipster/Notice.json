@@ -1,0 +1,66 @@
+{
+  "relationships": [
+    {
+      "relationshipId": 1,
+      "relationshipName": "irisUser",
+      "otherEntityName": "irisUser",
+      "relationshipType": "one-to-one",
+      "otherEntityField": "id",
+      "ownerSide": true,
+      "otherEntityRelationshipName": "notice"
+    }
+  ],
+  "fields": [
+    {
+      "fieldId": 1,
+      "fieldName": "noticeType",
+      "fieldType": "NoticeType",
+      "fieldValues": "NOTIFICATION,REMINDER,QUERY"
+    },
+    {
+      "fieldId": 2,
+      "fieldName": "priority",
+      "fieldType": "PriorityLevel",
+      "fieldValues": "HIGH,NORMAL,LOW"
+    },
+    {
+      "fieldId": 3,
+      "fieldName": "sensitivity",
+      "fieldType": "NoticeSensitivity",
+      "fieldValues": "PERSONAL,PRIVATE,CONFEDENTIAL,NORMAL"
+    },
+    {
+      "fieldId": 4,
+      "fieldName": "sendDate",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldId": 5,
+      "fieldName": "isRead",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 6,
+      "fieldName": "subject",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 7,
+      "fieldName": "sentBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 8,
+      "fieldName": "sentTo",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 9,
+      "fieldName": "message",
+      "fieldType": "String"
+    }
+  ],
+  "changelogDate": "20160113220817",
+  "dto": "no",
+  "pagination": "no"
+}

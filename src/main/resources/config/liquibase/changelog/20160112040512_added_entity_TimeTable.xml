@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+
+    <property name="now" value="now()" dbms="mysql,h2"/>
+    <property name="now" value="current_timestamp" dbms="postgresql"/>
+    <property name="now" value="sysdate" dbms="oracle"/>
+
+    <property name="autoIncrement" value="true" dbms="mysql,h2,postgresql,oracle"/>
+
+    <property name="floatType" value="float4" dbms="postgresql, h2"/>
+    <property name="floatType" value="float" dbms="mysql, oracle"/>
+
+    <!--
+        Added the entity TimeTable.
+    -->
+    <changeSet id="20160112040512" author="jhipster">
+        <createTable tableName="time_table">
+            <column name="id" type="bigint" autoIncrement="${autoIncrement}">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="day" type="varchar(255)"/>
+            <column name="start_date" type="timestamp"/>
+            <column name="end_date" type="timestamp"/>
+        </createTable>
+        <dropDefaultValue tableName="time_table" columnName="start_date" columnDataType="datetime"/>
+
+        <dropDefaultValue tableName="time_table" columnName="end_date" columnDataType="datetime"/>
+
+        
+        <createTable tableName="time_table_time_slot">
+            <column name="time_slots_id" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+            <column name="time_tables_id" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <addPrimaryKey columnNames="time_tables_id, time_slots_id" tableName="time_table_time_slot"/>
+
+        <addForeignKeyConstraint baseColumnNames="time_tables_id"
+                                 baseTableName="time_table_time_slot"
+                                 constraintName="fk_time_table_time_slot_timeslot_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="time_table"/>
+
+        <addForeignKeyConstraint baseColumnNames="time_slots_id"
+                                 baseTableName="time_table_time_slot"
+                                 constraintName="fk_time_table_time_slot_timetable_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="time_slot"/>
+        
+        <createTable tableName="time_table_class_room_session">
+            <column name="class_room_sessions_id" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+            <column name="time_tables_id" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <addPrimaryKey columnNames="time_tables_id, class_room_sessions_id" tableName="time_table_class_room_session"/>
+
+        <addForeignKeyConstraint baseColumnNames="time_tables_id"
+                                 baseTableName="time_table_class_room_session"
+                                 constraintName="fk_time_table_class_room_session_classroomsession_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="time_table"/>
+
+        <addForeignKeyConstraint baseColumnNames="class_room_sessions_id"
+                                 baseTableName="time_table_class_room_session"
+                                 constraintName="fk_time_table_class_room_session_timetable_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="class_room_session"/>
+        
+        <createTable tableName="time_table_section">
+            <column name="sections_id" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+            <column name="time_tables_id" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <addPrimaryKey columnNames="time_tables_id, sections_id" tableName="time_table_section"/>
+
+        <addForeignKeyConstraint baseColumnNames="time_tables_id"
+                                 baseTableName="time_table_section"
+                                 constraintName="fk_time_table_section_section_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="time_table"/>
+
+        <addForeignKeyConstraint baseColumnNames="sections_id"
+                                 baseTableName="time_table_section"
+                                 constraintName="fk_time_table_section_timetable_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="section"/>
+        
+    </changeSet>
+</databaseChangeLog>

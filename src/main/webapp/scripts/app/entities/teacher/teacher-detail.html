@@ -1,0 +1,46 @@
+
+<div>
+    <h2><span translate="try1App.teacher.detail.title">Teacher</span> {{teacher.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th translate="entity.detail.field">Field</th>
+                <th translate="entity.detail.value">Value</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <span translate="try1App.teacher.experties">Experties</span>
+                </td>
+                <td>
+                    <span class="form-control-static" translate="{{'try1App.Experties.' + teacher.experties}}">{{teacher.experties}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="try1App.teacher.courseGroup">CourseGroup</span>
+                </td>
+                <td>
+                    <span class="form-control-static" translate="{{'try1App.CourseGroup.' + teacher.courseGroup}}">{{teacher.courseGroup}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="try1App.teacher.employee">employee</span>
+                </td>
+                <td>
+                    <a class="form-control-static" ui-sref="employee.detail({id:teacher.employee.id})">{{teacher.employee.id}}</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

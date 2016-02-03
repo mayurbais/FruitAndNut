@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+
+    <property name="now" value="now()" dbms="mysql,h2"/>
+    <property name="now" value="current_timestamp" dbms="postgresql"/>
+    <property name="now" value="sysdate" dbms="oracle"/>
+
+    <property name="autoIncrement" value="true" dbms="mysql,h2,postgresql,oracle"/>
+
+    <property name="floatType" value="float4" dbms="postgresql, h2"/>
+    <property name="floatType" value="float" dbms="mysql, oracle"/>
+
+    <!--
+        Added the entity Attendance.
+    -->
+    <changeSet id="20160110084525" author="jhipster">
+        <createTable tableName="attendance">
+            <column name="id" type="bigint" autoIncrement="${autoIncrement}">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="attendance_for" type="varchar(255)"/>
+            <column name="date" type="timestamp"/>
+            <column name="is_present" type="bit"/>
+            <column name="reason_for_absent" type="varchar(50)"/>
+            <column name="is_approved" type="bit"/>
+            <column name="approved_by" type="varchar(255)"/>
+            <column name="attribute" type="varchar(255)"/>
+            <column name="iris_user_id" type="bigint">
+                <constraints unique="true"/>
+            </column>
+            <column name="section_id" type="bigint"/>
+            <column name="course_id" type="bigint"/>
+        </createTable>
+        <dropDefaultValue tableName="attendance" columnName="date" columnDataType="datetime"/>
+
+        
+        <addForeignKeyConstraint baseColumnNames="iris_user_id"
+                                 baseTableName="attendance"
+                                 constraintName="fk_attendance_irisuser_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="iris_user"/>
+
+        <addForeignKeyConstraint baseColumnNames="section_id"
+                                 baseTableName="attendance"
+                                 constraintName="fk_attendance_section_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="section"/>
+
+        <addForeignKeyConstraint baseColumnNames="course_id"
+                                 baseTableName="attendance"
+                                 constraintName="fk_attendance_course_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="course"/>
+
+    </changeSet>
+</databaseChangeLog>

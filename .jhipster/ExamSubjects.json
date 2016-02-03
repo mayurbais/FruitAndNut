@@ -1,0 +1,95 @@
+{
+  "relationships": [
+    {
+      "relationshipId": 1,
+      "relationshipName": "exam",
+      "otherEntityName": "exam",
+      "relationshipType": "many-to-one",
+      "otherEntityField": "id"
+    },
+    {
+      "relationshipId": 2,
+      "relationshipName": "subject",
+      "otherEntityName": "subject",
+      "relationshipType": "one-to-one",
+      "otherEntityField": "id",
+      "ownerSide": true,
+      "otherEntityRelationshipName": "examSubjects"
+    },
+    {
+      "relationshipId": 3,
+      "relationshipName": "teacher",
+      "otherEntityName": "teacher",
+      "relationshipType": "one-to-one",
+      "otherEntityField": "id",
+      "ownerSide": true,
+      "otherEntityRelationshipName": "examSubjects"
+    },
+    {
+      "relationshipId": 4,
+      "relationshipName": "room",
+      "otherEntityName": "room",
+      "relationshipType": "one-to-one",
+      "otherEntityField": "id",
+      "ownerSide": true,
+      "otherEntityRelationshipName": "examSubjects"
+    }
+  ],
+  "fields": [
+    {
+      "fieldId": 1,
+      "fieldName": "maxMarks",
+      "javadoc": "<Enter note text here>",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldId": 2,
+      "fieldName": "minPassMark",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldId": 3,
+      "fieldName": "isGrade",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldId": 4,
+      "fieldName": "startTime",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldId": 5,
+      "fieldName": "endTime",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldId": 6,
+      "fieldName": "conductingDate",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldId": 7,
+      "fieldName": "isResultPublished",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldId": 8,
+      "fieldName": "classAverage",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldId": 9,
+      "fieldName": "remarkByPrincipal",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 10,
+      "fieldName": "remarkByHeadTeacher",
+      "fieldType": "String"
+    }
+  ],
+  "changelogDate": "20160112221053",
+  "dto": "no",
+  "pagination": "no",
+  "javadoc": "<Enter note text here>"
+}

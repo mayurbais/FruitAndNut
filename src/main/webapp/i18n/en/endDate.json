@@ -1,0 +1,26 @@
+{
+    "try1App": {
+        "endDate" : {
+            "home": {
+                "title": "EndDates",
+                "createLabel": "Create a new EndDate",
+                "createOrEditLabel": "Create or edit a EndDate"
+            },
+            "created": "A new EndDate is created with identifier {{ param }}",
+            "updated": "A EndDate is updated with identifier {{ param }}",
+            "deleted": "A EndDate is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete EndDate {{ id }}?"
+            },
+            "detail": {
+                "title": "EndDate"
+            },
+            "day": "Day",
+            "startDate": "StartDate",
+            "endDate": "EndDate",
+            "timeSlot": "TimeSlot",
+            "classRoomSession": "ClassRoomSession",
+            "section": "Section"
+        }
+    }
+}

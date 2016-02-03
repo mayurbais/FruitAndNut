@@ -1,0 +1,786 @@
+<?xml version="1.0" encoding="UTF-8"?><uml:Model xmlns:uml="http://www.omg.org/spec/UML/20110701" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmi:version="2.1" xmi:id="_SLHzsLYyEeWnxvOOhvJD-w" name="iris1">
+  <eAnnotations xmi:id="_SLHzsbYyEeWnxvOOhvJD-w" source="Objing">
+    <contents xmi:type="uml:Property" xmi:id="_SLHzsrYyEeWnxvOOhvJD-w" name="exporterVersion">
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_SLHzs7YyEeWnxvOOhvJD-w" value="3.0.0"/>
+    </contents>
+  </eAnnotations>
+  <ownedRule xmi:type="uml:Constraint" xmi:id="_SLHztLYyEeWnxvOOhvJD-w" name="maxlength" constrainedElement="_SLH0DbYyEeWnxvOOhvJD-w">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_SLHztbYyEeWnxvOOhvJD-w">
+      <body>&lt;Enter note text here&gt;</body>
+    </ownedComment>
+    <specification xmi:type="uml:LiteralString" xmi:id="_SLHztrYyEeWnxvOOhvJD-w" value="20"/>
+  </ownedRule>
+  <ownedRule xmi:type="uml:Constraint" xmi:id="_SLHzt7YyEeWnxvOOhvJD-w" name="minlength" constrainedElement="_SLH0DbYyEeWnxvOOhvJD-w">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_SLHzuLYyEeWnxvOOhvJD-w">
+      <body>&lt;Enter note text here&gt;</body>
+    </ownedComment>
+    <specification xmi:type="uml:LiteralString" xmi:id="_SLHzubYyEeWnxvOOhvJD-w" value="5"/>
+  </ownedRule>
+  <ownedRule xmi:type="uml:Constraint" xmi:id="_SLHzurYyEeWnxvOOhvJD-w" name="required" constrainedElement="_SLH0ELYyEeWnxvOOhvJD-w">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_SLHzu7YyEeWnxvOOhvJD-w">
+      <body>&lt;Enter note text here&gt;</body>
+    </ownedComment>
+    <specification xmi:type="uml:LiteralString" xmi:id="_SLHzvLYyEeWnxvOOhvJD-w" value="required"/>
+  </ownedRule>
+  <ownedRule xmi:type="uml:Constraint" xmi:id="_SLHzvbYyEeWnxvOOhvJD-w" name="required" constrainedElement="_SLH0G7YyEeWnxvOOhvJD-w">
+    <specification xmi:type="uml:LiteralString" xmi:id="_SLHzvrYyEeWnxvOOhvJD-w" value="true"/>
+  </ownedRule>
+  <ownedRule xmi:type="uml:Constraint" xmi:id="_SLHzv7YyEeWnxvOOhvJD-w" name="required" constrainedElement="_SLH0HbYyEeWnxvOOhvJD-w">
+    <specification xmi:type="uml:LiteralString" xmi:id="_SLHzwLYyEeWnxvOOhvJD-w" value="true"/>
+  </ownedRule>
+  <ownedRule xmi:type="uml:Constraint" xmi:id="_SLHzwbYyEeWnxvOOhvJD-w" name="required" constrainedElement="_SLH0VLYyEeWnxvOOhvJD-w">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_SLHzwrYyEeWnxvOOhvJD-w">
+      <body>&lt;Enter note text here&gt;</body>
+    </ownedComment>
+    <specification xmi:type="uml:LiteralString" xmi:id="_SLHzw7YyEeWnxvOOhvJD-w" value="true"/>
+  </ownedRule>
+  <ownedRule xmi:type="uml:Constraint" xmi:id="_SLHzxLYyEeWnxvOOhvJD-w" name="minlength" constrainedElement="_SLH0VLYyEeWnxvOOhvJD-w">
+    <specification xmi:type="uml:LiteralString" xmi:id="_SLHzxbYyEeWnxvOOhvJD-w" value="5"/>
+  </ownedRule>
+  <ownedRule xmi:type="uml:Constraint" xmi:id="_SLHzxrYyEeWnxvOOhvJD-w" name="maxlength" constrainedElement="_SLH0VLYyEeWnxvOOhvJD-w">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_SLHzx7YyEeWnxvOOhvJD-w">
+      <body>&lt;Enter note text here&gt;</body>
+    </ownedComment>
+    <specification xmi:type="uml:LiteralString" xmi:id="_SLHzyLYyEeWnxvOOhvJD-w" value="10"/>
+  </ownedRule>
+  <ownedRule xmi:type="uml:Constraint" xmi:id="_SLHzybYyEeWnxvOOhvJD-w" name="required" constrainedElement="_SLH0VbYyEeWnxvOOhvJD-w">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_SLHzyrYyEeWnxvOOhvJD-w">
+      <body>&lt;Enter note text here&gt;</body>
+    </ownedComment>
+    <specification xmi:type="uml:LiteralString" xmi:id="_SLHzy7YyEeWnxvOOhvJD-w" value="true"/>
+  </ownedRule>
+  <ownedRule xmi:type="uml:Constraint" xmi:id="_SLHzzLYyEeWnxvOOhvJD-w" name="minlength" constrainedElement="_SLH0ZLYyEeWnxvOOhvJD-w">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_SLHzzbYyEeWnxvOOhvJD-w">
+      <body>&lt;Enter note text here&gt;</body>
+    </ownedComment>
+    <specification xmi:type="uml:LiteralString" xmi:id="_SLHzzrYyEeWnxvOOhvJD-w" value="2"/>
+  </ownedRule>
+  <ownedRule xmi:type="uml:Constraint" xmi:id="_SLHzz7YyEeWnxvOOhvJD-w" name="maxlength" constrainedElement="_SLH0ZLYyEeWnxvOOhvJD-w">
+    <specification xmi:type="uml:LiteralString" xmi:id="_SLHz0LYyEeWnxvOOhvJD-w" value="10"/>
+  </ownedRule>
+  <ownedRule xmi:type="uml:Constraint" xmi:id="_SLHz0bYyEeWnxvOOhvJD-w" name="required" constrainedElement="_SLH0ZLYyEeWnxvOOhvJD-w">
+    <specification xmi:type="uml:LiteralString" xmi:id="_SLHz0rYyEeWnxvOOhvJD-w" value="true"/>
+  </ownedRule>
+  <ownedRule xmi:type="uml:Constraint" xmi:id="_SLHz07YyEeWnxvOOhvJD-w" name="required" constrainedElement="_SLH0cLYyEeWnxvOOhvJD-w">
+    <specification xmi:type="uml:LiteralString" xmi:id="_SLHz1LYyEeWnxvOOhvJD-w" value="true"/>
+  </ownedRule>
+  <ownedRule xmi:type="uml:Constraint" xmi:id="_SLHz1bYyEeWnxvOOhvJD-w" name="minlength" constrainedElement="_SLH0cLYyEeWnxvOOhvJD-w">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_SLHz1rYyEeWnxvOOhvJD-w">
+      <body>&lt;Enter note text here&gt;</body>
+    </ownedComment>
+    <specification xmi:type="uml:LiteralString" xmi:id="_SLHz17YyEeWnxvOOhvJD-w" value="2"/>
+  </ownedRule>
+  <ownedRule xmi:type="uml:Constraint" xmi:id="_SLHz2LYyEeWnxvOOhvJD-w" name="maxlength" constrainedElement="_SLH0cLYyEeWnxvOOhvJD-w">
+    <specification xmi:type="uml:LiteralString" xmi:id="_SLHz2bYyEeWnxvOOhvJD-w" value="10"/>
+  </ownedRule>
+  <ownedRule xmi:type="uml:Constraint" xmi:id="_SLHz2rYyEeWnxvOOhvJD-w" name="minlength" constrainedElement="_SLH0jrYyEeWnxvOOhvJD-w">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_SLHz27YyEeWnxvOOhvJD-w">
+      <body>&lt;Enter note text here&gt;</body>
+    </ownedComment>
+    <specification xmi:type="uml:LiteralString" xmi:id="_SLHz3LYyEeWnxvOOhvJD-w" value="2"/>
+  </ownedRule>
+  <ownedRule xmi:type="uml:Constraint" xmi:id="_SLHz3bYyEeWnxvOOhvJD-w" name="maxlength" constrainedElement="_SLH0jrYyEeWnxvOOhvJD-w">
+    <specification xmi:type="uml:LiteralString" xmi:id="_SLHz3rYyEeWnxvOOhvJD-w" value="10"/>
+  </ownedRule>
+  <ownedRule xmi:type="uml:Constraint" xmi:id="_SLHz37YyEeWnxvOOhvJD-w" name="required" constrainedElement="_SLH0jrYyEeWnxvOOhvJD-w">
+    <specification xmi:type="uml:LiteralString" xmi:id="_SLHz4LYyEeWnxvOOhvJD-w" value="true"/>
+  </ownedRule>
+  <ownedRule xmi:type="uml:Constraint" xmi:id="_SLHz4bYyEeWnxvOOhvJD-w" name="required" constrainedElement="_SLH0n7YyEeWnxvOOhvJD-w">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_SLHz4rYyEeWnxvOOhvJD-w">
+      <body>&lt;Enter note text here&gt;</body>
+    </ownedComment>
+    <specification xmi:type="uml:LiteralString" xmi:id="_SLHz47YyEeWnxvOOhvJD-w" value="true"/>
+  </ownedRule>
+  <ownedRule xmi:type="uml:Constraint" xmi:id="_SLHz5LYyEeWnxvOOhvJD-w" name="required" constrainedElement="_SLH0oLYyEeWnxvOOhvJD-w">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_SLHz5bYyEeWnxvOOhvJD-w">
+      <body>&lt;Enter note text here&gt;</body>
+    </ownedComment>
+    <specification xmi:type="uml:LiteralString" xmi:id="_SLHz5rYyEeWnxvOOhvJD-w" value="true"/>
+  </ownedRule>
+  <ownedRule xmi:type="uml:Constraint" xmi:id="_SLHz57YyEeWnxvOOhvJD-w" name="required" constrainedElement="_SLH0p7YyEeWnxvOOhvJD-w">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_SLHz6LYyEeWnxvOOhvJD-w">
+      <body>&lt;Enter note text here&gt;</body>
+    </ownedComment>
+    <specification xmi:type="uml:LiteralString" xmi:id="_SLHz6bYyEeWnxvOOhvJD-w" value="true"/>
+  </ownedRule>
+  <ownedRule xmi:type="uml:Constraint" xmi:id="_SLHz6rYyEeWnxvOOhvJD-w" name="required" constrainedElement="_SLH0w7YyEeWnxvOOhvJD-w">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_SLHz67YyEeWnxvOOhvJD-w">
+      <body>&lt;Enter note text here&gt;</body>
+    </ownedComment>
+    <specification xmi:type="uml:LiteralString" xmi:id="_SLHz7LYyEeWnxvOOhvJD-w" value="true"/>
+  </ownedRule>
+  <ownedRule xmi:type="uml:Constraint" xmi:id="_SLHz7bYyEeWnxvOOhvJD-w" name="required" constrainedElement="_SLH0xLYyEeWnxvOOhvJD-w">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_SLHz7rYyEeWnxvOOhvJD-w">
+      <body>&lt;Enter note text here&gt;</body>
+    </ownedComment>
+    <specification xmi:type="uml:LiteralString" xmi:id="_SLHz77YyEeWnxvOOhvJD-w" value="true"/>
+  </ownedRule>
+  <ownedRule xmi:type="uml:Constraint" xmi:id="_SLHz8LYyEeWnxvOOhvJD-w" name="required" constrainedElement="_SLH0-7YyEeWnxvOOhvJD-w">
+    <specification xmi:type="uml:LiteralString" xmi:id="_SLHz8bYyEeWnxvOOhvJD-w" value="true"/>
+  </ownedRule>
+  <ownedRule xmi:type="uml:Constraint" xmi:id="_SLHz8rYyEeWnxvOOhvJD-w" name="minlength" constrainedElement="_SLH0-7YyEeWnxvOOhvJD-w">
+    <specification xmi:type="uml:LiteralString" xmi:id="_SLHz87YyEeWnxvOOhvJD-w" value="3"/>
+  </ownedRule>
+  <ownedRule xmi:type="uml:Constraint" xmi:id="_SLHz9LYyEeWnxvOOhvJD-w" name="maxlength" constrainedElement="_SLH0-7YyEeWnxvOOhvJD-w">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_SLHz9bYyEeWnxvOOhvJD-w">
+      <body>&lt;Enter note text here&gt;</body>
+    </ownedComment>
+    <specification xmi:type="uml:LiteralString" xmi:id="_SLHz9rYyEeWnxvOOhvJD-w" value="10"/>
+  </ownedRule>
+  <ownedRule xmi:type="uml:Constraint" xmi:id="_SLHz97YyEeWnxvOOhvJD-w" name="maxlength" constrainedElement="_SLH0_LYyEeWnxvOOhvJD-w">
+    <specification xmi:type="uml:LiteralString" xmi:id="_SLHz-LYyEeWnxvOOhvJD-w" value="10"/>
+  </ownedRule>
+  <ownedRule xmi:type="uml:Constraint" xmi:id="_SLHz-bYyEeWnxvOOhvJD-w" name="minlength" constrainedElement="_SLH0_LYyEeWnxvOOhvJD-w">
+    <specification xmi:type="uml:LiteralString" xmi:id="_SLHz-rYyEeWnxvOOhvJD-w" value="3"/>
+  </ownedRule>
+  <ownedRule xmi:type="uml:Constraint" xmi:id="_SLHz-7YyEeWnxvOOhvJD-w" name="required" constrainedElement="_SLH0_LYyEeWnxvOOhvJD-w">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_SLHz_LYyEeWnxvOOhvJD-w">
+      <body>&lt;Enter note text here&gt;</body>
+    </ownedComment>
+    <specification xmi:type="uml:LiteralString" xmi:id="_SLHz_bYyEeWnxvOOhvJD-w" value="true"/>
+  </ownedRule>
+  <ownedRule xmi:type="uml:Constraint" xmi:id="_SLHz_rYyEeWnxvOOhvJD-w" name="required" constrainedElement="_SLH0_rYyEeWnxvOOhvJD-w">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_SLHz_7YyEeWnxvOOhvJD-w">
+      <body>&lt;Enter note text here&gt;</body>
+    </ownedComment>
+    <specification xmi:type="uml:LiteralString" xmi:id="_SLH0ALYyEeWnxvOOhvJD-w" value="true"/>
+  </ownedRule>
+  <packagedElement xmi:type="uml:Class" xmi:id="_SLH0AbYyEeWnxvOOhvJD-w" name="ModuleLOV">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0ArYyEeWnxvOOhvJD-w" name="type" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0A7YyEeWnxvOOhvJD-w" name="name" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0BLYyEeWnxvOOhvJD-w" name="value" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_SLH0BbYyEeWnxvOOhvJD-w" name="SchoolDetails">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0BrYyEeWnxvOOhvJD-w" name="user" visibility="public" type="_SLH0RrYyEeWnxvOOhvJD-w" aggregation="composite" association="_SLH0L7YyEeWnxvOOhvJD-w">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_SLH0B7YyEeWnxvOOhvJD-w">
+        <body>&lt;Enter note text here&gt;</body>
+      </ownedComment>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0CLYyEeWnxvOOhvJD-w" name="languageLOV" visibility="public" type="_SLH0P7YyEeWnxvOOhvJD-w" aggregation="composite" association="_SLH0MbYyEeWnxvOOhvJD-w">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_SLH0CbYyEeWnxvOOhvJD-w">
+        <body>&lt;Enter note text here&gt;</body>
+      </ownedComment>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0CrYyEeWnxvOOhvJD-w" name="currancyLOV" visibility="public" type="_SLH0QrYyEeWnxvOOhvJD-w" aggregation="composite" association="_SLH0M7YyEeWnxvOOhvJD-w"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0C7YyEeWnxvOOhvJD-w" name="countryLOV" visibility="public" type="_SLH0O7YyEeWnxvOOhvJD-w" aggregation="composite" association="_SLH0NbYyEeWnxvOOhvJD-w">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_SLH0DLYyEeWnxvOOhvJD-w">
+        <body>&lt;Enter note text here&gt;</body>
+      </ownedComment>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0DbYyEeWnxvOOhvJD-w" name="schoolName" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0DrYyEeWnxvOOhvJD-w" name="address" visibility="public" isUnique="false">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_SLH0D7YyEeWnxvOOhvJD-w">
+        <body>&lt;Enter note text here&gt;</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0ELYyEeWnxvOOhvJD-w" name="phoneNumber" visibility="public" isUnique="false">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_SLH0EbYyEeWnxvOOhvJD-w">
+        <body/>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0ErYyEeWnxvOOhvJD-w" name="attendanceType" visibility="public" isUnique="false">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_SLH0E7YyEeWnxvOOhvJD-w">
+        <body>&lt;Enter note text here&gt;</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_SLH0FLYyEeWnxvOOhvJD-w" value="Daily"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0FbYyEeWnxvOOhvJD-w" name="startDayOfTheWeek" visibility="public" isUnique="false">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_SLH0FrYyEeWnxvOOhvJD-w">
+        <body>&lt;Enter note text here&gt;</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_SLH0F7YyEeWnxvOOhvJD-w" value="Monday"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0GLYyEeWnxvOOhvJD-w" name="dateFormat" visibility="public" isUnique="false">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_SLH0GbYyEeWnxvOOhvJD-w">
+        <body>&lt;Enter note text here&gt;</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_SLH0GrYyEeWnxvOOhvJD-w" value="DD/MM/YYYY"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0G7YyEeWnxvOOhvJD-w" name="financialStartDate" visibility="public" type="_SLH0SbYyEeWnxvOOhvJD-w" isUnique="false">
+      <defaultValue xmi:type="uml:Expression" xmi:id="_SLH0HLYyEeWnxvOOhvJD-w" symbol="04/07/2016"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0HbYyEeWnxvOOhvJD-w" name="financialEndDate" visibility="public" type="_SLH0SbYyEeWnxvOOhvJD-w" isUnique="false">
+      <defaultValue xmi:type="uml:Expression" xmi:id="_SLH0HrYyEeWnxvOOhvJD-w" symbol="02/02/2017"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0H7YyEeWnxvOOhvJD-w" name="logo" visibility="public" isUnique="false">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_SLH0ILYyEeWnxvOOhvJD-w">
+        <body>&lt;Enter note text here&gt;</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0IbYyEeWnxvOOhvJD-w" name="gradingSystem" visibility="public" type="_SLH0a7YyEeWnxvOOhvJD-w" isUnique="false"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0IrYyEeWnxvOOhvJD-w" name="enableAutoIncreamentOfAdmissionNo" visibility="public" isUnique="false">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_SLH0I7YyEeWnxvOOhvJD-w">
+        <body>&lt;Enter note text here&gt;</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#Boolean"/>
+      <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_SLH0JLYyEeWnxvOOhvJD-w" value="true"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0JbYyEeWnxvOOhvJD-w" name="enableNewsCommentsModeration" visibility="public" isUnique="false">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_SLH0JrYyEeWnxvOOhvJD-w">
+        <body>&lt;Enter note text here&gt;</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#Boolean"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0J7YyEeWnxvOOhvJD-w" name="enableSibling" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#Boolean"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0KLYyEeWnxvOOhvJD-w" name="enablePasswordChangeAtFirstLogin" visibility="public" isUnique="false">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_SLH0KbYyEeWnxvOOhvJD-w">
+        <body/>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#Boolean"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0KrYyEeWnxvOOhvJD-w" name="enableRollNumberForStudent" visibility="public" isUnique="false">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_SLH0K7YyEeWnxvOOhvJD-w">
+        <body/>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#Boolean"/>
+      <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_SLH0LLYyEeWnxvOOhvJD-w" value="true"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0LbYyEeWnxvOOhvJD-w" name="institutionType" visibility="public" type="_SLH0N7YyEeWnxvOOhvJD-w" isUnique="false">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_SLH0LrYyEeWnxvOOhvJD-w">
+        <body/>
+      </ownedComment>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_SLH0L7YyEeWnxvOOhvJD-w" name="admin" memberEnd="_SLH0BrYyEeWnxvOOhvJD-w _SLH0MLYyEeWnxvOOhvJD-w">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_SLH0MLYyEeWnxvOOhvJD-w" visibility="public" type="_SLH0BbYyEeWnxvOOhvJD-w" association="_SLH0L7YyEeWnxvOOhvJD-w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_SLH0MbYyEeWnxvOOhvJD-w" name="language" memberEnd="_SLH0CLYyEeWnxvOOhvJD-w _SLH0MrYyEeWnxvOOhvJD-w">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_SLH0MrYyEeWnxvOOhvJD-w" visibility="public" type="_SLH0BbYyEeWnxvOOhvJD-w" association="_SLH0MbYyEeWnxvOOhvJD-w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_SLH0M7YyEeWnxvOOhvJD-w" name="currancy" memberEnd="_SLH0CrYyEeWnxvOOhvJD-w _SLH0NLYyEeWnxvOOhvJD-w">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_SLH0NLYyEeWnxvOOhvJD-w" visibility="public" type="_SLH0BbYyEeWnxvOOhvJD-w" association="_SLH0M7YyEeWnxvOOhvJD-w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_SLH0NbYyEeWnxvOOhvJD-w" name="country" memberEnd="_SLH0C7YyEeWnxvOOhvJD-w _SLH0NrYyEeWnxvOOhvJD-w">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_SLH0NrYyEeWnxvOOhvJD-w" visibility="public" type="_SLH0BbYyEeWnxvOOhvJD-w" association="_SLH0NbYyEeWnxvOOhvJD-w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Enumeration" xmi:id="_SLH0N7YyEeWnxvOOhvJD-w" name="InstitutionType">
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_SLH0OLYyEeWnxvOOhvJD-w" name="K12"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_SLH0ObYyEeWnxvOOhvJD-w" name="HIGH">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_SLH0OrYyEeWnxvOOhvJD-w">
+        <body/>
+      </ownedComment>
+    </ownedLiteral>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_SLH0O7YyEeWnxvOOhvJD-w" name="CountryLOV">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_SLH0PLYyEeWnxvOOhvJD-w">
+      <body>&lt;Enter note text here&gt;</body>
+    </ownedComment>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0PbYyEeWnxvOOhvJD-w" name="value" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0PrYyEeWnxvOOhvJD-w" name="name" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_SLH0P7YyEeWnxvOOhvJD-w" name="LanguageLOV">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0QLYyEeWnxvOOhvJD-w" name="name" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0QbYyEeWnxvOOhvJD-w" name="value" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_SLH0QrYyEeWnxvOOhvJD-w" name="CurrancyLOV">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_SLH0Q7YyEeWnxvOOhvJD-w">
+      <body/>
+    </ownedComment>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0RLYyEeWnxvOOhvJD-w" name="value" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0RbYyEeWnxvOOhvJD-w" name="name" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_SLH0RrYyEeWnxvOOhvJD-w" name="User">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0R7YyEeWnxvOOhvJD-w" name="login" visibility="public" isUnique="false">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_SLH0SLYyEeWnxvOOhvJD-w">
+        <body>&lt;Enter note text here&gt;</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_SLH0SbYyEeWnxvOOhvJD-w" name="LocalDate">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_SLH0SrYyEeWnxvOOhvJD-w">
+      <body/>
+    </ownedComment>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_SLH0S7YyEeWnxvOOhvJD-w" name="Course">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0TLYyEeWnxvOOhvJD-w" name="subject" visibility="public" type="_SLH0brYyEeWnxvOOhvJD-w" aggregation="shared" association="_SLH0W7YyEeWnxvOOhvJD-w">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_SLH0TbYyEeWnxvOOhvJD-w">
+        <body/>
+      </ownedComment>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SLH0TrYyEeWnxvOOhvJD-w" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SLH0T7YyEeWnxvOOhvJD-w"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0ULYyEeWnxvOOhvJD-w" name="electiveSubject" visibility="public" type="_SLH0jLYyEeWnxvOOhvJD-w" aggregation="shared" association="_SLH0XbYyEeWnxvOOhvJD-w">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_SLH0UbYyEeWnxvOOhvJD-w">
+        <body/>
+      </ownedComment>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SLH0UrYyEeWnxvOOhvJD-w" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SLH0U7YyEeWnxvOOhvJD-w"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0VLYyEeWnxvOOhvJD-w" name="name" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0VbYyEeWnxvOOhvJD-w" name="code" visibility="public" isUnique="false">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_SLH0VrYyEeWnxvOOhvJD-w">
+        <body>&lt;Enter note text here&gt;</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0V7YyEeWnxvOOhvJD-w" name="enableElectiveSelection" visibility="public" isUnique="false">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_SLH0WLYyEeWnxvOOhvJD-w">
+        <body>&lt;Enter note text here&gt;</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#Boolean"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0WbYyEeWnxvOOhvJD-w" name="description" visibility="public" isUnique="false">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_SLH0WrYyEeWnxvOOhvJD-w">
+        <body>&lt;Enter note text here&gt;</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_SLH0W7YyEeWnxvOOhvJD-w" name="subjects" memberEnd="_SLH0TLYyEeWnxvOOhvJD-w _SLH0XLYyEeWnxvOOhvJD-w">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_SLH0XLYyEeWnxvOOhvJD-w" visibility="public" type="_SLH0S7YyEeWnxvOOhvJD-w" association="_SLH0W7YyEeWnxvOOhvJD-w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_SLH0XbYyEeWnxvOOhvJD-w" name="electives" memberEnd="_SLH0ULYyEeWnxvOOhvJD-w _SLH0XrYyEeWnxvOOhvJD-w">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_SLH0XrYyEeWnxvOOhvJD-w" visibility="public" type="_SLH0S7YyEeWnxvOOhvJD-w" association="_SLH0XbYyEeWnxvOOhvJD-w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_SLH0X7YyEeWnxvOOhvJD-w" name="Section">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0YLYyEeWnxvOOhvJD-w" name="course" visibility="public" type="_SLH0S7YyEeWnxvOOhvJD-w" aggregation="shared" association="_SLH0Z7YyEeWnxvOOhvJD-w">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_SLH0YbYyEeWnxvOOhvJD-w">
+        <body>&lt;Enter note text here&gt;</body>
+      </ownedComment>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0YrYyEeWnxvOOhvJD-w" name="teacher" visibility="public" type="_SLH0kbYyEeWnxvOOhvJD-w" aggregation="shared" association="_SLH0abYyEeWnxvOOhvJD-w">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_SLH0Y7YyEeWnxvOOhvJD-w">
+        <body/>
+      </ownedComment>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0ZLYyEeWnxvOOhvJD-w" name="name" visibility="public" isUnique="false">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_SLH0ZbYyEeWnxvOOhvJD-w">
+        <body>&lt;Enter note text here&gt;</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0ZrYyEeWnxvOOhvJD-w" name="code" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_SLH0Z7YyEeWnxvOOhvJD-w" name="course" memberEnd="_SLH0YLYyEeWnxvOOhvJD-w _SLH0aLYyEeWnxvOOhvJD-w">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_SLH0aLYyEeWnxvOOhvJD-w" visibility="public" type="_SLH0X7YyEeWnxvOOhvJD-w" association="_SLH0Z7YyEeWnxvOOhvJD-w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_SLH0abYyEeWnxvOOhvJD-w" name="classTeacher" memberEnd="_SLH0YrYyEeWnxvOOhvJD-w _SLH0arYyEeWnxvOOhvJD-w">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_SLH0arYyEeWnxvOOhvJD-w" visibility="public" type="_SLH0X7YyEeWnxvOOhvJD-w" association="_SLH0abYyEeWnxvOOhvJD-w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Enumeration" xmi:id="_SLH0a7YyEeWnxvOOhvJD-w" name="GradingType">
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_SLH0bLYyEeWnxvOOhvJD-w" name="NORMAL"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_SLH0bbYyEeWnxvOOhvJD-w" name="GPA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_SLH0brYyEeWnxvOOhvJD-w" name="Subject">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_SLH0b7YyEeWnxvOOhvJD-w">
+      <body>&lt;Enter note text here&gt;</body>
+    </ownedComment>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0cLYyEeWnxvOOhvJD-w" name="name" visibility="public" isUnique="false">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_SLH0cbYyEeWnxvOOhvJD-w">
+        <body>&lt;Enter note text here&gt;</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0crYyEeWnxvOOhvJD-w" name="description" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0c7YyEeWnxvOOhvJD-w" name="code" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0dLYyEeWnxvOOhvJD-w" name="noExam" visibility="public" isUnique="false">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_SLH0dbYyEeWnxvOOhvJD-w">
+        <body/>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#Boolean"/>
+      <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_SLH0drYyEeWnxvOOhvJD-w"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_SLH0d7YyEeWnxvOOhvJD-w" name="Student">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0eLYyEeWnxvOOhvJD-w" name="user" visibility="public" type="_SLH087YyEeWnxvOOhvJD-w" aggregation="composite" association="_SLH0grYyEeWnxvOOhvJD-w"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0ebYyEeWnxvOOhvJD-w" name="studentCategory" visibility="public" type="_SLH0nbYyEeWnxvOOhvJD-w" aggregation="shared" association="_SLH0hLYyEeWnxvOOhvJD-w"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0erYyEeWnxvOOhvJD-w" name="course" visibility="public" type="_SLH0S7YyEeWnxvOOhvJD-w" aggregation="shared" association="_SLH0hrYyEeWnxvOOhvJD-w">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_SLH0e7YyEeWnxvOOhvJD-w">
+        <body/>
+      </ownedComment>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0fLYyEeWnxvOOhvJD-w" name="section" visibility="public" type="_SLH0X7YyEeWnxvOOhvJD-w" aggregation="shared" association="_SLH0iLYyEeWnxvOOhvJD-w"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0fbYyEeWnxvOOhvJD-w" name="student" visibility="public" type="_SLH0d7YyEeWnxvOOhvJD-w" aggregation="shared" association="_SLH0irYyEeWnxvOOhvJD-w">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_SLH0frYyEeWnxvOOhvJD-w">
+        <body/>
+      </ownedComment>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SLH0f7YyEeWnxvOOhvJD-w" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SLH0gLYyEeWnxvOOhvJD-w"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0gbYyEeWnxvOOhvJD-w" name="rollNo" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_SLH0grYyEeWnxvOOhvJD-w" name="user" memberEnd="_SLH0eLYyEeWnxvOOhvJD-w _SLH0g7YyEeWnxvOOhvJD-w">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_SLH0g7YyEeWnxvOOhvJD-w" visibility="public" type="_SLH0d7YyEeWnxvOOhvJD-w" association="_SLH0grYyEeWnxvOOhvJD-w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_SLH0hLYyEeWnxvOOhvJD-w" name="category" memberEnd="_SLH0ebYyEeWnxvOOhvJD-w _SLH0hbYyEeWnxvOOhvJD-w">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_SLH0hbYyEeWnxvOOhvJD-w" visibility="public" type="_SLH0d7YyEeWnxvOOhvJD-w" association="_SLH0hLYyEeWnxvOOhvJD-w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_SLH0hrYyEeWnxvOOhvJD-w" name="course" memberEnd="_SLH0erYyEeWnxvOOhvJD-w _SLH0h7YyEeWnxvOOhvJD-w">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_SLH0h7YyEeWnxvOOhvJD-w" visibility="public" type="_SLH0d7YyEeWnxvOOhvJD-w" association="_SLH0hrYyEeWnxvOOhvJD-w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_SLH0iLYyEeWnxvOOhvJD-w" name="section" memberEnd="_SLH0fLYyEeWnxvOOhvJD-w _SLH0ibYyEeWnxvOOhvJD-w">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_SLH0ibYyEeWnxvOOhvJD-w" visibility="public" type="_SLH0d7YyEeWnxvOOhvJD-w" association="_SLH0iLYyEeWnxvOOhvJD-w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_SLH0irYyEeWnxvOOhvJD-w" name="sibling" memberEnd="_SLH0fbYyEeWnxvOOhvJD-w _SLH0i7YyEeWnxvOOhvJD-w">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_SLH0i7YyEeWnxvOOhvJD-w" visibility="public" type="_SLH0d7YyEeWnxvOOhvJD-w" association="_SLH0irYyEeWnxvOOhvJD-w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_SLH0jLYyEeWnxvOOhvJD-w" name="ElectiveSubject">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_SLH0jbYyEeWnxvOOhvJD-w">
+      <body>&lt;Enter note text here&gt;</body>
+    </ownedComment>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0jrYyEeWnxvOOhvJD-w" name="name" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0j7YyEeWnxvOOhvJD-w" name="description" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0kLYyEeWnxvOOhvJD-w" name="code" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_SLH0kbYyEeWnxvOOhvJD-w" name="Teacher">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_SLH0krYyEeWnxvOOhvJD-w">
+      <body>&lt;Enter note text here&gt;</body>
+    </ownedComment>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0k7YyEeWnxvOOhvJD-w" name="user" visibility="public" type="_SLH087YyEeWnxvOOhvJD-w" aggregation="composite" association="_SLH0mbYyEeWnxvOOhvJD-w">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_SLH0lLYyEeWnxvOOhvJD-w">
+        <body>&lt;Enter note text here&gt;</body>
+      </ownedComment>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0lbYyEeWnxvOOhvJD-w" name="subject" visibility="public" type="_SLH0brYyEeWnxvOOhvJD-w" aggregation="shared" association="_SLH0m7YyEeWnxvOOhvJD-w">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_SLH0lrYyEeWnxvOOhvJD-w">
+        <body>&lt;Enter note text here&gt;</body>
+      </ownedComment>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SLH0l7YyEeWnxvOOhvJD-w" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SLH0mLYyEeWnxvOOhvJD-w"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_SLH0mbYyEeWnxvOOhvJD-w" name="user" memberEnd="_SLH0k7YyEeWnxvOOhvJD-w _SLH0mrYyEeWnxvOOhvJD-w">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_SLH0mrYyEeWnxvOOhvJD-w" visibility="public" type="_SLH0kbYyEeWnxvOOhvJD-w" association="_SLH0mbYyEeWnxvOOhvJD-w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_SLH0m7YyEeWnxvOOhvJD-w" name="subjects" memberEnd="_SLH0lbYyEeWnxvOOhvJD-w _SLH0nLYyEeWnxvOOhvJD-w">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_SLH0nLYyEeWnxvOOhvJD-w" visibility="public" type="_SLH0kbYyEeWnxvOOhvJD-w" association="_SLH0m7YyEeWnxvOOhvJD-w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_SLH0nbYyEeWnxvOOhvJD-w" name="StudentCategory">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_SLH0nrYyEeWnxvOOhvJD-w">
+      <body>&lt;Enter note text here&gt;</body>
+    </ownedComment>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0n7YyEeWnxvOOhvJD-w" name="name" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0oLYyEeWnxvOOhvJD-w" name="value" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0obYyEeWnxvOOhvJD-w" name="description" visibility="public" isUnique="false">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_SLH0orYyEeWnxvOOhvJD-w">
+        <body/>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_SLH0o7YyEeWnxvOOhvJD-w" name="CustomAdmissionDetails">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_SLH0pLYyEeWnxvOOhvJD-w">
+      <body>&lt;Enter note text here&gt;</body>
+    </ownedComment>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0pbYyEeWnxvOOhvJD-w" name="schoolDetails" visibility="public" type="_SLH0BbYyEeWnxvOOhvJD-w" aggregation="shared" association="_SLH0rbYyEeWnxvOOhvJD-w">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_SLH0prYyEeWnxvOOhvJD-w">
+        <body>&lt;Enter note text here&gt;</body>
+      </ownedComment>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0p7YyEeWnxvOOhvJD-w" name="name" visibility="public" isUnique="false">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_SLH0qLYyEeWnxvOOhvJD-w">
+        <body/>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0qbYyEeWnxvOOhvJD-w" name="isActive" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#Boolean"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0qrYyEeWnxvOOhvJD-w" name="isMandatory" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#Boolean"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0q7YyEeWnxvOOhvJD-w" name="inputMethod" visibility="public" isUnique="false">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_SLH0rLYyEeWnxvOOhvJD-w">
+        <body/>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_SLH0rbYyEeWnxvOOhvJD-w" name="addedFor" memberEnd="_SLH0pbYyEeWnxvOOhvJD-w _SLH0rrYyEeWnxvOOhvJD-w">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_SLH0rrYyEeWnxvOOhvJD-w" visibility="public" type="_SLH0o7YyEeWnxvOOhvJD-w" association="_SLH0rbYyEeWnxvOOhvJD-w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Enumeration" xmi:id="_SLH0r7YyEeWnxvOOhvJD-w" name="InputMethod">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_SLH0sLYyEeWnxvOOhvJD-w">
+      <body>&lt;Enter note text here&gt;</body>
+    </ownedComment>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_SLH0sbYyEeWnxvOOhvJD-w" name="TEXT_BOX">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_SLH0srYyEeWnxvOOhvJD-w">
+        <body>&lt;Enter note text here&gt;</body>
+      </ownedComment>
+    </ownedLiteral>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_SLH0s7YyEeWnxvOOhvJD-w" name="NUMERIC_DROP_DOWN">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_SLH0tLYyEeWnxvOOhvJD-w">
+        <body>&lt;Enter note text here&gt;</body>
+      </ownedComment>
+    </ownedLiteral>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_SLH0tbYyEeWnxvOOhvJD-w" name="CHECKBOX">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_SLH0trYyEeWnxvOOhvJD-w">
+        <body>&lt;Enter note text here&gt;</body>
+      </ownedComment>
+    </ownedLiteral>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_SLH0t7YyEeWnxvOOhvJD-w" name="SmsSetting">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_SLH0uLYyEeWnxvOOhvJD-w">
+      <body>&lt;Enter note text here&gt;</body>
+    </ownedComment>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0ubYyEeWnxvOOhvJD-w" name="name" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0urYyEeWnxvOOhvJD-w" name="code" visibility="public" isUnique="false">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_SLH0u7YyEeWnxvOOhvJD-w">
+        <body>&lt;Enter note text here&gt;</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0vLYyEeWnxvOOhvJD-w" name="isEnabled" visibility="public" isUnique="false">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_SLH0vbYyEeWnxvOOhvJD-w">
+        <body>&lt;Enter note text here&gt;</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_SLH0vrYyEeWnxvOOhvJD-w" name="AdmissionDetails">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0v7YyEeWnxvOOhvJD-w" name="student" visibility="public" type="_SLH0d7YyEeWnxvOOhvJD-w" aggregation="shared" association="_SLH0xrYyEeWnxvOOhvJD-w">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_SLH0wLYyEeWnxvOOhvJD-w">
+        <body>&lt;Enter note text here&gt;</body>
+      </ownedComment>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0wbYyEeWnxvOOhvJD-w" name="prevSchoolDetail" visibility="public" type="_SLH1EbYyEeWnxvOOhvJD-w" aggregation="shared" association="_SLH0yLYyEeWnxvOOhvJD-w">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_SLH0wrYyEeWnxvOOhvJD-w">
+        <body/>
+      </ownedComment>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0w7YyEeWnxvOOhvJD-w" name="admissionNo" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0xLYyEeWnxvOOhvJD-w" name="admissionDate" visibility="public" type="_SLH0SbYyEeWnxvOOhvJD-w" isUnique="false">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_SLH0xbYyEeWnxvOOhvJD-w">
+        <body>&lt;Enter note text here&gt;</body>
+      </ownedComment>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_SLH0xrYyEeWnxvOOhvJD-w" name="student" memberEnd="_SLH0v7YyEeWnxvOOhvJD-w _SLH0x7YyEeWnxvOOhvJD-w">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_SLH0x7YyEeWnxvOOhvJD-w" visibility="public" type="_SLH0vrYyEeWnxvOOhvJD-w" association="_SLH0xrYyEeWnxvOOhvJD-w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_SLH0yLYyEeWnxvOOhvJD-w" name="prevSchool" memberEnd="_SLH0wbYyEeWnxvOOhvJD-w _SLH0ybYyEeWnxvOOhvJD-w">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_SLH0ybYyEeWnxvOOhvJD-w" visibility="public" type="_SLH0vrYyEeWnxvOOhvJD-w" association="_SLH0yLYyEeWnxvOOhvJD-w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Enumeration" xmi:id="_SLH0yrYyEeWnxvOOhvJD-w" name="Gender">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_SLH0y7YyEeWnxvOOhvJD-w">
+      <body/>
+    </ownedComment>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_SLH0zLYyEeWnxvOOhvJD-w" name="MALE"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_SLH0zbYyEeWnxvOOhvJD-w" name="FEMALE"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Enumeration" xmi:id="_SLH0zrYyEeWnxvOOhvJD-w" name="BloodGroup">
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_SLH0z7YyEeWnxvOOhvJD-w" name="A_PLUS">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_SLH00LYyEeWnxvOOhvJD-w">
+        <body/>
+      </ownedComment>
+    </ownedLiteral>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_SLH00bYyEeWnxvOOhvJD-w" name="A_MINUS"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_SLH00rYyEeWnxvOOhvJD-w" name="B_MINUS"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_SLH007YyEeWnxvOOhvJD-w" name="B_PLUS"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_SLH01LYyEeWnxvOOhvJD-w" name="O_MINUS"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_SLH01bYyEeWnxvOOhvJD-w" name="O_PLUS"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_SLH01rYyEeWnxvOOhvJD-w" name="AB_PLUS"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_SLH017YyEeWnxvOOhvJD-w" name="AB_MINUS"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_SLH02LYyEeWnxvOOhvJD-w" name="Address">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH02bYyEeWnxvOOhvJD-w" name="addressLineOne" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH02rYyEeWnxvOOhvJD-w" name="addressLineTwo" visibility="public" isUnique="false">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_SLH027YyEeWnxvOOhvJD-w">
+        <body>&lt;Enter note text here&gt;</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH03LYyEeWnxvOOhvJD-w" name="city" visibility="public" isUnique="false">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_SLH03bYyEeWnxvOOhvJD-w">
+        <body/>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH03rYyEeWnxvOOhvJD-w" name="state" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH037YyEeWnxvOOhvJD-w" name="pinCode" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH04LYyEeWnxvOOhvJD-w" name="country" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH04bYyEeWnxvOOhvJD-w" name="phone" visibility="public" type="_SLH04rYyEeWnxvOOhvJD-w" isUnique="false"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_SLH04rYyEeWnxvOOhvJD-w" name="Long">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_SLH047YyEeWnxvOOhvJD-w">
+      <body>&lt;Enter note text here&gt;</body>
+    </ownedComment>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_SLH05LYyEeWnxvOOhvJD-w" name="Parent">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH05bYyEeWnxvOOhvJD-w" name="user" visibility="public" type="_SLH087YyEeWnxvOOhvJD-w" aggregation="composite" association="_SLH07bYyEeWnxvOOhvJD-w">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_SLH05rYyEeWnxvOOhvJD-w">
+        <body>&lt;Enter note text here&gt;</body>
+      </ownedComment>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH057YyEeWnxvOOhvJD-w" name="student" visibility="public" type="_SLH0d7YyEeWnxvOOhvJD-w" aggregation="composite" association="_SLH077YyEeWnxvOOhvJD-w">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_SLH06LYyEeWnxvOOhvJD-w">
+        <body/>
+      </ownedComment>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SLH06bYyEeWnxvOOhvJD-w" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SLH06rYyEeWnxvOOhvJD-w" value="-1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH067YyEeWnxvOOhvJD-w" name="occupation" visibility="public" isUnique="false">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_SLH07LYyEeWnxvOOhvJD-w">
+        <body>&lt;Enter note text here&gt;</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_SLH07bYyEeWnxvOOhvJD-w" name="user" memberEnd="_SLH05bYyEeWnxvOOhvJD-w _SLH07rYyEeWnxvOOhvJD-w">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_SLH07rYyEeWnxvOOhvJD-w" visibility="public" type="_SLH05LYyEeWnxvOOhvJD-w" association="_SLH07bYyEeWnxvOOhvJD-w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_SLH077YyEeWnxvOOhvJD-w" name="parent" memberEnd="_SLH057YyEeWnxvOOhvJD-w _SLH08LYyEeWnxvOOhvJD-w">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_SLH08LYyEeWnxvOOhvJD-w" visibility="public" type="_SLH05LYyEeWnxvOOhvJD-w" association="_SLH077YyEeWnxvOOhvJD-w">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SLH08bYyEeWnxvOOhvJD-w" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SLH08rYyEeWnxvOOhvJD-w" value="-1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_SLH087YyEeWnxvOOhvJD-w" name="IrisUser">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH09LYyEeWnxvOOhvJD-w" name="user" visibility="public" type="_SLH0RrYyEeWnxvOOhvJD-w" aggregation="composite" association="_SLH1CbYyEeWnxvOOhvJD-w">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_SLH09bYyEeWnxvOOhvJD-w">
+        <body>&lt;Enter note text here&gt;</body>
+      </ownedComment>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH09rYyEeWnxvOOhvJD-w" name="languageLOV" visibility="public" type="_SLH0P7YyEeWnxvOOhvJD-w" aggregation="shared" association="_SLH1C7YyEeWnxvOOhvJD-w">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_SLH097YyEeWnxvOOhvJD-w">
+        <body>&lt;Enter note text here&gt;</body>
+      </ownedComment>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0-LYyEeWnxvOOhvJD-w" name="countryLOV" visibility="public" type="_SLH0O7YyEeWnxvOOhvJD-w" aggregation="shared" association="_SLH1DbYyEeWnxvOOhvJD-w">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_SLH0-bYyEeWnxvOOhvJD-w">
+        <body>&lt;Enter note text here&gt;</body>
+      </ownedComment>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0-rYyEeWnxvOOhvJD-w" name="address" visibility="public" type="_SLH02LYyEeWnxvOOhvJD-w" aggregation="shared" association="_SLH1D7YyEeWnxvOOhvJD-w"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0-7YyEeWnxvOOhvJD-w" name="firstName" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0_LYyEeWnxvOOhvJD-w" name="lastName" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0_bYyEeWnxvOOhvJD-w" name="middleName" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH0_rYyEeWnxvOOhvJD-w" name="dateOfBirth" visibility="public" type="_SLH0SbYyEeWnxvOOhvJD-w" isUnique="false">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_SLH0_7YyEeWnxvOOhvJD-w">
+        <body>&lt;Enter note text here&gt;</body>
+      </ownedComment>
+      <defaultValue xmi:type="uml:Expression" xmi:id="_SLH1ALYyEeWnxvOOhvJD-w" symbol="04/07/2016"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH1AbYyEeWnxvOOhvJD-w" name="gender" visibility="public" type="_SLH0yrYyEeWnxvOOhvJD-w" isUnique="false">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_SLH1ArYyEeWnxvOOhvJD-w">
+        <body/>
+      </ownedComment>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH1A7YyEeWnxvOOhvJD-w" name="bloodGroup" visibility="public" type="_SLH0zrYyEeWnxvOOhvJD-w" isUnique="false"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH1BLYyEeWnxvOOhvJD-w" name="birthPlace" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH1BbYyEeWnxvOOhvJD-w" name="religion" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH1BrYyEeWnxvOOhvJD-w" name="photo" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH1B7YyEeWnxvOOhvJD-w" name="phone" visibility="public" type="_SLH04rYyEeWnxvOOhvJD-w" isUnique="false">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_SLH1CLYyEeWnxvOOhvJD-w">
+        <body/>
+      </ownedComment>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_SLH1CbYyEeWnxvOOhvJD-w" name="systemUser" memberEnd="_SLH09LYyEeWnxvOOhvJD-w _SLH1CrYyEeWnxvOOhvJD-w">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_SLH1CrYyEeWnxvOOhvJD-w" visibility="public" type="_SLH087YyEeWnxvOOhvJD-w" association="_SLH1CbYyEeWnxvOOhvJD-w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_SLH1C7YyEeWnxvOOhvJD-w" name="motherTouge" memberEnd="_SLH09rYyEeWnxvOOhvJD-w _SLH1DLYyEeWnxvOOhvJD-w">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_SLH1DLYyEeWnxvOOhvJD-w" visibility="public" type="_SLH087YyEeWnxvOOhvJD-w" association="_SLH1C7YyEeWnxvOOhvJD-w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_SLH1DbYyEeWnxvOOhvJD-w" name="nationality" memberEnd="_SLH0-LYyEeWnxvOOhvJD-w _SLH1DrYyEeWnxvOOhvJD-w">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_SLH1DrYyEeWnxvOOhvJD-w" visibility="public" type="_SLH087YyEeWnxvOOhvJD-w" association="_SLH1DbYyEeWnxvOOhvJD-w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_SLH1D7YyEeWnxvOOhvJD-w" name="address" memberEnd="_SLH0-rYyEeWnxvOOhvJD-w _SLH1ELYyEeWnxvOOhvJD-w">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_SLH1ELYyEeWnxvOOhvJD-w" visibility="public" type="_SLH087YyEeWnxvOOhvJD-w" association="_SLH1D7YyEeWnxvOOhvJD-w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_SLH1EbYyEeWnxvOOhvJD-w" name="PrevSchoolInfo">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_SLH1ErYyEeWnxvOOhvJD-w">
+      <body/>
+    </ownedComment>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH1E7YyEeWnxvOOhvJD-w" name="schoolName" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH1FLYyEeWnxvOOhvJD-w" name="grade" visibility="public" isUnique="false">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_SLH1FbYyEeWnxvOOhvJD-w">
+        <body/>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH1FrYyEeWnxvOOhvJD-w" name="remarkBy" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH1F7YyEeWnxvOOhvJD-w" name="remark" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH1GLYyEeWnxvOOhvJD-w" name="contactOfRemark" visibility="public" isUnique="false">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_SLH1GbYyEeWnxvOOhvJD-w">
+        <body>&lt;Enter note text here&gt;</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SLH1GrYyEeWnxvOOhvJD-w" name="reasonForChange" visibility="public" isUnique="false">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_SLH1G7YyEeWnxvOOhvJD-w">
+        <body>&lt;Enter note text here&gt;</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+    </ownedAttribute>
+  </packagedElement>
+</uml:Model>

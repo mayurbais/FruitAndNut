@@ -1,0 +1,26 @@
+{
+    "try1App": {
+        "prevSchoolInfo" : {
+            "home": {
+                "title": "PrevSchoolInfos",
+                "createLabel": "Create a new PrevSchoolInfo",
+                "createOrEditLabel": "Create or edit a PrevSchoolInfo"
+            },
+            "created": "A new PrevSchoolInfo is created with identifier {{ param }}",
+            "updated": "A PrevSchoolInfo is updated with identifier {{ param }}",
+            "deleted": "A PrevSchoolInfo is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete PrevSchoolInfo {{ id }}?"
+            },
+            "detail": {
+                "title": "PrevSchoolInfo"
+            },
+            "schoolName": "SchoolName",
+            "grade": "Grade",
+            "remarkBy": "RemarkBy",
+            "remark": "Remark",
+            "contactOfRemark": "ContactOfRemark",
+            "reasonForChange": "ReasonForChange"
+        }
+    }
+}

@@ -1,0 +1,28 @@
+{
+  "relationships": [
+    {
+      "relationshipId": 1,
+      "relationshipName": "schoolDetails",
+      "otherEntityName": "schoolDetails",
+      "relationshipType": "many-to-one",
+      "otherEntityField": "id"
+    }
+  ],
+  "fields": [
+    {
+      "fieldId": 1,
+      "fieldName": "sessionStartDate",
+      "javadoc": "<Enter note text here>",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldId": 2,
+      "fieldName": "sessionEndDate",
+      "javadoc": "<Enter note text here>",
+      "fieldType": "ZonedDateTime"
+    }
+  ],
+  "changelogDate": "20160112071551",
+  "dto": "no",
+  "pagination": "no"
+}

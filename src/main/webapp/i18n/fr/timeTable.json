@@ -1,0 +1,27 @@
+{
+    "try1App": {
+        "timeTable" : {
+            "home": {
+                "title": "TimeTables",
+                "createLabel": "Créer un nouveau TimeTable",
+                "createOrEditLabel": "Créer ou éditer un TimeTable"
+            },
+            "created": "Un nouveau TimeTable a été créé avec l'identifiant {{ param }}",
+            "updated": "Le TimeTable avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le TimeTable avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le TimeTable {{ id }} ?"
+            },
+            "detail": {
+                "title": "TimeTable"
+            },
+            "day": "Day",
+            "startDate": "StartDate",
+            "endDate": "EndDate",
+            "timeSlot": "TimeSlot",
+            "classRoomSession": "ClassRoomSession",
+            "section": "Section"
+        }
+    }
+}
+

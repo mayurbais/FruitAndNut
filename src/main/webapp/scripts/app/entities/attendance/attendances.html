@@ -1,0 +1,72 @@
+<div>
+    <h2 translate="try1App.attendance.home.title">Attendances</h2>
+    <jh-alert></jh-alert>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <button class="btn btn-primary" ui-sref="attendance.new">
+                    <span class="glyphicon glyphicon-flash"></span> <span translate="try1App.attendance.home.createLabel">Create a new Attendance</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th><span translate="global.field.id">ID</span></th>
+                    <th><span translate="try1App.attendance.attendanceFor">AttendanceFor</span></th>
+                    <th><span translate="try1App.attendance.date">Date</span></th>
+                    <th><span translate="try1App.attendance.isPresent">IsPresent</span></th>
+                    <th><span translate="try1App.attendance.reasonForAbsent">ReasonForAbsent</span></th>
+                    <th><span translate="try1App.attendance.isApproved">IsApproved</span></th>
+                    <th><span translate="try1App.attendance.approvedBy">ApprovedBy</span></th>
+                    <th><span translate="try1App.attendance.attribute">Attribute</span></th>
+                    <th><span translate="try1App.attendance.irisUser">irisUser</span></th>
+                    <th><span translate="try1App.attendance.section">section</span></th>
+                    <th><span translate="try1App.attendance.course">course</span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="attendance in attendances track by attendance.id">
+                    <td><a ui-sref="attendance.detail({id:attendance.id})">{{attendance.id}}</a></td>
+                    <td translate="{{'try1App.IrisUserRole.' + attendance.attendanceFor}}">{{attendance.attendanceFor}}</td>
+                    <td>{{attendance.date | date:'medium'}}</td>
+                    <td>{{attendance.isPresent}}</td>
+                    <td>{{attendance.reasonForAbsent}}</td>
+                    <td>{{attendance.isApproved}}</td>
+                    <td>{{attendance.approvedBy}}</td>
+                    <td>{{attendance.attribute}}</td>
+                    <td>
+                        <a ui-sref="irisUser.detail({id:attendance.irisUser.id})">{{attendance.irisUser.id}}</a>
+                    </td>
+                    <td>
+                        <a ui-sref="section.detail({id:attendance.section.id})">{{attendance.section.id}}</a>
+                    </td>
+                    <td>
+                        <a ui-sref="course.detail({id:attendance.course.id})">{{attendance.course.id}}</a>
+                    </td>
+                    <td>
+                        <button type="submit"
+                                ui-sref="attendance.detail({id:attendance.id})"
+                                class="btn btn-info btn-sm">
+                            <span class="glyphicon glyphicon-eye-open"></span>&nbsp;<span translate="entity.action.view"> View</span>
+                        </button>
+                        <button type="submit"
+                                ui-sref="attendance.edit({id:attendance.id})"
+                                class="btn btn-primary btn-sm">
+                            <span class="glyphicon glyphicon-pencil"></span>&nbsp;<span translate="entity.action.edit"> Edit</span>
+                        </button>
+                        <button type="submit"
+                                ui-sref="attendance.delete({id:attendance.id})"
+                                class="btn btn-danger btn-sm">
+                            <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;<span translate="entity.action.delete"> Delete</span>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

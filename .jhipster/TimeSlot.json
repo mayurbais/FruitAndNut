@@ -1,0 +1,34 @@
+{
+  "relationships": [
+    {
+      "relationshipId": 1,
+      "relationshipName": "timeTable",
+      "otherEntityName": "timeTable",
+      "relationshipType": "many-to-many",
+      "ownerSide": false,
+      "otherEntityRelationshipName": "timeSlot"
+    }
+  ],
+  "fields": [
+    {
+      "fieldId": 1,
+      "fieldName": "name",
+      "javadoc": "<Enter note text here>",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 2,
+      "fieldName": "startTime",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 3,
+      "fieldName": "endTime",
+      "fieldType": "String"
+    }
+  ],
+  "changelogDate": "20160112040512",
+  "dto": "no",
+  "pagination": "no",
+  "javadoc": "<Enter note text here>"
+}

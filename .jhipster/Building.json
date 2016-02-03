@@ -1,0 +1,22 @@
+{
+  "relationships": [
+    {
+      "relationshipId": 1,
+      "relationshipName": "room",
+      "otherEntityName": "room",
+      "relationshipType": "one-to-many",
+      "otherEntityRelationshipName": "building"
+    }
+  ],
+  "fields": [
+    {
+      "fieldId": 1,
+      "fieldName": "name",
+      "fieldType": "String"
+    }
+  ],
+  "changelogDate": "20160112080624",
+  "dto": "no",
+  "pagination": "no",
+  "javadoc": "<Enter note text here>"
+}

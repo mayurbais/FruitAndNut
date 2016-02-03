@@ -1,0 +1,22 @@
+{
+    "try1App": {
+        "currancyLOV" : {
+            "home": {
+                "title": "CurrancyLOVs",
+                "createLabel": "Create a new CurrancyLOV",
+                "createOrEditLabel": "Create or edit a CurrancyLOV"
+            },
+            "created": "A new CurrancyLOV is created with identifier {{ param }}",
+            "updated": "A CurrancyLOV is updated with identifier {{ param }}",
+            "deleted": "A CurrancyLOV is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete CurrancyLOV {{ id }}?"
+            },
+            "detail": {
+                "title": "CurrancyLOV"
+            },
+            "value": "Value",
+            "name": "Name"
+        }
+    }
+}

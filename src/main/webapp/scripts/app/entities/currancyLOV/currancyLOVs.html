@@ -1,0 +1,50 @@
+<div>
+    <h2 translate="try1App.currancyLOV.home.title">CurrancyLOVs</h2>
+    <jh-alert></jh-alert>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <button class="btn btn-primary" ui-sref="currancyLOV.new">
+                    <span class="glyphicon glyphicon-flash"></span> <span translate="try1App.currancyLOV.home.createLabel">Create a new CurrancyLOV</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th><span translate="global.field.id">ID</span></th>
+                    <th><span translate="try1App.currancyLOV.value">Value</span></th>
+                    <th><span translate="try1App.currancyLOV.name">Name</span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="currancyLOV in currancyLOVs track by currancyLOV.id">
+                    <td><a ui-sref="currancyLOV.detail({id:currancyLOV.id})">{{currancyLOV.id}}</a></td>
+                    <td>{{currancyLOV.value}}</td>
+                    <td>{{currancyLOV.name}}</td>
+                    <td>
+                        <button type="submit"
+                                ui-sref="currancyLOV.detail({id:currancyLOV.id})"
+                                class="btn btn-info btn-sm">
+                            <span class="glyphicon glyphicon-eye-open"></span>&nbsp;<span translate="entity.action.view"> View</span>
+                        </button>
+                        <button type="submit"
+                                ui-sref="currancyLOV.edit({id:currancyLOV.id})"
+                                class="btn btn-primary btn-sm">
+                            <span class="glyphicon glyphicon-pencil"></span>&nbsp;<span translate="entity.action.edit"> Edit</span>
+                        </button>
+                        <button type="submit"
+                                ui-sref="currancyLOV.delete({id:currancyLOV.id})"
+                                class="btn btn-danger btn-sm">
+                            <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;<span translate="entity.action.delete"> Delete</span>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

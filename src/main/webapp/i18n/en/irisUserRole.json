@@ -1,0 +1,9 @@
+{
+    "try1App": {
+        "IrisUserRole" : {
+            "null": "",
+            "STUDENT": "STUDENT",
+            "STAFF": "STAFF"
+        }
+    }
+}

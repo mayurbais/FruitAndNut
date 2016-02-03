@@ -1,0 +1,10 @@
+{
+    "try1App": {
+        "PriorityLevel" : {
+            "null": "",
+            "HIGH": "HIGH",
+            "NORMAL": "NORMAL",
+            "LOW": "LOW"
+        }
+    }
+}

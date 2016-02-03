@@ -1,0 +1,16 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "myTeacher",
+            "otherEntityName": "teacher",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "myAuthor"
+        }
+    ],
+    "fields": [],
+    "changelogDate": "20160108080109",
+    "dto": "no",
+    "service": "no",
+    "pagination": "no"
+}

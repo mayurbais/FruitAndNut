@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+
+    <property name="now" value="now()" dbms="mysql,h2"/>
+    <property name="now" value="current_timestamp" dbms="postgresql"/>
+    <property name="now" value="sysdate" dbms="oracle"/>
+
+    <property name="autoIncrement" value="true" dbms="mysql,h2,postgresql,oracle"/>
+
+    <property name="floatType" value="float4" dbms="postgresql, h2"/>
+    <property name="floatType" value="float" dbms="mysql, oracle"/>
+
+    <!--
+        Added the entity SchoolDetails.
+    -->
+    <changeSet id="20160106064057" author="jhipster">
+        <createTable tableName="school_details">
+            <column name="id" type="bigint" autoIncrement="${autoIncrement}">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="school_name" type="varchar(20)"/>
+            <column name="address" type="varchar(255)"/>
+            <column name="phone_number" type="integer">
+                <constraints nullable="false" />
+            </column>
+            <column name="attendance_type" type="varchar(255)"/>
+            <column name="start_day_of_the_week" type="varchar(255)"/>
+            <column name="date_format" type="varchar(255)"/>
+            <column name="financial_start_date" type="date">
+                <constraints nullable="false" />
+            </column>
+            <column name="financial_end_date" type="date">
+                <constraints nullable="false" />
+            </column>
+            <column name="logo" type="varchar(255)"/>
+            <column name="grading_system" type="varchar(255)"/>
+            <column name="enable_auto_increament_of_admission_no" type="bit"/>
+            <column name="enable_news_comments_moderation" type="bit"/>
+            <column name="enable_sibling" type="bit"/>
+            <column name="enable_password_change_at_first_login" type="bit"/>
+            <column name="enable_roll_number_for_student" type="bit"/>
+            <column name="institution_type" type="varchar(255)"/>
+            <column name="user_id" type="bigint">
+                <constraints unique="true"/>
+            </column>
+            <column name="language_lov_id" type="bigint">
+                <constraints unique="true"/>
+            </column>
+            <column name="currancy_lov_id" type="bigint">
+                <constraints unique="true"/>
+            </column>
+            <column name="country_lov_id" type="bigint">
+                <constraints unique="true"/>
+            </column>
+        </createTable>
+        
+        <addForeignKeyConstraint baseColumnNames="user_id"
+                                 baseTableName="school_details"
+                                 constraintName="fk_schooldetails_user_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="jhi_user"/>
+
+        <addForeignKeyConstraint baseColumnNames="language_lov_id"
+                                 baseTableName="school_details"
+                                 constraintName="fk_schooldetails_languagelov_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="language_lov"/>
+
+        <addForeignKeyConstraint baseColumnNames="currancy_lov_id"
+                                 baseTableName="school_details"
+                                 constraintName="fk_schooldetails_currancylov_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="currancy_lov"/>
+
+        <addForeignKeyConstraint baseColumnNames="country_lov_id"
+                                 baseTableName="school_details"
+                                 constraintName="fk_schooldetails_countrylov_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="country_lov"/>
+
+    </changeSet>
+</databaseChangeLog>

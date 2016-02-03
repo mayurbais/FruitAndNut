@@ -1,0 +1,66 @@
+
+<form name="editForm" role="form" novalidate ng-submit="save()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="clear()">&times;</button>
+        <h4 class="modal-title" id="myEndDateLabel" translate="try1App.endDate.home.createOrEditLabel">Create or edit a EndDate</h4>
+    </div>
+    <div class="modal-body">
+        <jh-alert-error></jh-alert-error>
+        <div class="form-group">
+            <label for="id" translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="endDate.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.endDate.day" for="field_day">Day</label>
+            <select class="form-control" name="day" ng-model="endDate.day" id="field_day">
+                <option value="MONDAY" translate="try1App.Days.MONDAY">MONDAY</option>
+                <option value="TUESDAY" translate="try1App.Days.TUESDAY">TUESDAY</option>
+                <option value="WEDNESDAY" translate="try1App.Days.WEDNESDAY">WEDNESDAY</option>
+                <option value="THURSDAY" translate="try1App.Days.THURSDAY">THURSDAY</option>
+                <option value="FRIDAY" translate="try1App.Days.FRIDAY">FRIDAY</option>
+                <option value="SATURDAY" translate="try1App.Days.SATURDAY">SATURDAY</option>
+                <option value="SUNDAY" translate="try1App.Days.SUNDAY">SUNDAY</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.endDate.startDate" for="field_startDate">StartDate</label>
+            <input id="field_startDate" type="text" class="form-control" uib-datepicker-popup="{{dateformat}}" ng-model="endDate.startDate" is-open="datePickerForStartDate.status.opened"
+            />
+            <span class="input-group-btn">
+                <button type="button" class="btn btn-default" ng-click="datePickerForStartDateOpen($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+            </span>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.endDate.endDate" for="field_endDate">EndDate</label>
+            <input id="field_endDate" type="text" class="form-control" uib-datepicker-popup="{{dateformat}}" ng-model="endDate.endDate" is-open="datePickerForEndDate.status.opened"
+            />
+            <span class="input-group-btn">
+                <button type="button" class="btn btn-default" ng-click="datePickerForEndDateOpen($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+            </span>
+        </div>
+
+        <div class="form-group">
+            <label translate="try1App.endDate.timeSlot" for="field_timeSlot">timeSlot</label>
+            <select class="form-control" id="field_timeSlot" multiple name="timeSlot" ng-model="endDate.timeSlots" ng-options="timeSlot as timeSlot.id for timeSlot in timeslots track by timeSlot.id"></select>
+        </div>
+        <div class="form-group">
+            <label translate="try1App.endDate.classRoomSession" for="field_classRoomSession">classRoomSession</label>
+            <select class="form-control" id="field_classRoomSession" multiple name="classRoomSession" ng-model="endDate.classRoomSessions" ng-options="classRoomSession as classRoomSession.id for classRoomSession in classroomsessions track by classRoomSession.id"></select>
+        </div>
+        <div class="form-group">
+            <label translate="try1App.endDate.section" for="field_section">section</label>
+            <select class="form-control" id="field_section" multiple name="section" ng-model="endDate.sections" ng-options="section as section.id for section in sections track by section.id"></select>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

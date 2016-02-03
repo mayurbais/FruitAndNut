@@ -1,0 +1,56 @@
+<div>
+    <h2 translate="try1App.rankingLevel.home.title">RankingLevels</h2>
+    <jh-alert></jh-alert>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <button class="btn btn-primary" ui-sref="rankingLevel.new">
+                    <span class="glyphicon glyphicon-flash"></span> <span translate="try1App.rankingLevel.home.createLabel">Create a new RankingLevel</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th><span translate="global.field.id">ID</span></th>
+                    <th><span translate="try1App.rankingLevel.name">Name</span></th>
+                    <th><span translate="try1App.rankingLevel.percentageLimit">PercentageLimit</span></th>
+                    <th><span translate="try1App.rankingLevel.description">Description</span></th>
+                    <th><span translate="try1App.rankingLevel.course">course</span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="rankingLevel in rankingLevels track by rankingLevel.id">
+                    <td><a ui-sref="rankingLevel.detail({id:rankingLevel.id})">{{rankingLevel.id}}</a></td>
+                    <td>{{rankingLevel.name}}</td>
+                    <td>{{rankingLevel.percentageLimit}}</td>
+                    <td>{{rankingLevel.description}}</td>
+                    <td>
+                        <a ui-sref="course.detail({id:rankingLevel.course.id})">{{rankingLevel.course.id}}</a>
+                    </td>
+                    <td>
+                        <button type="submit"
+                                ui-sref="rankingLevel.detail({id:rankingLevel.id})"
+                                class="btn btn-info btn-sm">
+                            <span class="glyphicon glyphicon-eye-open"></span>&nbsp;<span translate="entity.action.view"> View</span>
+                        </button>
+                        <button type="submit"
+                                ui-sref="rankingLevel.edit({id:rankingLevel.id})"
+                                class="btn btn-primary btn-sm">
+                            <span class="glyphicon glyphicon-pencil"></span>&nbsp;<span translate="entity.action.edit"> Edit</span>
+                        </button>
+                        <button type="submit"
+                                ui-sref="rankingLevel.delete({id:rankingLevel.id})"
+                                class="btn btn-danger btn-sm">
+                            <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;<span translate="entity.action.delete"> Delete</span>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

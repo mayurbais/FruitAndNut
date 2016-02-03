@@ -1,0 +1,28 @@
+{
+    "try1App": {
+        "course" : {
+            "home": {
+                "title": "Courses",
+                "createLabel": "Create a new Course",
+                "createOrEditLabel": "Create or edit a Course"
+            },
+            "created": "A new Course is created with identifier {{ param }}",
+            "updated": "A Course is updated with identifier {{ param }}",
+            "deleted": "A Course is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Course {{ id }}?"
+            },
+            "detail": {
+                "title": "Course"
+            },
+            "name": "Name",
+            "code": "Code",
+            "enableElectiveSelection": "EnableElectiveSelection",
+            "description": "Description",
+            "courseGroup": "CourseGroup",
+            "subject": "Subject",
+            "electiveSubject": "ElectiveSubject",
+            "acedemicSession": "AcedemicSession"
+        }
+    }
+}

@@ -1,0 +1,115 @@
+{
+  "relationships": [
+    {
+      "relationshipId": 1,
+      "relationshipName": "user",
+      "otherEntityName": "user",
+      "relationshipType": "one-to-one",
+      "otherEntityField": "id",
+      "ownerSide": true,
+      "otherEntityRelationshipName": "irisUser"
+    },
+    {
+      "relationshipId": 2,
+      "relationshipName": "languageLOV",
+      "otherEntityName": "languageLOV",
+      "relationshipType": "one-to-one",
+      "otherEntityField": "id",
+      "ownerSide": true,
+      "otherEntityRelationshipName": "irisUser"
+    },
+    {
+      "relationshipId": 3,
+      "relationshipName": "countryLOV",
+      "otherEntityName": "countryLOV",
+      "relationshipType": "one-to-one",
+      "otherEntityField": "id",
+      "ownerSide": true,
+      "otherEntityRelationshipName": "irisUser"
+    },
+    {
+      "relationshipId": 4,
+      "relationshipName": "address",
+      "otherEntityName": "address",
+      "relationshipType": "one-to-one",
+      "otherEntityField": "id",
+      "ownerSide": true,
+      "otherEntityRelationshipName": "irisUser"
+    }
+  ],
+  "fields": [
+    {
+      "fieldId": 1,
+      "fieldName": "firstName",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required",
+        "minlength",
+        "maxlength"
+      ],
+      "fieldValidateRulesMinlength": "3",
+      "fieldValidateRulesMaxlength": "10"
+    },
+    {
+      "fieldId": 2,
+      "fieldName": "lastName",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength",
+        "minlength",
+        "required"
+      ],
+      "fieldValidateRulesMaxlength": "10",
+      "fieldValidateRulesMinlength": "3"
+    },
+    {
+      "fieldId": 3,
+      "fieldName": "middleName",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 4,
+      "fieldName": "dateOfBirth",
+      "javadoc": "<Enter note text here>",
+      "fieldType": "LocalDate",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldId": 5,
+      "fieldName": "gender",
+      "fieldType": "Gender",
+      "fieldValues": "MALE,FEMALE"
+    },
+    {
+      "fieldId": 6,
+      "fieldName": "bloodGroup",
+      "fieldType": "BloodGroup",
+      "fieldValues": "A_PLUS,A_MINUS,B_MINUS,B_PLUS,O_MINUS,O_PLUS,AB_PLUS,AB_MINUS"
+    },
+    {
+      "fieldId": 7,
+      "fieldName": "birthPlace",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 8,
+      "fieldName": "religion",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 9,
+      "fieldName": "photo",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 10,
+      "fieldName": "phone",
+      "fieldType": "Long"
+    }
+  ],
+  "changelogDate": "20160108065513",
+  "dto": "no",
+  "pagination": "no"
+}

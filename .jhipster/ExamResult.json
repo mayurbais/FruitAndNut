@@ -1,0 +1,49 @@
+{
+  "relationships": [
+    {
+      "relationshipId": 1,
+      "relationshipName": "exam",
+      "otherEntityName": "exam",
+      "relationshipType": "many-to-one",
+      "otherEntityField": "id"
+    }
+  ],
+  "fields": [
+    {
+      "fieldId": 1,
+      "fieldName": "studentId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldId": 2,
+      "fieldName": "percentage",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 3,
+      "fieldName": "grade",
+      "javadoc": "<Enter note text here>",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 4,
+      "fieldName": "isPassed",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldId": 5,
+      "fieldName": "isAbsent",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldId": 6,
+      "fieldName": "remark",
+      "javadoc": "<Enter note text here>",
+      "fieldType": "String"
+    }
+  ],
+  "changelogDate": "20160113052659",
+  "dto": "no",
+  "pagination": "no",
+  "javadoc": "<Enter note text here>"
+}

@@ -1,0 +1,116 @@
+
+<form name="editForm" role="form" novalidate ng-submit="save()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="clear()">&times;</button>
+        <h4 class="modal-title" id="myExamSubjectsLabel" translate="try1App.examSubjects.home.createOrEditLabel">Create or edit a ExamSubjects</h4>
+    </div>
+    <div class="modal-body">
+        <jh-alert-error></jh-alert-error>
+        <div class="form-group">
+            <label for="id" translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="examSubjects.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.examSubjects.maxMarks" for="field_maxMarks">MaxMarks</label>
+            <input type="number" class="form-control" name="maxMarks" id="field_maxMarks"
+                    ng-model="examSubjects.maxMarks"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.examSubjects.minPassMark" for="field_minPassMark">MinPassMark</label>
+            <input type="number" class="form-control" name="minPassMark" id="field_minPassMark"
+                    ng-model="examSubjects.minPassMark"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.examSubjects.isGrade" for="field_isGrade">IsGrade</label>
+            <input type="checkbox" class="form-control" name="isGrade" id="field_isGrade"
+                    ng-model="examSubjects.isGrade"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.examSubjects.startTime" for="field_startTime">StartTime</label>
+            <input id="field_startTime" type="text" class="form-control" uib-datepicker-popup="{{dateformat}}" ng-model="examSubjects.startTime" is-open="datePickerForStartTime.status.opened"
+            />
+            <span class="input-group-btn">
+                <button type="button" class="btn btn-default" ng-click="datePickerForStartTimeOpen($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+            </span>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.examSubjects.endTime" for="field_endTime">EndTime</label>
+            <input id="field_endTime" type="text" class="form-control" uib-datepicker-popup="{{dateformat}}" ng-model="examSubjects.endTime" is-open="datePickerForEndTime.status.opened"
+            />
+            <span class="input-group-btn">
+                <button type="button" class="btn btn-default" ng-click="datePickerForEndTimeOpen($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+            </span>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.examSubjects.conductingDate" for="field_conductingDate">ConductingDate</label>
+            <input id="field_conductingDate" type="text" class="form-control" uib-datepicker-popup="{{dateformat}}" ng-model="examSubjects.conductingDate" is-open="datePickerForConductingDate.status.opened"
+            />
+            <span class="input-group-btn">
+                <button type="button" class="btn btn-default" ng-click="datePickerForConductingDateOpen($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+            </span>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.examSubjects.isResultPublished" for="field_isResultPublished">IsResultPublished</label>
+            <input type="checkbox" class="form-control" name="isResultPublished" id="field_isResultPublished"
+                    ng-model="examSubjects.isResultPublished"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.examSubjects.classAverage" for="field_classAverage">ClassAverage</label>
+            <input type="number" class="form-control" name="classAverage" id="field_classAverage"
+                    ng-model="examSubjects.classAverage"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.examSubjects.remarkByPrincipal" for="field_remarkByPrincipal">RemarkByPrincipal</label>
+            <input type="text" class="form-control" name="remarkByPrincipal" id="field_remarkByPrincipal"
+                    ng-model="examSubjects.remarkByPrincipal"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.examSubjects.remarkByHeadTeacher" for="field_remarkByHeadTeacher">RemarkByHeadTeacher</label>
+            <input type="text" class="form-control" name="remarkByHeadTeacher" id="field_remarkByHeadTeacher"
+                    ng-model="examSubjects.remarkByHeadTeacher"
+                     />
+        </div>
+
+        <div class="form-group">
+            <label translate="try1App.examSubjects.exam" for="field_exam">exam</label>
+            <select class="form-control" id="field_exam" name="exam" ng-model="examSubjects.exam" ng-options="exam as exam.id for exam in exams track by exam.id">
+                <option value=""></option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label translate="try1App.examSubjects.subject" for="field_subject">subject</label>
+            <select class="form-control" id="field_subject" name="subject" ng-model="examSubjects.subject" ng-options="subject as subject.id for subject in subjects | orderBy:'id' track by subject.id">
+                <option value=""></option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label translate="try1App.examSubjects.teacher" for="field_teacher">teacher</label>
+            <select class="form-control" id="field_teacher" name="teacher" ng-model="examSubjects.teacher" ng-options="teacher as teacher.id for teacher in teachers | orderBy:'id' track by teacher.id">
+                <option value=""></option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label translate="try1App.examSubjects.room" for="field_room">room</label>
+            <select class="form-control" id="field_room" name="room" ng-model="examSubjects.room" ng-options="room as room.id for room in rooms | orderBy:'id' track by room.id">
+                <option value=""></option>
+            </select>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

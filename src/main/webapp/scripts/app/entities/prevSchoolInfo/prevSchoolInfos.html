@@ -1,0 +1,58 @@
+<div>
+    <h2 translate="try1App.prevSchoolInfo.home.title">PrevSchoolInfos</h2>
+    <jh-alert></jh-alert>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <button class="btn btn-primary" ui-sref="prevSchoolInfo.new">
+                    <span class="glyphicon glyphicon-flash"></span> <span translate="try1App.prevSchoolInfo.home.createLabel">Create a new PrevSchoolInfo</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th><span translate="global.field.id">ID</span></th>
+                    <th><span translate="try1App.prevSchoolInfo.schoolName">SchoolName</span></th>
+                    <th><span translate="try1App.prevSchoolInfo.grade">Grade</span></th>
+                    <th><span translate="try1App.prevSchoolInfo.remarkBy">RemarkBy</span></th>
+                    <th><span translate="try1App.prevSchoolInfo.remark">Remark</span></th>
+                    <th><span translate="try1App.prevSchoolInfo.contactOfRemark">ContactOfRemark</span></th>
+                    <th><span translate="try1App.prevSchoolInfo.reasonForChange">ReasonForChange</span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="prevSchoolInfo in prevSchoolInfos track by prevSchoolInfo.id">
+                    <td><a ui-sref="prevSchoolInfo.detail({id:prevSchoolInfo.id})">{{prevSchoolInfo.id}}</a></td>
+                    <td>{{prevSchoolInfo.schoolName}}</td>
+                    <td>{{prevSchoolInfo.grade}}</td>
+                    <td>{{prevSchoolInfo.remarkBy}}</td>
+                    <td>{{prevSchoolInfo.remark}}</td>
+                    <td>{{prevSchoolInfo.contactOfRemark}}</td>
+                    <td>{{prevSchoolInfo.reasonForChange}}</td>
+                    <td>
+                        <button type="submit"
+                                ui-sref="prevSchoolInfo.detail({id:prevSchoolInfo.id})"
+                                class="btn btn-info btn-sm">
+                            <span class="glyphicon glyphicon-eye-open"></span>&nbsp;<span translate="entity.action.view"> View</span>
+                        </button>
+                        <button type="submit"
+                                ui-sref="prevSchoolInfo.edit({id:prevSchoolInfo.id})"
+                                class="btn btn-primary btn-sm">
+                            <span class="glyphicon glyphicon-pencil"></span>&nbsp;<span translate="entity.action.edit"> Edit</span>
+                        </button>
+                        <button type="submit"
+                                ui-sref="prevSchoolInfo.delete({id:prevSchoolInfo.id})"
+                                class="btn btn-danger btn-sm">
+                            <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;<span translate="entity.action.delete"> Delete</span>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

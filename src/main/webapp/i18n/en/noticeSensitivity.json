@@ -1,0 +1,11 @@
+{
+    "try1App": {
+        "NoticeSensitivity" : {
+            "null": "",
+            "PERSONAL": "PERSONAL",
+            "PRIVATE": "PRIVATE",
+            "CONFEDENTIAL": "CONFEDENTIAL",
+            "NORMAL": "NORMAL"
+        }
+    }
+}

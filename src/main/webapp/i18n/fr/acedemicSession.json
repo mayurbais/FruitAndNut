@@ -1,0 +1,24 @@
+{
+    "try1App": {
+        "acedemicSession" : {
+            "home": {
+                "title": "AcedemicSessions",
+                "createLabel": "Créer un nouveau AcedemicSession",
+                "createOrEditLabel": "Créer ou éditer un AcedemicSession"
+            },
+            "created": "Un nouveau AcedemicSession a été créé avec l'identifiant {{ param }}",
+            "updated": "Le AcedemicSession avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le AcedemicSession avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le AcedemicSession {{ id }} ?"
+            },
+            "detail": {
+                "title": "AcedemicSession"
+            },
+            "sessionStartDate": "SessionStartDate",
+            "sessionEndDate": "SessionEndDate",
+            "schoolDetails": "SchoolDetails"
+        }
+    }
+}
+

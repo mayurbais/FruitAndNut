@@ -1,0 +1,25 @@
+{
+    "try1App": {
+        "rankingLevel" : {
+            "home": {
+                "title": "RankingLevels",
+                "createLabel": "Créer un nouveau RankingLevel",
+                "createOrEditLabel": "Créer ou éditer un RankingLevel"
+            },
+            "created": "Un nouveau RankingLevel a été créé avec l'identifiant {{ param }}",
+            "updated": "Le RankingLevel avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le RankingLevel avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le RankingLevel {{ id }} ?"
+            },
+            "detail": {
+                "title": "RankingLevel"
+            },
+            "name": "Name",
+            "percentageLimit": "PercentageLimit",
+            "description": "Description",
+            "course": "Course"
+        }
+    }
+}
+

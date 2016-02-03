@@ -1,0 +1,46 @@
+{
+  "relationships": [
+    {
+      "relationshipId": 1,
+      "relationshipName": "irisUser",
+      "otherEntityName": "irisUser",
+      "relationshipType": "one-to-one",
+      "otherEntityField": "id",
+      "ownerSide": true,
+      "otherEntityRelationshipName": "employee"
+    }
+  ],
+  "fields": [
+    {
+      "fieldId": 1,
+      "fieldName": "category",
+      "javadoc": "<Enter note text here>",
+      "fieldType": "EmployeeCategory",
+      "fieldValues": "JR_TEACHER,PRINCIPAL,SYSTEM_ADMIN,LIBRARY_STAFF,HR_REP,SR_TEACHER"
+    },
+    {
+      "fieldId": 2,
+      "fieldName": "isActive",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldId": 3,
+      "fieldName": "isOnLeave",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldId": 4,
+      "fieldName": "leaveFrom",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldId": 5,
+      "fieldName": "leaveTill",
+      "javadoc": "<Enter note text here>",
+      "fieldType": "ZonedDateTime"
+    }
+  ],
+  "changelogDate": "20160110084525",
+  "dto": "no",
+  "pagination": "no"
+}

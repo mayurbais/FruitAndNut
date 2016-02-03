@@ -1,0 +1,70 @@
+
+<div>
+    <h2><span translate="try1App.prevSchoolInfo.detail.title">PrevSchoolInfo</span> {{prevSchoolInfo.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th translate="entity.detail.field">Field</th>
+                <th translate="entity.detail.value">Value</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <span translate="try1App.prevSchoolInfo.schoolName">SchoolName</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{prevSchoolInfo.schoolName}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="try1App.prevSchoolInfo.grade">Grade</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{prevSchoolInfo.grade}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="try1App.prevSchoolInfo.remarkBy">RemarkBy</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{prevSchoolInfo.remarkBy}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="try1App.prevSchoolInfo.remark">Remark</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{prevSchoolInfo.remark}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="try1App.prevSchoolInfo.contactOfRemark">ContactOfRemark</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{prevSchoolInfo.contactOfRemark}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="try1App.prevSchoolInfo.reasonForChange">ReasonForChange</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{prevSchoolInfo.reasonForChange}}</span>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

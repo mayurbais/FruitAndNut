@@ -1,0 +1,12 @@
+{
+    "try1App": {
+        "Experties" : {
+            "null": "",
+            "MATH": "MATH",
+            "SCIENCE": "SCIENCE",
+            "SOCIALSTUDIES": "SOCIALSTUDIES",
+            "PHYSICS": "PHYSICS",
+            "CHEMISTRY": "CHEMISTRY"
+        }
+    }
+}

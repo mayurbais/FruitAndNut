@@ -1,0 +1,58 @@
+<div>
+    <h2 translate="try1App.admissionDetails.home.title">AdmissionDetailss</h2>
+    <jh-alert></jh-alert>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <button class="btn btn-primary" ui-sref="admissionDetails.new">
+                    <span class="glyphicon glyphicon-flash"></span> <span translate="try1App.admissionDetails.home.createLabel">Create a new AdmissionDetails</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th><span translate="global.field.id">ID</span></th>
+                    <th><span translate="try1App.admissionDetails.admissionNo">AdmissionNo</span></th>
+                    <th><span translate="try1App.admissionDetails.admissionDate">AdmissionDate</span></th>
+                    <th><span translate="try1App.admissionDetails.student">student</span></th>
+                    <th><span translate="try1App.admissionDetails.prevSchoolDetail">prevSchoolDetail</span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="admissionDetails in admissionDetailss track by admissionDetails.id">
+                    <td><a ui-sref="admissionDetails.detail({id:admissionDetails.id})">{{admissionDetails.id}}</a></td>
+                    <td>{{admissionDetails.admissionNo}}</td>
+                        <td>{{admissionDetails.admissionDate | date:'mediumDate'}}</td>
+                    <td>
+                        <a ui-sref="student.detail({id:admissionDetails.student.id})">{{admissionDetails.student.id}}</a>
+                    </td>
+                    <td>
+                        <a ui-sref="prevSchoolInfo.detail({id:admissionDetails.prevSchoolDetail.id})">{{admissionDetails.prevSchoolDetail.id}}</a>
+                    </td>
+                    <td>
+                        <button type="submit"
+                                ui-sref="admissionDetails.detail({id:admissionDetails.id})"
+                                class="btn btn-info btn-sm">
+                            <span class="glyphicon glyphicon-eye-open"></span>&nbsp;<span translate="entity.action.view"> View</span>
+                        </button>
+                        <button type="submit"
+                                ui-sref="admissionDetails.edit({id:admissionDetails.id})"
+                                class="btn btn-primary btn-sm">
+                            <span class="glyphicon glyphicon-pencil"></span>&nbsp;<span translate="entity.action.edit"> Edit</span>
+                        </button>
+                        <button type="submit"
+                                ui-sref="admissionDetails.delete({id:admissionDetails.id})"
+                                class="btn btn-danger btn-sm">
+                            <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;<span translate="entity.action.delete"> Delete</span>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

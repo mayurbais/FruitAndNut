@@ -1,0 +1,23 @@
+{
+    "try1App": {
+        "countryLOV" : {
+            "home": {
+                "title": "CountryLOVs",
+                "createLabel": "Créer un nouveau CountryLOV",
+                "createOrEditLabel": "Créer ou éditer un CountryLOV"
+            },
+            "created": "Un nouveau CountryLOV a été créé avec l'identifiant {{ param }}",
+            "updated": "Le CountryLOV avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le CountryLOV avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le CountryLOV {{ id }} ?"
+            },
+            "detail": {
+                "title": "CountryLOV"
+            },
+            "value": "Value",
+            "name": "Name"
+        }
+    }
+}
+

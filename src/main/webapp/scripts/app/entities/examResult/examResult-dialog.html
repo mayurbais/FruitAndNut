@@ -1,0 +1,68 @@
+
+<form name="editForm" role="form" novalidate ng-submit="save()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="clear()">&times;</button>
+        <h4 class="modal-title" id="myExamResultLabel" translate="try1App.examResult.home.createOrEditLabel">Create or edit a ExamResult</h4>
+    </div>
+    <div class="modal-body">
+        <jh-alert-error></jh-alert-error>
+        <div class="form-group">
+            <label for="id" translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="examResult.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.examResult.studentId" for="field_studentId">StudentId</label>
+            <input type="number" class="form-control" name="studentId" id="field_studentId"
+                    ng-model="examResult.studentId"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.examResult.percentage" for="field_percentage">Percentage</label>
+            <input type="text" class="form-control" name="percentage" id="field_percentage"
+                    ng-model="examResult.percentage"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.examResult.grade" for="field_grade">Grade</label>
+            <input type="text" class="form-control" name="grade" id="field_grade"
+                    ng-model="examResult.grade"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.examResult.isPassed" for="field_isPassed">IsPassed</label>
+            <input type="checkbox" class="form-control" name="isPassed" id="field_isPassed"
+                    ng-model="examResult.isPassed"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.examResult.isAbsent" for="field_isAbsent">IsAbsent</label>
+            <input type="checkbox" class="form-control" name="isAbsent" id="field_isAbsent"
+                    ng-model="examResult.isAbsent"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.examResult.remark" for="field_remark">Remark</label>
+            <input type="text" class="form-control" name="remark" id="field_remark"
+                    ng-model="examResult.remark"
+                     />
+        </div>
+
+        <div class="form-group">
+            <label translate="try1App.examResult.exam" for="field_exam">exam</label>
+            <select class="form-control" id="field_exam" name="exam" ng-model="examResult.exam" ng-options="exam as exam.id for exam in exams track by exam.id">
+                <option value=""></option>
+            </select>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

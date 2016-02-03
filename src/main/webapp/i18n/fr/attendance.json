@@ -1,0 +1,31 @@
+{
+    "try1App": {
+        "attendance" : {
+            "home": {
+                "title": "Attendances",
+                "createLabel": "Créer un nouveau Attendance",
+                "createOrEditLabel": "Créer ou éditer un Attendance"
+            },
+            "created": "Un nouveau Attendance a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Attendance avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Attendance avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Attendance {{ id }} ?"
+            },
+            "detail": {
+                "title": "Attendance"
+            },
+            "attendanceFor": "AttendanceFor",
+            "date": "Date",
+            "isPresent": "IsPresent",
+            "reasonForAbsent": "ReasonForAbsent",
+            "isApproved": "IsApproved",
+            "approvedBy": "ApprovedBy",
+            "attribute": "Attribute",
+            "irisUser": "IrisUser",
+            "section": "Section",
+            "course": "Course"
+        }
+    }
+}
+

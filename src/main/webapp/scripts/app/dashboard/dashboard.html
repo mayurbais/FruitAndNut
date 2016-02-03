@@ -1,0 +1,49 @@
+<div>
+    <h2><span translate="try1App.dashboard.detail.title">DashBoardView</span> </h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th><span translate="global.field.id">ID</span></th>
+                    <th><span translate="try1App.dashboard.child.name">Name</span></th>
+                    <th><span translate="try1App.dashboard.child.grade">Grade</span></th>
+                    <th><span translate="try1App.dashboard.child.section">Section</span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="student in students track by student.id">
+                    <td><a ui-sref="student.getMyChildInfo({id:student.id})">{{student.id}}</a></td>
+                    
+                    <td>
+                        <a ui-sref="student.getMyChildInfo({id:student.id})">{{student.irisUser.firstName + " " + student.irisUser.lastName}}</a>
+                    </td>
+                    <td>
+                        <a ui-sref="course.detail({id:student.course.id})">{{student.course.id}}</a>
+                    </td>
+                    <td>
+                        <a ui-sref="section.detail({id:student.section.id})">{{student.section.id}}</a>
+                    </td>
+           
+                    <td>
+                        <button type="submit"
+                                ui-sref="student.detail({id:student.id})"
+                                class="btn btn-info btn-sm">
+                            <span class="glyphicon glyphicon-eye-open"></span>&nbsp;<span translate="entity.action.view"> View</span>
+                        </button>
+                        <button type="submit"
+                                ui-sref="student.edit({id:student.id})"
+                                class="btn btn-primary btn-sm">
+                            <span class="glyphicon glyphicon-pencil"></span>&nbsp;<span translate="entity.action.edit"> Edit</span>
+                        </button>
+                        <button type="submit"
+                                ui-sref="student.delete({id:student.id})"
+                                class="btn btn-danger btn-sm">
+                            <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;<span translate="entity.action.delete"> Delete</span>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,86 @@
+{
+  "relationships": [
+    {
+      "relationshipId": 1,
+      "relationshipName": "course",
+      "otherEntityName": "course",
+      "relationshipType": "many-to-one",
+      "otherEntityField": "id"
+    },
+    {
+      "relationshipId": 2,
+      "relationshipName": "section",
+      "otherEntityName": "section",
+      "relationshipType": "many-to-one",
+      "otherEntityField": "id"
+    },
+    {
+      "relationshipId": 3,
+      "relationshipName": "examSubjects",
+      "otherEntityName": "examSubjects",
+      "relationshipType": "one-to-many",
+      "otherEntityRelationshipName": "exam"
+    }
+  ],
+  "fields": [
+    {
+      "fieldId": 1,
+      "fieldName": "name",
+      "javadoc": "<Enter note text here>",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 2,
+      "fieldName": "type",
+      "fieldType": "ExamType",
+      "fieldValues": "MARKS,GRADES,MARKSANDGRADES"
+    },
+    {
+      "fieldId": 3,
+      "fieldName": "startDate",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldId": 4,
+      "fieldName": "endDate",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldId": 5,
+      "fieldName": "isPublished",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldId": 6,
+      "fieldName": "progressStatus",
+      "fieldType": "ProgressStatus",
+      "fieldValues": "IN_PROGRESS,NEW,COMPLETED"
+    },
+    {
+      "fieldId": 7,
+      "fieldName": "isResultPublished",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldId": 8,
+      "fieldName": "classAverage",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldId": 9,
+      "fieldName": "remarkByPrincipal",
+      "javadoc": "<Enter note text here>",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 10,
+      "fieldName": "remarkByHeadTeacher",
+      "javadoc": "<Enter note text here>",
+      "fieldType": "String"
+    }
+  ],
+  "changelogDate": "20160112221053",
+  "dto": "no",
+  "pagination": "no",
+  "javadoc": "<Enter note text here>"
+}

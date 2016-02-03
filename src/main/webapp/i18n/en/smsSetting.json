@@ -1,0 +1,23 @@
+{
+    "try1App": {
+        "smsSetting" : {
+            "home": {
+                "title": "SmsSettings",
+                "createLabel": "Create a new SmsSetting",
+                "createOrEditLabel": "Create or edit a SmsSetting"
+            },
+            "created": "A new SmsSetting is created with identifier {{ param }}",
+            "updated": "A SmsSetting is updated with identifier {{ param }}",
+            "deleted": "A SmsSetting is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete SmsSetting {{ id }}?"
+            },
+            "detail": {
+                "title": "SmsSetting"
+            },
+            "name": "Name",
+            "code": "Code",
+            "isEnabled": "IsEnabled"
+        }
+    }
+}

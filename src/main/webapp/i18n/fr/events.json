@@ -1,0 +1,28 @@
+{
+    "try1App": {
+        "events" : {
+            "home": {
+                "title": "Eventss",
+                "createLabel": "Créer un nouveau Events",
+                "createOrEditLabel": "Créer ou éditer un Events"
+            },
+            "created": "Un nouveau Events a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Events avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Events avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Events {{ id }} ?"
+            },
+            "detail": {
+                "title": "Events"
+            },
+            "title": "Title",
+            "description": "Description",
+            "startDate": "StartDate",
+            "endDate": "EndDate",
+            "isHoliday": "IsHoliday",
+            "isCommonToAll": "IsCommonToAll",
+            "section": "Section"
+        }
+    }
+}
+

@@ -1,0 +1,26 @@
+{
+  "relationships": [],
+  "fields": [
+    {
+      "fieldId": 1,
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 2,
+      "fieldName": "code",
+      "javadoc": "<Enter note text here>",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 3,
+      "fieldName": "isEnabled",
+      "javadoc": "<Enter note text here>",
+      "fieldType": "String"
+    }
+  ],
+  "changelogDate": "20160107073929",
+  "dto": "no",
+  "pagination": "no",
+  "javadoc": "<Enter note text here>"
+}

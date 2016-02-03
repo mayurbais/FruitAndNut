@@ -1,0 +1,23 @@
+{
+    "try1App": {
+        "acedemicSession" : {
+            "home": {
+                "title": "AcedemicSessions",
+                "createLabel": "Create a new AcedemicSession",
+                "createOrEditLabel": "Create or edit a AcedemicSession"
+            },
+            "created": "A new AcedemicSession is created with identifier {{ param }}",
+            "updated": "A AcedemicSession is updated with identifier {{ param }}",
+            "deleted": "A AcedemicSession is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete AcedemicSession {{ id }}?"
+            },
+            "detail": {
+                "title": "AcedemicSession"
+            },
+            "sessionStartDate": "SessionStartDate",
+            "sessionEndDate": "SessionEndDate",
+            "schoolDetails": "SchoolDetails"
+        }
+    }
+}

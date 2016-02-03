@@ -1,0 +1,70 @@
+<div>
+    <h2 translate="try1App.endDate.home.title">EndDates</h2>
+    <jh-alert></jh-alert>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <button class="btn btn-primary" ui-sref="endDate.new">
+                    <span class="glyphicon glyphicon-flash"></span> <span translate="try1App.endDate.home.createLabel">Create a new EndDate</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th><span translate="global.field.id">ID</span></th>
+                    <th><span translate="try1App.endDate.day">Day</span></th>
+                    <th><span translate="try1App.endDate.startDate">StartDate</span></th>
+                    <th><span translate="try1App.endDate.endDate">EndDate</span></th>
+                    <th><span translate="try1App.endDate.timeSlot">timeSlot</span></th>
+                    <th><span translate="try1App.endDate.classRoomSession">classRoomSession</span></th>
+                    <th><span translate="try1App.endDate.section">section</span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="endDate in endDates track by endDate.id">
+                    <td><a ui-sref="endDate.detail({id:endDate.id})">{{endDate.id}}</a></td>
+                    <td translate="{{'try1App.Days.' + endDate.day}}">{{endDate.day}}</td>
+                    <td>{{endDate.startDate | date:'medium'}}</td>
+                    <td>{{endDate.endDate | date:'medium'}}</td>
+                    <td>
+                        <span ng-repeat="timeSlot in endDate.timeSlots">
+                            <a class="form-control-static" ui-sref="timeSlot.detail({id: {{timeSlot.id}}})">{{timeSlot.id}}</a>{{$last ? '' : ', '}}
+                        <span>
+                    </td>
+                    <td>
+                        <span ng-repeat="classRoomSession in endDate.classRoomSessions">
+                            <a class="form-control-static" ui-sref="classRoomSession.detail({id: {{classRoomSession.id}}})">{{classRoomSession.id}}</a>{{$last ? '' : ', '}}
+                        <span>
+                    </td>
+                    <td>
+                        <span ng-repeat="section in endDate.sections">
+                            <a class="form-control-static" ui-sref="section.detail({id: {{section.id}}})">{{section.id}}</a>{{$last ? '' : ', '}}
+                        <span>
+                    </td>
+                    <td>
+                        <button type="submit"
+                                ui-sref="endDate.detail({id:endDate.id})"
+                                class="btn btn-info btn-sm">
+                            <span class="glyphicon glyphicon-eye-open"></span>&nbsp;<span translate="entity.action.view"> View</span>
+                        </button>
+                        <button type="submit"
+                                ui-sref="endDate.edit({id:endDate.id})"
+                                class="btn btn-primary btn-sm">
+                            <span class="glyphicon glyphicon-pencil"></span>&nbsp;<span translate="entity.action.edit"> Edit</span>
+                        </button>
+                        <button type="submit"
+                                ui-sref="endDate.delete({id:endDate.id})"
+                                class="btn btn-danger btn-sm">
+                            <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;<span translate="entity.action.delete"> Delete</span>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

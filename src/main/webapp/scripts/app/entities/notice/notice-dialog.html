@@ -1,0 +1,95 @@
+
+<form name="editForm" role="form" novalidate ng-submit="save()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="clear()">&times;</button>
+        <h4 class="modal-title" id="myNoticeLabel" translate="try1App.notice.home.createOrEditLabel">Create or edit a Notice</h4>
+    </div>
+    <div class="modal-body">
+        <jh-alert-error></jh-alert-error>
+        <div class="form-group">
+            <label for="id" translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="notice.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.notice.noticeType" for="field_noticeType">NoticeType</label>
+            <select class="form-control" name="noticeType" ng-model="notice.noticeType" id="field_noticeType">
+                <option value="NOTIFICATION" translate="try1App.NoticeType.NOTIFICATION">NOTIFICATION</option>
+                <option value="REMINDER" translate="try1App.NoticeType.REMINDER">REMINDER</option>
+                <option value="QUERY" translate="try1App.NoticeType.QUERY">QUERY</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.notice.priority" for="field_priority">Priority</label>
+            <select class="form-control" name="priority" ng-model="notice.priority" id="field_priority">
+                <option value="HIGH" translate="try1App.PriorityLevel.HIGH">HIGH</option>
+                <option value="NORMAL" translate="try1App.PriorityLevel.NORMAL">NORMAL</option>
+                <option value="LOW" translate="try1App.PriorityLevel.LOW">LOW</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.notice.sensitivity" for="field_sensitivity">Sensitivity</label>
+            <select class="form-control" name="sensitivity" ng-model="notice.sensitivity" id="field_sensitivity">
+                <option value="PERSONAL" translate="try1App.NoticeSensitivity.PERSONAL">PERSONAL</option>
+                <option value="PRIVATE" translate="try1App.NoticeSensitivity.PRIVATE">PRIVATE</option>
+                <option value="CONFEDENTIAL" translate="try1App.NoticeSensitivity.CONFEDENTIAL">CONFEDENTIAL</option>
+                <option value="NORMAL" translate="try1App.NoticeSensitivity.NORMAL">NORMAL</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.notice.sendDate" for="field_sendDate">SendDate</label>
+            <input id="field_sendDate" type="text" class="form-control" uib-datepicker-popup="{{dateformat}}" ng-model="notice.sendDate" is-open="datePickerForSendDate.status.opened"
+            />
+            <span class="input-group-btn">
+                <button type="button" class="btn btn-default" ng-click="datePickerForSendDateOpen($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+            </span>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.notice.isRead" for="field_isRead">IsRead</label>
+            <input type="text" class="form-control" name="isRead" id="field_isRead"
+                    ng-model="notice.isRead"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.notice.subject" for="field_subject">Subject</label>
+            <input type="text" class="form-control" name="subject" id="field_subject"
+                    ng-model="notice.subject"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.notice.sentBy" for="field_sentBy">SentBy</label>
+            <input type="text" class="form-control" name="sentBy" id="field_sentBy"
+                    ng-model="notice.sentBy"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.notice.sentTo" for="field_sentTo">SentTo</label>
+            <input type="text" class="form-control" name="sentTo" id="field_sentTo"
+                    ng-model="notice.sentTo"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.notice.message" for="field_message">Message</label>
+            <input type="text" class="form-control" name="message" id="field_message"
+                    ng-model="notice.message"
+                     />
+        </div>
+
+        <div class="form-group">
+            <label translate="try1App.notice.irisUser" for="field_irisUser">irisUser</label>
+            <select class="form-control" id="field_irisUser" name="irisUser" ng-model="notice.irisUser" ng-options="irisUser as irisUser.id for irisUser in irisusers | orderBy:'id' track by irisUser.id">
+                <option value=""></option>
+            </select>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

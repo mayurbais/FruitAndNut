@@ -1,0 +1,9 @@
+{
+    "try1App": {
+        "AttendanceType" : {
+            "null": "",
+            "DAILY": "DAILY",
+            "WEEKLY": "WEEKLY"
+        }
+    }
+}

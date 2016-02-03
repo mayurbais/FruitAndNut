@@ -1,0 +1,192 @@
+
+<form name="editForm" role="form" novalidate ng-submit="save()" show-validation>
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="clear()">&times;</button>
+        <h4 class="modal-title" id="mySchoolDetailsLabel" translate="try1App.schoolDetails.home.createOrEditLabel">Create or edit a SchoolDetails</h4>
+    </div>
+    <div class="modal-body">
+        <jh-alert-error></jh-alert-error>
+        <div class="form-group">
+            <label for="id" translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="schoolDetails.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.schoolDetails.schoolName" for="field_schoolName">SchoolName</label>
+            <input type="text" class="form-control" name="schoolName" id="field_schoolName"
+                    ng-model="schoolDetails.schoolName"
+                    ng-minlength="5" ng-maxlength="20" />
+            <div ng-show="editForm.schoolName.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.schoolName.$error.minlength" translate="entity.validation.minlength" translate-value-min="5">
+                    This field is required to be at least 5 characters.
+                </p>
+                <p class="help-block"
+                    ng-show="editForm.schoolName.$error.maxlength" translate="entity.validation.maxlength" translate-value-max="20">
+                    This field cannot be longer than 20 characters.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.schoolDetails.address" for="field_address">Address</label>
+            <input type="text" class="form-control" name="address" id="field_address"
+                    ng-model="schoolDetails.address"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.schoolDetails.phoneNumber" for="field_phoneNumber">PhoneNumber</label>
+            <input type="number" class="form-control" name="phoneNumber" id="field_phoneNumber"
+                    ng-model="schoolDetails.phoneNumber"
+                    required />
+            <div ng-show="editForm.phoneNumber.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.phoneNumber.$error.required" translate="entity.validation.required">
+                    This field is required.
+                </p>
+                <p class="help-block"
+                    ng-show="editForm.phoneNumber.$error.number" translate="entity.validation.number">
+                    This field should be a number.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.schoolDetails.attendanceType" for="field_attendanceType">AttendanceType</label>
+            <select class="form-control" name="attendanceType" ng-model="schoolDetails.attendanceType" id="field_attendanceType">
+                <option value="DAILY" translate="try1App.AttendanceType.DAILY">DAILY</option>
+                <option value="WEEKLY" translate="try1App.AttendanceType.WEEKLY">WEEKLY</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.schoolDetails.startDayOfTheWeek" for="field_startDayOfTheWeek">StartDayOfTheWeek</label>
+            <select class="form-control" name="startDayOfTheWeek" ng-model="schoolDetails.startDayOfTheWeek" id="field_startDayOfTheWeek">
+                <option value="MONDAY" translate="try1App.Days.MONDAY">MONDAY</option>
+                <option value="TUESDAY" translate="try1App.Days.TUESDAY">TUESDAY</option>
+                <option value="WEDNESDAY" translate="try1App.Days.WEDNESDAY">WEDNESDAY</option>
+                <option value="THURSDAY" translate="try1App.Days.THURSDAY">THURSDAY</option>
+                <option value="FRIDAY" translate="try1App.Days.FRIDAY">FRIDAY</option>
+                <option value="SATURDAY" translate="try1App.Days.SATURDAY">SATURDAY</option>
+                <option value="SUNDAY" translate="try1App.Days.SUNDAY">SUNDAY</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.schoolDetails.dateFormat" for="field_dateFormat">DateFormat</label>
+            <select class="form-control" name="dateFormat" ng-model="schoolDetails.dateFormat" id="field_dateFormat">
+                <option value="MMDDYYYY" translate="try1App.DateFormat.MMDDYYYY">MMDDYYYY</option>
+                <option value="DDMMYYYY" translate="try1App.DateFormat.DDMMYYYY">DDMMYYYY</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.schoolDetails.financialStartDate" for="field_financialStartDate">FinancialStartDate</label>
+            <input id="field_financialStartDate" type="text" class="form-control" uib-datepicker-popup="{{dateformat}}" ng-model="schoolDetails.financialStartDate" is-open="datePickerForFinancialStartDate.status.opened"
+            required/>
+            <span class="input-group-btn">
+                <button type="button" class="btn btn-default" ng-click="datePickerForFinancialStartDateOpen($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+            </span>
+            <div ng-show="editForm.financialStartDate.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.financialStartDate.$error.required" translate="entity.validation.required">
+                    This field is required.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.schoolDetails.financialEndDate" for="field_financialEndDate">FinancialEndDate</label>
+            <input id="field_financialEndDate" type="text" class="form-control" uib-datepicker-popup="{{dateformat}}" ng-model="schoolDetails.financialEndDate" is-open="datePickerForFinancialEndDate.status.opened"
+            required/>
+            <span class="input-group-btn">
+                <button type="button" class="btn btn-default" ng-click="datePickerForFinancialEndDateOpen($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+            </span>
+            <div ng-show="editForm.financialEndDate.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.financialEndDate.$error.required" translate="entity.validation.required">
+                    This field is required.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.schoolDetails.logo" for="field_logo">Logo</label>
+            <input type="text" class="form-control" name="logo" id="field_logo"
+                    ng-model="schoolDetails.logo"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.schoolDetails.gradingSystem" for="field_gradingSystem">GradingSystem</label>
+            <select class="form-control" name="gradingSystem" ng-model="schoolDetails.gradingSystem" id="field_gradingSystem">
+                <option value="NORMAL" translate="try1App.GradingType.NORMAL">NORMAL</option>
+                <option value="GPA" translate="try1App.GradingType.GPA">GPA</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.schoolDetails.enableAutoIncreamentOfAdmissionNo" for="field_enableAutoIncreamentOfAdmissionNo">EnableAutoIncreamentOfAdmissionNo</label>
+            <input type="checkbox" class="form-control" name="enableAutoIncreamentOfAdmissionNo" id="field_enableAutoIncreamentOfAdmissionNo"
+                    ng-model="schoolDetails.enableAutoIncreamentOfAdmissionNo"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.schoolDetails.enableNewsCommentsModeration" for="field_enableNewsCommentsModeration">EnableNewsCommentsModeration</label>
+            <input type="checkbox" class="form-control" name="enableNewsCommentsModeration" id="field_enableNewsCommentsModeration"
+                    ng-model="schoolDetails.enableNewsCommentsModeration"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.schoolDetails.enableSibling" for="field_enableSibling">EnableSibling</label>
+            <input type="checkbox" class="form-control" name="enableSibling" id="field_enableSibling"
+                    ng-model="schoolDetails.enableSibling"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.schoolDetails.enablePasswordChangeAtFirstLogin" for="field_enablePasswordChangeAtFirstLogin">EnablePasswordChangeAtFirstLogin</label>
+            <input type="checkbox" class="form-control" name="enablePasswordChangeAtFirstLogin" id="field_enablePasswordChangeAtFirstLogin"
+                    ng-model="schoolDetails.enablePasswordChangeAtFirstLogin"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.schoolDetails.enableRollNumberForStudent" for="field_enableRollNumberForStudent">EnableRollNumberForStudent</label>
+            <input type="checkbox" class="form-control" name="enableRollNumberForStudent" id="field_enableRollNumberForStudent"
+                    ng-model="schoolDetails.enableRollNumberForStudent"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.schoolDetails.institutionType" for="field_institutionType">InstitutionType</label>
+            <select class="form-control" name="institutionType" ng-model="schoolDetails.institutionType" id="field_institutionType">
+                <option value="K12" translate="try1App.InstitutionType.K12">K12</option>
+                <option value="HIGH" translate="try1App.InstitutionType.HIGH">HIGH</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label translate="try1App.schoolDetails.user" for="field_user">user</label>
+            <select class="form-control" id="field_user" name="user" ng-model="schoolDetails.user" ng-options="user as user.id for user in users track by user.id">
+                <option value=""></option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label translate="try1App.schoolDetails.languageLOV" for="field_languageLOV">languageLOV</label>
+            <select class="form-control" id="field_languageLOV" name="languageLOV" ng-model="schoolDetails.languageLOV" ng-options="languageLOV as languageLOV.id for languageLOV in languagelovs | orderBy:'id' track by languageLOV.id">
+                <option value=""></option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label translate="try1App.schoolDetails.currancyLOV" for="field_currancyLOV">currancyLOV</label>
+            <select class="form-control" id="field_currancyLOV" name="currancyLOV" ng-model="schoolDetails.currancyLOV" ng-options="currancyLOV as currancyLOV.id for currancyLOV in currancylovs | orderBy:'id' track by currancyLOV.id">
+                <option value=""></option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label translate="try1App.schoolDetails.countryLOV" for="field_countryLOV">countryLOV</label>
+            <select class="form-control" id="field_countryLOV" name="countryLOV" ng-model="schoolDetails.countryLOV" ng-options="countryLOV as countryLOV.id for countryLOV in countrylovs | orderBy:'id' track by countryLOV.id">
+                <option value=""></option>
+            </select>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

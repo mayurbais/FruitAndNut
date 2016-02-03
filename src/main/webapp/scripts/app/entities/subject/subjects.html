@@ -1,0 +1,62 @@
+<div>
+    <h2 translate="try1App.subject.home.title">Subjects</h2>
+    <jh-alert></jh-alert>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <button class="btn btn-primary" ui-sref="subject.new">
+                    <span class="glyphicon glyphicon-flash"></span> <span translate="try1App.subject.home.createLabel">Create a new Subject</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th><span translate="global.field.id">ID</span></th>
+                    <th><span translate="try1App.subject.name">Name</span></th>
+                    <th><span translate="try1App.subject.description">Description</span></th>
+                    <th><span translate="try1App.subject.code">Code</span></th>
+                    <th><span translate="try1App.subject.noExam">NoExam</span></th>
+                    <th><span translate="try1App.subject.course">course</span></th>
+                    <th><span translate="try1App.subject.teacher">teacher</span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="subject in subjects track by subject.id">
+                    <td><a ui-sref="subject.detail({id:subject.id})">{{subject.id}}</a></td>
+                    <td>{{subject.name}}</td>
+                    <td>{{subject.description}}</td>
+                    <td>{{subject.code}}</td>
+                    <td>{{subject.noExam}}</td>
+                    <td>
+                        <a ui-sref="course.detail({id:subject.course.id})">{{subject.course.id}}</a>
+                    </td>
+                    <td>
+                        <a ui-sref="teacher.detail({id:subject.teacher.id})">{{subject.teacher.id}}</a>
+                    </td>
+                    <td>
+                        <button type="submit"
+                                ui-sref="subject.detail({id:subject.id})"
+                                class="btn btn-info btn-sm">
+                            <span class="glyphicon glyphicon-eye-open"></span>&nbsp;<span translate="entity.action.view"> View</span>
+                        </button>
+                        <button type="submit"
+                                ui-sref="subject.edit({id:subject.id})"
+                                class="btn btn-primary btn-sm">
+                            <span class="glyphicon glyphicon-pencil"></span>&nbsp;<span translate="entity.action.edit"> Edit</span>
+                        </button>
+                        <button type="submit"
+                                ui-sref="subject.delete({id:subject.id})"
+                                class="btn btn-danger btn-sm">
+                            <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;<span translate="entity.action.delete"> Delete</span>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

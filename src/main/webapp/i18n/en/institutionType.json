@@ -1,0 +1,9 @@
+{
+    "try1App": {
+        "InstitutionType" : {
+            "null": "",
+            "K12": "K12",
+            "HIGH": "HIGH"
+        }
+    }
+}

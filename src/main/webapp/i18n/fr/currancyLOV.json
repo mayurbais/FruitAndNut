@@ -1,0 +1,23 @@
+{
+    "try1App": {
+        "currancyLOV" : {
+            "home": {
+                "title": "CurrancyLOVs",
+                "createLabel": "Créer un nouveau CurrancyLOV",
+                "createOrEditLabel": "Créer ou éditer un CurrancyLOV"
+            },
+            "created": "Un nouveau CurrancyLOV a été créé avec l'identifiant {{ param }}",
+            "updated": "Le CurrancyLOV avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le CurrancyLOV avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le CurrancyLOV {{ id }} ?"
+            },
+            "detail": {
+                "title": "CurrancyLOV"
+            },
+            "value": "Value",
+            "name": "Name"
+        }
+    }
+}
+

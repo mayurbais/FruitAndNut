@@ -1,0 +1,23 @@
+{
+    "try1App": {
+        "studentCategory" : {
+            "home": {
+                "title": "StudentCategorys",
+                "createLabel": "Create a new StudentCategory",
+                "createOrEditLabel": "Create or edit a StudentCategory"
+            },
+            "created": "A new StudentCategory is created with identifier {{ param }}",
+            "updated": "A StudentCategory is updated with identifier {{ param }}",
+            "deleted": "A StudentCategory is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete StudentCategory {{ id }}?"
+            },
+            "detail": {
+                "title": "StudentCategory"
+            },
+            "name": "Name",
+            "value": "Value",
+            "description": "Description"
+        }
+    }
+}

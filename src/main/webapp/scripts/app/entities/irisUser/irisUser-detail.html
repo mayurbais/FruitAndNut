@@ -1,0 +1,134 @@
+
+<div>
+    <h2><span translate="try1App.irisUser.detail.title">IrisUser</span> {{irisUser.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th translate="entity.detail.field">Field</th>
+                <th translate="entity.detail.value">Value</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <span translate="try1App.irisUser.firstName">FirstName</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{irisUser.firstName}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="try1App.irisUser.lastName">LastName</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{irisUser.lastName}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="try1App.irisUser.middleName">MiddleName</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{irisUser.middleName}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="try1App.irisUser.dateOfBirth">DateOfBirth</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{irisUser.dateOfBirth | date:'mediumDate'}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="try1App.irisUser.gender">Gender</span>
+                </td>
+                <td>
+                    <span class="form-control-static" translate="{{'try1App.Gender.' + irisUser.gender}}">{{irisUser.gender}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="try1App.irisUser.bloodGroup">BloodGroup</span>
+                </td>
+                <td>
+                    <span class="form-control-static" translate="{{'try1App.BloodGroup.' + irisUser.bloodGroup}}">{{irisUser.bloodGroup}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="try1App.irisUser.birthPlace">BirthPlace</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{irisUser.birthPlace}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="try1App.irisUser.religion">Religion</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{irisUser.religion}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="try1App.irisUser.photo">Photo</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{irisUser.photo}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="try1App.irisUser.phone">Phone</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{irisUser.phone}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="try1App.irisUser.user">user</span>
+                </td>
+                <td>
+                    {{irisUser.user.id}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="try1App.irisUser.languageLOV">languageLOV</span>
+                </td>
+                <td>
+                    <a class="form-control-static" ui-sref="languageLOV.detail({id:irisUser.languageLOV.id})">{{irisUser.languageLOV.id}}</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="try1App.irisUser.countryLOV">countryLOV</span>
+                </td>
+                <td>
+                    <a class="form-control-static" ui-sref="countryLOV.detail({id:irisUser.countryLOV.id})">{{irisUser.countryLOV.id}}</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="try1App.irisUser.address">address</span>
+                </td>
+                <td>
+                    <a class="form-control-static" ui-sref="address.detail({id:irisUser.address.id})">{{irisUser.address.id}}</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

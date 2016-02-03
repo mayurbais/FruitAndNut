@@ -1,0 +1,24 @@
+{
+    "try1App": {
+        "electiveSubject" : {
+            "home": {
+                "title": "ElectiveSubjects",
+                "createLabel": "Create a new ElectiveSubject",
+                "createOrEditLabel": "Create or edit a ElectiveSubject"
+            },
+            "created": "A new ElectiveSubject is created with identifier {{ param }}",
+            "updated": "A ElectiveSubject is updated with identifier {{ param }}",
+            "deleted": "A ElectiveSubject is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete ElectiveSubject {{ id }}?"
+            },
+            "detail": {
+                "title": "ElectiveSubject"
+            },
+            "name": "Name",
+            "description": "Description",
+            "code": "Code",
+            "course": "Course"
+        }
+    }
+}

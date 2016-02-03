@@ -1,0 +1,50 @@
+<div>
+    <h2 translate="try1App.languageLOV.home.title">LanguageLOVs</h2>
+    <jh-alert></jh-alert>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <button class="btn btn-primary" ui-sref="languageLOV.new">
+                    <span class="glyphicon glyphicon-flash"></span> <span translate="try1App.languageLOV.home.createLabel">Create a new LanguageLOV</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th><span translate="global.field.id">ID</span></th>
+                    <th><span translate="try1App.languageLOV.name">Name</span></th>
+                    <th><span translate="try1App.languageLOV.value">Value</span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="languageLOV in languageLOVs track by languageLOV.id">
+                    <td><a ui-sref="languageLOV.detail({id:languageLOV.id})">{{languageLOV.id}}</a></td>
+                    <td>{{languageLOV.name}}</td>
+                    <td>{{languageLOV.value}}</td>
+                    <td>
+                        <button type="submit"
+                                ui-sref="languageLOV.detail({id:languageLOV.id})"
+                                class="btn btn-info btn-sm">
+                            <span class="glyphicon glyphicon-eye-open"></span>&nbsp;<span translate="entity.action.view"> View</span>
+                        </button>
+                        <button type="submit"
+                                ui-sref="languageLOV.edit({id:languageLOV.id})"
+                                class="btn btn-primary btn-sm">
+                            <span class="glyphicon glyphicon-pencil"></span>&nbsp;<span translate="entity.action.edit"> Edit</span>
+                        </button>
+                        <button type="submit"
+                                ui-sref="languageLOV.delete({id:languageLOV.id})"
+                                class="btn btn-danger btn-sm">
+                            <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;<span translate="entity.action.delete"> Delete</span>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

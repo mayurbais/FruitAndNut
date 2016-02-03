@@ -1,0 +1,9 @@
+{
+    "try1App": {
+        "GradingType" : {
+            "null": "",
+            "NORMAL": "NORMAL",
+            "GPA": "GPA"
+        }
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "try1App": {
+        "dashboard" : {
+          
+            "created": "A new Section is created with identifier {{ param }}",
+            "updated": "A Section is updated with identifier {{ param }}",
+            "deleted": "A Section is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Section {{ id }}?"
+            },
+            "child": {
+                "name": "Name",
+                "section" : "Section",
+                "grade": "Grade"
+            },
+            "detail": {
+                "title": "Dashboard View",
+                "createLabel": "Create a new Section",
+                "createOrEditLabel": "Create or edit a Section"
+            },
+            "name": "Name",
+            "code": "Code",
+            "strength": "Strength",
+            "course": "Course",
+            "teacher": "Teacher",
+            "room": "Room",
+            "timeTable": "TimeTable"
+        }
+    }
+}

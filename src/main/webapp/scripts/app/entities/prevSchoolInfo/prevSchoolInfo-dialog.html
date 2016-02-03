@@ -1,0 +1,62 @@
+
+<form name="editForm" role="form" novalidate ng-submit="save()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="clear()">&times;</button>
+        <h4 class="modal-title" id="myPrevSchoolInfoLabel" translate="try1App.prevSchoolInfo.home.createOrEditLabel">Create or edit a PrevSchoolInfo</h4>
+    </div>
+    <div class="modal-body">
+        <jh-alert-error></jh-alert-error>
+        <div class="form-group">
+            <label for="id" translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="prevSchoolInfo.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.prevSchoolInfo.schoolName" for="field_schoolName">SchoolName</label>
+            <input type="text" class="form-control" name="schoolName" id="field_schoolName"
+                    ng-model="prevSchoolInfo.schoolName"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.prevSchoolInfo.grade" for="field_grade">Grade</label>
+            <input type="text" class="form-control" name="grade" id="field_grade"
+                    ng-model="prevSchoolInfo.grade"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.prevSchoolInfo.remarkBy" for="field_remarkBy">RemarkBy</label>
+            <input type="text" class="form-control" name="remarkBy" id="field_remarkBy"
+                    ng-model="prevSchoolInfo.remarkBy"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.prevSchoolInfo.remark" for="field_remark">Remark</label>
+            <input type="text" class="form-control" name="remark" id="field_remark"
+                    ng-model="prevSchoolInfo.remark"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.prevSchoolInfo.contactOfRemark" for="field_contactOfRemark">ContactOfRemark</label>
+            <input type="text" class="form-control" name="contactOfRemark" id="field_contactOfRemark"
+                    ng-model="prevSchoolInfo.contactOfRemark"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.prevSchoolInfo.reasonForChange" for="field_reasonForChange">ReasonForChange</label>
+            <input type="text" class="form-control" name="reasonForChange" id="field_reasonForChange"
+                    ng-model="prevSchoolInfo.reasonForChange"
+                     />
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

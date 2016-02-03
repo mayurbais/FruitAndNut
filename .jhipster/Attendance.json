@@ -1,0 +1,75 @@
+{
+  "relationships": [
+    {
+      "relationshipId": 1,
+      "relationshipName": "irisUser",
+      "otherEntityName": "irisUser",
+      "relationshipType": "one-to-one",
+      "otherEntityField": "id",
+      "ownerSide": true,
+      "otherEntityRelationshipName": "attendance"
+    },
+    {
+      "relationshipId": 2,
+      "relationshipName": "section",
+      "otherEntityName": "section",
+      "relationshipType": "many-to-one",
+      "otherEntityField": "id"
+    },
+    {
+      "relationshipId": 3,
+      "relationshipName": "course",
+      "otherEntityName": "course",
+      "relationshipType": "many-to-one",
+      "otherEntityField": "id"
+    }
+  ],
+  "fields": [
+    {
+      "fieldId": 1,
+      "fieldName": "attendanceFor",
+      "fieldType": "IrisUserRole",
+      "fieldValues": "STUDENT,STAFF"
+    },
+    {
+      "fieldId": 2,
+      "fieldName": "date",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldId": 3,
+      "fieldName": "isPresent",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldId": 4,
+      "fieldName": "reasonForAbsent",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "minlength",
+        "maxlength"
+      ],
+      "fieldValidateRulesMinlength": "10",
+      "fieldValidateRulesMaxlength": "50"
+    },
+    {
+      "fieldId": 5,
+      "fieldName": "isApproved",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldId": 6,
+      "fieldName": "approvedBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 7,
+      "fieldName": "attribute",
+      "fieldType": "String"
+    }
+  ],
+  "changelogDate": "20160110084525",
+  "dto": "no",
+  "pagination": "no",
+  "javadoc": "<Enter note text here>"
+}

@@ -1,0 +1,24 @@
+{
+    "try1App": {
+        "moduleLOV" : {
+            "home": {
+                "title": "ModuleLOVs",
+                "createLabel": "Créer un nouveau ModuleLOV",
+                "createOrEditLabel": "Créer ou éditer un ModuleLOV"
+            },
+            "created": "Un nouveau ModuleLOV a été créé avec l'identifiant {{ param }}",
+            "updated": "Le ModuleLOV avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le ModuleLOV avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le ModuleLOV {{ id }} ?"
+            },
+            "detail": {
+                "title": "ModuleLOV"
+            },
+            "type": "Type",
+            "name": "Name",
+            "value": "Value"
+        }
+    }
+}
+

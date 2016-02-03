@@ -1,0 +1,62 @@
+<div>
+    <h2 translate="try1App.events.home.title">Eventss</h2>
+    <jh-alert></jh-alert>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <button class="btn btn-primary" ui-sref="events.new">
+                    <span class="glyphicon glyphicon-flash"></span> <span translate="try1App.events.home.createLabel">Create a new Events</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th><span translate="global.field.id">ID</span></th>
+                    <th><span translate="try1App.events.title">Title</span></th>
+                    <th><span translate="try1App.events.description">Description</span></th>
+                    <th><span translate="try1App.events.startDate">StartDate</span></th>
+                    <th><span translate="try1App.events.endDate">EndDate</span></th>
+                    <th><span translate="try1App.events.isHoliday">IsHoliday</span></th>
+                    <th><span translate="try1App.events.isCommonToAll">IsCommonToAll</span></th>
+                    <th><span translate="try1App.events.section">section</span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="events in eventss track by events.id">
+                    <td><a ui-sref="events.detail({id:events.id})">{{events.id}}</a></td>
+                    <td>{{events.title}}</td>
+                    <td>{{events.description}}</td>
+                    <td>{{events.startDate | date:'medium'}}</td>
+                    <td>{{events.endDate | date:'medium'}}</td>
+                    <td>{{events.isHoliday}}</td>
+                    <td>{{events.isCommonToAll}}</td>
+                    <td>
+                        <a ui-sref="section.detail({id:events.section.id})">{{events.section.id}}</a>
+                    </td>
+                    <td>
+                        <button type="submit"
+                                ui-sref="events.detail({id:events.id})"
+                                class="btn btn-info btn-sm">
+                            <span class="glyphicon glyphicon-eye-open"></span>&nbsp;<span translate="entity.action.view"> View</span>
+                        </button>
+                        <button type="submit"
+                                ui-sref="events.edit({id:events.id})"
+                                class="btn btn-primary btn-sm">
+                            <span class="glyphicon glyphicon-pencil"></span>&nbsp;<span translate="entity.action.edit"> Edit</span>
+                        </button>
+                        <button type="submit"
+                                ui-sref="events.delete({id:events.id})"
+                                class="btn btn-danger btn-sm">
+                            <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;<span translate="entity.action.delete"> Delete</span>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

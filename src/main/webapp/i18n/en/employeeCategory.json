@@ -1,0 +1,13 @@
+{
+    "try1App": {
+        "EmployeeCategory" : {
+            "null": "",
+            "JR_TEACHER": "JR_TEACHER",
+            "PRINCIPAL": "PRINCIPAL",
+            "SYSTEM_ADMIN": "SYSTEM_ADMIN",
+            "LIBRARY_STAFF": "LIBRARY_STAFF",
+            "HR_REP": "HR_REP",
+            "SR_TEACHER": "SR_TEACHER"
+        }
+    }
+}

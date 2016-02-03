@@ -1,0 +1,99 @@
+
+<form name="editForm" role="form" novalidate ng-submit="save()" show-validation>
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="clear()">&times;</button>
+        <h4 class="modal-title" id="myAttendanceLabel" translate="try1App.attendance.home.createOrEditLabel">Create or edit a Attendance</h4>
+    </div>
+    <div class="modal-body">
+        <jh-alert-error></jh-alert-error>
+        <div class="form-group">
+            <label for="id" translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="attendance.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.attendance.attendanceFor" for="field_attendanceFor">AttendanceFor</label>
+            <select class="form-control" name="attendanceFor" ng-model="attendance.attendanceFor" id="field_attendanceFor">
+                <option value="STUDENT" translate="try1App.IrisUserRole.STUDENT">STUDENT</option>
+                <option value="STAFF" translate="try1App.IrisUserRole.STAFF">STAFF</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.attendance.date" for="field_date">Date</label>
+            <input id="field_date" type="text" class="form-control" uib-datepicker-popup="{{dateformat}}" ng-model="attendance.date" is-open="datePickerForDate.status.opened"
+            />
+            <span class="input-group-btn">
+                <button type="button" class="btn btn-default" ng-click="datePickerForDateOpen($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+            </span>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.attendance.isPresent" for="field_isPresent">IsPresent</label>
+            <input type="checkbox" class="form-control" name="isPresent" id="field_isPresent"
+                    ng-model="attendance.isPresent"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.attendance.reasonForAbsent" for="field_reasonForAbsent">ReasonForAbsent</label>
+            <input type="text" class="form-control" name="reasonForAbsent" id="field_reasonForAbsent"
+                    ng-model="attendance.reasonForAbsent"
+                    ng-minlength="10" ng-maxlength="50" />
+            <div ng-show="editForm.reasonForAbsent.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.reasonForAbsent.$error.minlength" translate="entity.validation.minlength" translate-value-min="10">
+                    This field is required to be at least 10 characters.
+                </p>
+                <p class="help-block"
+                    ng-show="editForm.reasonForAbsent.$error.maxlength" translate="entity.validation.maxlength" translate-value-max="50">
+                    This field cannot be longer than 50 characters.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.attendance.isApproved" for="field_isApproved">IsApproved</label>
+            <input type="checkbox" class="form-control" name="isApproved" id="field_isApproved"
+                    ng-model="attendance.isApproved"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.attendance.approvedBy" for="field_approvedBy">ApprovedBy</label>
+            <input type="text" class="form-control" name="approvedBy" id="field_approvedBy"
+                    ng-model="attendance.approvedBy"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.attendance.attribute" for="field_attribute">Attribute</label>
+            <input type="text" class="form-control" name="attribute" id="field_attribute"
+                    ng-model="attendance.attribute"
+                     />
+        </div>
+
+        <div class="form-group">
+            <label translate="try1App.attendance.irisUser" for="field_irisUser">irisUser</label>
+            <select class="form-control" id="field_irisUser" name="irisUser" ng-model="attendance.irisUser" ng-options="irisUser as irisUser.id for irisUser in irisusers | orderBy:'id' track by irisUser.id">
+                <option value=""></option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label translate="try1App.attendance.section" for="field_section">section</label>
+            <select class="form-control" id="field_section" name="section" ng-model="attendance.section" ng-options="section as section.id for section in sections track by section.id">
+                <option value=""></option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label translate="try1App.attendance.course" for="field_course">course</label>
+            <select class="form-control" id="field_course" name="course" ng-model="attendance.course" ng-options="course as course.id for course in courses track by course.id">
+                <option value=""></option>
+            </select>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

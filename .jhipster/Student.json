@@ -1,0 +1,64 @@
+{
+  "relationships": [
+    {
+      "relationshipId": 1,
+      "relationshipName": "studentCategory",
+      "otherEntityName": "studentCategory",
+      "relationshipType": "one-to-one",
+      "otherEntityField": "id",
+      "ownerSide": true,
+      "otherEntityRelationshipName": "student"
+    },
+    {
+      "relationshipId": 2,
+      "relationshipName": "course",
+      "otherEntityName": "course",
+      "relationshipType": "one-to-one",
+      "otherEntityField": "id",
+      "ownerSide": true,
+      "otherEntityRelationshipName": "student"
+    },
+    {
+      "relationshipId": 3,
+      "relationshipName": "section",
+      "otherEntityName": "section",
+      "relationshipType": "one-to-one",
+      "otherEntityField": "id",
+      "ownerSide": true,
+      "otherEntityRelationshipName": "student"
+    },
+    {
+      "relationshipId": 4,
+      "relationshipName": "student",
+      "otherEntityName": "student",
+      "relationshipType": "one-to-many",
+      "otherEntityRelationshipName": "student"
+    },
+    {
+      "relationshipId": 5,
+      "relationshipName": "student",
+      "otherEntityName": "student",
+      "relationshipType": "many-to-one",
+      "otherEntityField": "id"
+    },
+    {
+      "relationshipId": 6,
+      "relationshipName": "irisUser",
+      "otherEntityName": "irisUser",
+      "relationshipType": "one-to-one",
+      "otherEntityField": "id",
+      "ownerSide": true,
+      "otherEntityRelationshipName": "student"
+    }
+  ],
+  "fields": [
+    {
+      "fieldId": 1,
+      "fieldName": "rollNo",
+      "fieldType": "String"
+    }
+  ],
+  "changelogDate": "20160106194143",
+  "dto": "no",
+  "pagination": "no"
+}

@@ -1,0 +1,151 @@
+{
+  "relationships": [
+    {
+      "relationshipId": 1,
+      "relationshipName": "user",
+      "otherEntityName": "user",
+      "relationshipType": "one-to-one",
+      "otherEntityField": "id",
+      "ownerSide": true,
+      "otherEntityRelationshipName": "schoolDetails"
+    },
+    {
+      "relationshipId": 2,
+      "relationshipName": "languageLOV",
+      "otherEntityName": "languageLOV",
+      "relationshipType": "one-to-one",
+      "otherEntityField": "id",
+      "ownerSide": true,
+      "otherEntityRelationshipName": "schoolDetails"
+    },
+    {
+      "relationshipId": 3,
+      "relationshipName": "currancyLOV",
+      "otherEntityName": "currancyLOV",
+      "relationshipType": "one-to-one",
+      "otherEntityField": "id",
+      "ownerSide": true,
+      "otherEntityRelationshipName": "schoolDetails"
+    },
+    {
+      "relationshipId": 4,
+      "relationshipName": "countryLOV",
+      "otherEntityName": "countryLOV",
+      "relationshipType": "one-to-one",
+      "otherEntityField": "id",
+      "ownerSide": true,
+      "otherEntityRelationshipName": "schoolDetails"
+    }
+  ],
+  "fields": [
+    {
+      "fieldId": 1,
+      "fieldName": "schoolName",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength",
+        "minlength"
+      ],
+      "fieldValidateRulesMaxlength": "20",
+      "fieldValidateRulesMinlength": "5"
+    },
+    {
+      "fieldId": 2,
+      "fieldName": "address",
+      "javadoc": "<Enter note text here>",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 3,
+      "fieldName": "phoneNumber",
+      "fieldType": "Integer",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldId": 4,
+      "fieldName": "attendanceType",
+      "fieldType": "AttendanceType",
+      "fieldValues": "DAILY,WEEKLY"
+    },
+    {
+      "fieldId": 5,
+      "fieldName": "startDayOfTheWeek",
+      "javadoc": "<Enter note text here>",
+      "fieldType": "Days",
+      "fieldValues": "MONDAY,TUESDAY,WEDNESDAY,THURSDAY,FRIDAY,SATURDAY,SUNDAY"
+    },
+    {
+      "fieldId": 6,
+      "fieldName": "dateFormat",
+      "javadoc": "<Enter note text here>",
+      "fieldType": "DateFormat",
+      "fieldValues": "MMDDYYYY,DDMMYYYY"
+    },
+    {
+      "fieldId": 7,
+      "fieldName": "financialStartDate",
+      "fieldType": "LocalDate",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldId": 8,
+      "fieldName": "financialEndDate",
+      "fieldType": "LocalDate",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldId": 9,
+      "fieldName": "logo",
+      "javadoc": "<Enter note text here>",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 10,
+      "fieldName": "gradingSystem",
+      "fieldType": "GradingType",
+      "fieldValues": "NORMAL,GPA"
+    },
+    {
+      "fieldId": 11,
+      "fieldName": "enableAutoIncreamentOfAdmissionNo",
+      "javadoc": "<Enter note text here>",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldId": 12,
+      "fieldName": "enableNewsCommentsModeration",
+      "javadoc": "<Enter note text here>",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldId": 13,
+      "fieldName": "enableSibling",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldId": 14,
+      "fieldName": "enablePasswordChangeAtFirstLogin",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldId": 15,
+      "fieldName": "enableRollNumberForStudent",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldId": 16,
+      "fieldName": "institutionType",
+      "fieldType": "InstitutionType",
+      "fieldValues": "K12,HIGH"
+    }
+  ],
+  "changelogDate": "20160106064057",
+  "dto": "no",
+  "pagination": "no"
+}

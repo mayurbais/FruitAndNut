@@ -1,0 +1,25 @@
+{
+    "try1App": {
+        "admissionDetails" : {
+            "home": {
+                "title": "AdmissionDetailss",
+                "createLabel": "Créer un nouveau AdmissionDetails",
+                "createOrEditLabel": "Créer ou éditer un AdmissionDetails"
+            },
+            "created": "Un nouveau AdmissionDetails a été créé avec l'identifiant {{ param }}",
+            "updated": "Le AdmissionDetails avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le AdmissionDetails avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le AdmissionDetails {{ id }} ?"
+            },
+            "detail": {
+                "title": "AdmissionDetails"
+            },
+            "admissionNo": "AdmissionNo",
+            "admissionDate": "AdmissionDate",
+            "student": "Student",
+            "prevSchoolDetail": "PrevSchoolDetail"
+        }
+    }
+}
+

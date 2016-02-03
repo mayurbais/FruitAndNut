@@ -1,0 +1,74 @@
+<div>
+    <h2 translate="try1App.exam.home.title">Exams</h2>
+    <jh-alert></jh-alert>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <button class="btn btn-primary" ui-sref="exam.new">
+                    <span class="glyphicon glyphicon-flash"></span> <span translate="try1App.exam.home.createLabel">Create a new Exam</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th><span translate="global.field.id">ID</span></th>
+                    <th><span translate="try1App.exam.name">Name</span></th>
+                    <th><span translate="try1App.exam.type">Type</span></th>
+                    <th><span translate="try1App.exam.startDate">StartDate</span></th>
+                    <th><span translate="try1App.exam.endDate">EndDate</span></th>
+                    <th><span translate="try1App.exam.isPublished">IsPublished</span></th>
+                    <th><span translate="try1App.exam.progressStatus">ProgressStatus</span></th>
+                    <th><span translate="try1App.exam.isResultPublished">IsResultPublished</span></th>
+                    <th><span translate="try1App.exam.classAverage">ClassAverage</span></th>
+                    <th><span translate="try1App.exam.remarkByPrincipal">RemarkByPrincipal</span></th>
+                    <th><span translate="try1App.exam.remarkByHeadTeacher">RemarkByHeadTeacher</span></th>
+                    <th><span translate="try1App.exam.course">course</span></th>
+                    <th><span translate="try1App.exam.section">section</span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="exam in exams track by exam.id">
+                    <td><a ui-sref="exam.detail({id:exam.id})">{{exam.id}}</a></td>
+                    <td>{{exam.name}}</td>
+                    <td translate="{{'try1App.ExamType.' + exam.type}}">{{exam.type}}</td>
+                    <td>{{exam.startDate | date:'medium'}}</td>
+                    <td>{{exam.endDate | date:'medium'}}</td>
+                    <td>{{exam.isPublished}}</td>
+                    <td translate="{{'try1App.ProgressStatus.' + exam.progressStatus}}">{{exam.progressStatus}}</td>
+                    <td>{{exam.isResultPublished}}</td>
+                    <td>{{exam.classAverage}}</td>
+                    <td>{{exam.remarkByPrincipal}}</td>
+                    <td>{{exam.remarkByHeadTeacher}}</td>
+                    <td>
+                        <a ui-sref="course.detail({id:exam.course.id})">{{exam.course.id}}</a>
+                    </td>
+                    <td>
+                        <a ui-sref="section.detail({id:exam.section.id})">{{exam.section.id}}</a>
+                    </td>
+                    <td>
+                        <button type="submit"
+                                ui-sref="exam.detail({id:exam.id})"
+                                class="btn btn-info btn-sm">
+                            <span class="glyphicon glyphicon-eye-open"></span>&nbsp;<span translate="entity.action.view"> View</span>
+                        </button>
+                        <button type="submit"
+                                ui-sref="exam.edit({id:exam.id})"
+                                class="btn btn-primary btn-sm">
+                            <span class="glyphicon glyphicon-pencil"></span>&nbsp;<span translate="entity.action.edit"> Edit</span>
+                        </button>
+                        <button type="submit"
+                                ui-sref="exam.delete({id:exam.id})"
+                                class="btn btn-danger btn-sm">
+                            <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;<span translate="entity.action.delete"> Delete</span>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,40 @@
+{
+  "relationships": [],
+  "fields": [
+    {
+      "fieldId": 1,
+      "fieldName": "schoolName",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 2,
+      "fieldName": "grade",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 3,
+      "fieldName": "remarkBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 4,
+      "fieldName": "remark",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 5,
+      "fieldName": "contactOfRemark",
+      "javadoc": "<Enter note text here>",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 6,
+      "fieldName": "reasonForChange",
+      "javadoc": "<Enter note text here>",
+      "fieldType": "String"
+    }
+  ],
+  "changelogDate": "20160108065513",
+  "dto": "no",
+  "pagination": "no"
+}

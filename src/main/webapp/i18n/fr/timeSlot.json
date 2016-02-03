@@ -1,0 +1,25 @@
+{
+    "try1App": {
+        "timeSlot" : {
+            "home": {
+                "title": "TimeSlots",
+                "createLabel": "Créer un nouveau TimeSlot",
+                "createOrEditLabel": "Créer ou éditer un TimeSlot"
+            },
+            "created": "Un nouveau TimeSlot a été créé avec l'identifiant {{ param }}",
+            "updated": "Le TimeSlot avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le TimeSlot avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le TimeSlot {{ id }} ?"
+            },
+            "detail": {
+                "title": "TimeSlot"
+            },
+            "name": "Name",
+            "startTime": "StartTime",
+            "endTime": "EndTime",
+            "timeTable": "TimeTable"
+        }
+    }
+}
+

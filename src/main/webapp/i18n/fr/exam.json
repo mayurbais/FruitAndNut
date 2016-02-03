@@ -1,0 +1,34 @@
+{
+    "try1App": {
+        "exam" : {
+            "home": {
+                "title": "Exams",
+                "createLabel": "Créer un nouveau Exam",
+                "createOrEditLabel": "Créer ou éditer un Exam"
+            },
+            "created": "Un nouveau Exam a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Exam avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Exam avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Exam {{ id }} ?"
+            },
+            "detail": {
+                "title": "Exam"
+            },
+            "name": "Name",
+            "type": "Type",
+            "startDate": "StartDate",
+            "endDate": "EndDate",
+            "isPublished": "IsPublished",
+            "progressStatus": "ProgressStatus",
+            "isResultPublished": "IsResultPublished",
+            "classAverage": "ClassAverage",
+            "remarkByPrincipal": "RemarkByPrincipal",
+            "remarkByHeadTeacher": "RemarkByHeadTeacher",
+            "course": "Course",
+            "section": "Section",
+            "examSubjects": "ExamSubjects"
+        }
+    }
+}
+

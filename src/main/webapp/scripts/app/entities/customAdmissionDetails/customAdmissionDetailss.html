@@ -1,0 +1,58 @@
+<div>
+    <h2 translate="try1App.customAdmissionDetails.home.title">CustomAdmissionDetailss</h2>
+    <jh-alert></jh-alert>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <button class="btn btn-primary" ui-sref="customAdmissionDetails.new">
+                    <span class="glyphicon glyphicon-flash"></span> <span translate="try1App.customAdmissionDetails.home.createLabel">Create a new CustomAdmissionDetails</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th><span translate="global.field.id">ID</span></th>
+                    <th><span translate="try1App.customAdmissionDetails.name">Name</span></th>
+                    <th><span translate="try1App.customAdmissionDetails.isActive">IsActive</span></th>
+                    <th><span translate="try1App.customAdmissionDetails.isMandatory">IsMandatory</span></th>
+                    <th><span translate="try1App.customAdmissionDetails.inputMethod">InputMethod</span></th>
+                    <th><span translate="try1App.customAdmissionDetails.schoolDetails">schoolDetails</span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="customAdmissionDetails in customAdmissionDetailss track by customAdmissionDetails.id">
+                    <td><a ui-sref="customAdmissionDetails.detail({id:customAdmissionDetails.id})">{{customAdmissionDetails.id}}</a></td>
+                    <td>{{customAdmissionDetails.name}}</td>
+                    <td>{{customAdmissionDetails.isActive}}</td>
+                    <td>{{customAdmissionDetails.isMandatory}}</td>
+                    <td>{{customAdmissionDetails.inputMethod}}</td>
+                    <td>
+                        <a ui-sref="schoolDetails.detail({id:customAdmissionDetails.schoolDetails.id})">{{customAdmissionDetails.schoolDetails.id}}</a>
+                    </td>
+                    <td>
+                        <button type="submit"
+                                ui-sref="customAdmissionDetails.detail({id:customAdmissionDetails.id})"
+                                class="btn btn-info btn-sm">
+                            <span class="glyphicon glyphicon-eye-open"></span>&nbsp;<span translate="entity.action.view"> View</span>
+                        </button>
+                        <button type="submit"
+                                ui-sref="customAdmissionDetails.edit({id:customAdmissionDetails.id})"
+                                class="btn btn-primary btn-sm">
+                            <span class="glyphicon glyphicon-pencil"></span>&nbsp;<span translate="entity.action.edit"> Edit</span>
+                        </button>
+                        <button type="submit"
+                                ui-sref="customAdmissionDetails.delete({id:customAdmissionDetails.id})"
+                                class="btn btn-danger btn-sm">
+                            <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;<span translate="entity.action.delete"> Delete</span>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

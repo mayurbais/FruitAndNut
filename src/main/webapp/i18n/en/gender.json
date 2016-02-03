@@ -1,0 +1,9 @@
+{
+    "try1App": {
+        "Gender" : {
+            "null": "",
+            "MALE": "MALE",
+            "FEMALE": "FEMALE"
+        }
+    }
+}

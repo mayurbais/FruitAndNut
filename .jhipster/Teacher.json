@@ -1,0 +1,39 @@
+{
+  "relationships": [
+    {
+      "relationshipId": 1,
+      "relationshipName": "subject",
+      "otherEntityName": "subject",
+      "relationshipType": "one-to-many",
+      "otherEntityRelationshipName": "teacher"
+    },
+    {
+      "relationshipId": 2,
+      "relationshipName": "employee",
+      "otherEntityName": "employee",
+      "relationshipType": "one-to-one",
+      "otherEntityField": "id",
+      "ownerSide": true,
+      "otherEntityRelationshipName": "teacher"
+    }
+  ],
+  "fields": [
+    {
+      "fieldId": 1,
+      "fieldName": "experties",
+      "fieldType": "Experties",
+      "fieldValues": "MATH,SCIENCE,SOCIALSTUDIES,PHYSICS,CHEMISTRY"
+    },
+    {
+      "fieldId": 2,
+      "fieldName": "courseGroup",
+      "javadoc": "<Enter note text here>",
+      "fieldType": "CourseGroup",
+      "fieldValues": "LKG,UKG,JRSCHOOL,MIDDLESCHOOL,HIGHSCHOOL"
+    }
+  ],
+  "changelogDate": "20160106194143",
+  "dto": "no",
+  "pagination": "no",
+  "javadoc": "<Enter note text here>"
+}

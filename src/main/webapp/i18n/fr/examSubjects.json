@@ -1,0 +1,35 @@
+{
+    "try1App": {
+        "examSubjects" : {
+            "home": {
+                "title": "ExamSubjectss",
+                "createLabel": "Créer un nouveau ExamSubjects",
+                "createOrEditLabel": "Créer ou éditer un ExamSubjects"
+            },
+            "created": "Un nouveau ExamSubjects a été créé avec l'identifiant {{ param }}",
+            "updated": "Le ExamSubjects avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le ExamSubjects avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le ExamSubjects {{ id }} ?"
+            },
+            "detail": {
+                "title": "ExamSubjects"
+            },
+            "maxMarks": "MaxMarks",
+            "minPassMark": "MinPassMark",
+            "isGrade": "IsGrade",
+            "startTime": "StartTime",
+            "endTime": "EndTime",
+            "conductingDate": "ConductingDate",
+            "isResultPublished": "IsResultPublished",
+            "classAverage": "ClassAverage",
+            "remarkByPrincipal": "RemarkByPrincipal",
+            "remarkByHeadTeacher": "RemarkByHeadTeacher",
+            "exam": "Exam",
+            "subject": "Subject",
+            "teacher": "Teacher",
+            "room": "Room"
+        }
+    }
+}
+

@@ -1,0 +1,26 @@
+{
+    "try1App": {
+        "customAdmissionDetails" : {
+            "home": {
+                "title": "CustomAdmissionDetailss",
+                "createLabel": "Créer un nouveau CustomAdmissionDetails",
+                "createOrEditLabel": "Créer ou éditer un CustomAdmissionDetails"
+            },
+            "created": "Un nouveau CustomAdmissionDetails a été créé avec l'identifiant {{ param }}",
+            "updated": "Le CustomAdmissionDetails avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le CustomAdmissionDetails avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le CustomAdmissionDetails {{ id }} ?"
+            },
+            "detail": {
+                "title": "CustomAdmissionDetails"
+            },
+            "name": "Name",
+            "isActive": "IsActive",
+            "isMandatory": "IsMandatory",
+            "inputMethod": "InputMethod",
+            "schoolDetails": "SchoolDetails"
+        }
+    }
+}
+

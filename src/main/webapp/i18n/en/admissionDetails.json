@@ -1,0 +1,24 @@
+{
+    "try1App": {
+        "admissionDetails" : {
+            "home": {
+                "title": "AdmissionDetailss",
+                "createLabel": "Create a new AdmissionDetails",
+                "createOrEditLabel": "Create or edit a AdmissionDetails"
+            },
+            "created": "A new AdmissionDetails is created with identifier {{ param }}",
+            "updated": "A AdmissionDetails is updated with identifier {{ param }}",
+            "deleted": "A AdmissionDetails is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete AdmissionDetails {{ id }}?"
+            },
+            "detail": {
+                "title": "AdmissionDetails"
+            },
+            "admissionNo": "AdmissionNo",
+            "admissionDate": "AdmissionDate",
+            "student": "Student",
+            "prevSchoolDetail": "PrevSchoolDetail"
+        }
+    }
+}

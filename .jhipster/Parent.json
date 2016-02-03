@@ -1,0 +1,24 @@
+{
+  "relationships": [
+    {
+      "relationshipId": 1,
+      "relationshipName": "irisUser",
+      "otherEntityName": "irisUser",
+      "relationshipType": "one-to-one",
+      "otherEntityField": "id",
+      "ownerSide": true,
+      "otherEntityRelationshipName": "parent"
+    }
+  ],
+  "fields": [
+    {
+      "fieldId": 1,
+      "fieldName": "occupation",
+      "javadoc": "<Enter note text here>",
+      "fieldType": "String"
+    }
+  ],
+  "changelogDate": "20160107073929",
+  "dto": "no",
+  "pagination": "no"
+}

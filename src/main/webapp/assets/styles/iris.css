@@ -1,0 +1,8 @@
+.iris-form-control {
+ 	display:inline !important;
+ 	width:auto !important;
+}
+
+label{
+	min-width:200px !important
+}

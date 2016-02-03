@@ -1,0 +1,28 @@
+{
+    "try1App": {
+        "section" : {
+            "home": {
+                "title": "Sections",
+                "createLabel": "Créer un nouveau Section",
+                "createOrEditLabel": "Créer ou éditer un Section"
+            },
+            "created": "Un nouveau Section a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Section avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Section avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Section {{ id }} ?"
+            },
+            "detail": {
+                "title": "Section"
+            },
+            "name": "Name",
+            "code": "Code",
+            "strength": "Strength",
+            "course": "Course",
+            "teacher": "Teacher",
+            "room": "Room",
+            "timeTable": "TimeTable"
+        }
+    }
+}
+

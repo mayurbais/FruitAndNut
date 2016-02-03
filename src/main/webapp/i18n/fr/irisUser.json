@@ -1,0 +1,35 @@
+{
+    "try1App": {
+        "irisUser" : {
+            "home": {
+                "title": "IrisUsers",
+                "createLabel": "Créer un nouveau IrisUser",
+                "createOrEditLabel": "Créer ou éditer un IrisUser"
+            },
+            "created": "Un nouveau IrisUser a été créé avec l'identifiant {{ param }}",
+            "updated": "Le IrisUser avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le IrisUser avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le IrisUser {{ id }} ?"
+            },
+            "detail": {
+                "title": "IrisUser"
+            },
+            "firstName": "FirstName",
+            "lastName": "LastName",
+            "middleName": "MiddleName",
+            "dateOfBirth": "DateOfBirth",
+            "gender": "Gender",
+            "bloodGroup": "BloodGroup",
+            "birthPlace": "BirthPlace",
+            "religion": "Religion",
+            "photo": "Photo",
+            "phone": "Phone",
+            "user": "User",
+            "languageLOV": "LanguageLOV",
+            "countryLOV": "CountryLOV",
+            "address": "Address"
+        }
+    }
+}
+

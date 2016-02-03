@@ -1,0 +1,28 @@
+{
+    "try1App": {
+        "session" : {
+            "home": {
+                "title": "Sessions",
+                "createLabel": "Créer un nouveau Session",
+                "createOrEditLabel": "Créer ou éditer un Session"
+            },
+            "created": "Un nouveau Session a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Session avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Session avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Session {{ id }} ?"
+            },
+            "detail": {
+                "title": "Session"
+            },
+            "sessionName": "SessionName",
+            "startTime": "StartTime",
+            "endTime": "EndTime",
+            "isBreak": "IsBreak",
+            "employee": "Employee",
+            "section": "Section",
+            "timeTable": "TimeTable"
+        }
+    }
+}
+

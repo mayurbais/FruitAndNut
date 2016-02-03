@@ -1,0 +1,27 @@
+{
+    "try1App": {
+        "subjectExamResult" : {
+            "home": {
+                "title": "SubjectExamResults",
+                "createLabel": "Create a new SubjectExamResult",
+                "createOrEditLabel": "Create or edit a SubjectExamResult"
+            },
+            "created": "A new SubjectExamResult is created with identifier {{ param }}",
+            "updated": "A SubjectExamResult is updated with identifier {{ param }}",
+            "deleted": "A SubjectExamResult is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete SubjectExamResult {{ id }}?"
+            },
+            "detail": {
+                "title": "SubjectExamResult"
+            },
+            "studentId": "StudentId",
+            "marksObtained": "MarksObtained",
+            "grade": "Grade",
+            "isPassed": "IsPassed",
+            "isAbsent": "IsAbsent",
+            "remark": "Remark",
+            "examSubjects": "ExamSubjects"
+        }
+    }
+}
