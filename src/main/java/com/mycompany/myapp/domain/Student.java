@@ -53,8 +53,11 @@ public class Student implements Serializable {
                inverseJoinColumns = @JoinColumn(name="parent_id", referencedColumnName="ID"))
     private Set<Parent> parents = new HashSet<>();
     
-    
+    @ManyToOne
+    @JoinColumn(name = "busDetail_id")
+    private BusDetails busDetails;
 
+	
 	public Long getId() {
         return id;
     }
@@ -127,7 +130,16 @@ public class Student implements Serializable {
 		this.parents = parents;
 	}
 
-    @Override
+	public BusDetails getBusDetails() {
+		return busDetails;
+	}
+
+	public void setBusDetails(BusDetails busDetails) {
+		this.busDetails = busDetails;
+	}
+
+	
+	@Override
     public boolean equals(Object o) {
         if (this == o) {
             return true;

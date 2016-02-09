@@ -1,0 +1,25 @@
+{
+    "try1App": {
+        "dairyEntry" : {
+            "home": {
+                "title": "DairyEntrys",
+                "createLabel": "Create a new DairyEntry",
+                "createOrEditLabel": "Create or edit a DairyEntry"
+            },
+            "created": "A new DairyEntry is created with identifier {{ param }}",
+            "updated": "A DairyEntry is updated with identifier {{ param }}",
+            "deleted": "A DairyEntry is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete DairyEntry {{ id }}?"
+            },
+            "detail": {
+                "title": "DairyEntry"
+            },
+            "date": "Date",
+            "entryType": "EntryType",
+            "course": "Course",
+            "teacher": "Teacher",
+            "section": "Section"
+        }
+    }
+}

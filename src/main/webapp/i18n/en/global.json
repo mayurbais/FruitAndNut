@@ -45,6 +45,11 @@
                 "subjectExamResult": "SubjectExamResult",
                 "examResult": "ExamResult",
                 "events": "Events",
+                "dairyDescription": "DairyDescription",
+                "yearlyDairyDescription": "YearlyDairyDescription",
+                "busDetails": "BusDetails",
+                "dairyTemplate": "DairyTemplate",
+                "dairyEntry": "DairyEntry",
                 "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
             },
             "account": {

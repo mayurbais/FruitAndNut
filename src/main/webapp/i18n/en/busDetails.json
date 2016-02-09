@@ -1,0 +1,27 @@
+{
+    "try1App": {
+        "busDetails" : {
+            "home": {
+                "title": "BusDetailss",
+                "createLabel": "Create a new BusDetails",
+                "createOrEditLabel": "Create or edit a BusDetails"
+            },
+            "created": "A new BusDetails is created with identifier {{ param }}",
+            "updated": "A BusDetails is updated with identifier {{ param }}",
+            "deleted": "A BusDetails is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete BusDetails {{ id }}?"
+            },
+            "detail": {
+                "title": "BusDetails"
+            },
+            "busNo": "BusNo",
+            "route": "Route",
+            "timing": "Timing",
+            "driverName": "DriverName",
+            "driverContactNo": "DriverContactNo",
+            "schoolDetails": "SchoolDetails",
+            "student": "Student"
+        }
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "try1App": {
+        "yearlyDairyDescription" : {
+            "home": {
+                "title": "YearlyDairyDescriptions",
+                "createLabel": "Create a new YearlyDairyDescription",
+                "createOrEditLabel": "Create or edit a YearlyDairyDescription"
+            },
+            "created": "A new YearlyDairyDescription is created with identifier {{ param }}",
+            "updated": "A YearlyDairyDescription is updated with identifier {{ param }}",
+            "deleted": "A YearlyDairyDescription is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete YearlyDairyDescription {{ id }}?"
+            },
+            "detail": {
+                "title": "YearlyDairyDescription"
+            },
+            "year": "Year",
+            "theme": "Theme",
+            "summerDressCode": "SummerDressCode",
+            "winterDressCode": "WinterDressCode",
+            "isEnabled": "IsEnabled",
+            "schoolDetails": "SchoolDetails"
+        }
+    }
+}

@@ -1,0 +1,62 @@
+
+<form name="editForm" role="form" novalidate ng-submit="save()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="clear()">&times;</button>
+        <h4 class="modal-title" id="myBusDetailsLabel" translate="try1App.busDetails.home.createOrEditLabel">Create or edit a BusDetails</h4>
+    </div>
+    <div class="modal-body">
+        <jh-alert-error></jh-alert-error>
+        <div class="form-group">
+            <label for="id" translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="busDetails.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.busDetails.busNo" for="field_busNo">BusNo</label>
+            <input type="text" class="form-control" name="busNo" id="field_busNo"
+                    ng-model="busDetails.busNo"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.busDetails.route" for="field_route">Route</label>
+            <input type="text" class="form-control" name="route" id="field_route"
+                    ng-model="busDetails.route"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.busDetails.timing" for="field_timing">Timing</label>
+            <input type="text" class="form-control" name="timing" id="field_timing"
+                    ng-model="busDetails.timing"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.busDetails.driverName" for="field_driverName">DriverName</label>
+            <input type="text" class="form-control" name="driverName" id="field_driverName"
+                    ng-model="busDetails.driverName"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.busDetails.driverContactNo" for="field_driverContactNo">DriverContactNo</label>
+            <input type="text" class="form-control" name="driverContactNo" id="field_driverContactNo"
+                    ng-model="busDetails.driverContactNo"
+                     />
+        </div>
+
+        <div class="form-group">
+            <label translate="try1App.busDetails.schoolDetails" for="field_schoolDetails">schoolDetails</label>
+            <select class="form-control" id="field_schoolDetails" name="schoolDetails" ng-model="busDetails.schoolDetails" ng-options="schoolDetails as schoolDetails.id for schoolDetails in schooldetailss | orderBy:'id' track by schoolDetails.id">
+                <option value=""></option>
+            </select>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

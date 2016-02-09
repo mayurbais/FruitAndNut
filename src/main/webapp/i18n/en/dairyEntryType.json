@@ -1,0 +1,14 @@
+{
+    "try1App": {
+        "DairyEntryType" : {
+            "null": "",
+            "HOMEWORK": "HOMEWORK",
+            "PROJECT": "PROJECT",
+            "GROUP_DISCUSSION": "GROUP_DISCUSSION",
+            "REMARK": "REMARK",
+            "OTHER": "OTHER",
+            "EXTRA_CURRICULAR": "EXTRA_CURRICULAR",
+            "THOUGHT_OF_THE_DAY": "THOUGHT_OF_THE_DAY"
+        }
+    }
+}

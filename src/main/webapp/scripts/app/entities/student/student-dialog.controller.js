@@ -1,8 +1,8 @@
 'use strict';
 
 angular.module('try1App').controller('StudentDialogController',
-    ['$scope', '$stateParams', '$uibModalInstance', '$q', 'entity', 'Student', 'StudentCategory', 'Course', 'Section', 'IrisUser', 'Parent',
-        function($scope, $stateParams, $uibModalInstance, $q, entity, Student, StudentCategory, Course, Section, IrisUser, Parent) {
+    ['$scope', '$stateParams', '$uibModalInstance', '$q', 'entity', 'Student', 'StudentCategory', 'Course', 'Section', 'IrisUser', 'Parent','BusDetails',
+        function($scope, $stateParams, $uibModalInstance, $q, entity, Student, StudentCategory, Course, Section, IrisUser, Parent, BusDetails) {
 
         $scope.student = entity;
         $scope.parents = Parent.query();
@@ -43,6 +43,17 @@ angular.module('try1App').controller('StudentDialogController',
         }).then(function(irisUser) {
             $scope.irisusers.push(irisUser);
         });
+        
+        $scope.busDetailss = BusDetails.query({filter: 'student-is-null'});
+        $q.all([$scope.student.$promise, $scope.irisusers.$promise]).then(function() {
+            if (!$scope.student.busDetail || !$scope.student.busDetail.id) {
+                return $q.reject();
+            }
+            return BusDetails.get({id : $scope.student.busDetails.id}).$promise;
+        }).then(function(busDetails) {
+            $scope.busDetails.push(busDetails);
+        });
+        
         $scope.load = function(id) {
             Student.get({id : id}, function(result) {
                 $scope.student = result;

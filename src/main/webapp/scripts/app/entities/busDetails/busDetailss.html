@@ -1,0 +1,60 @@
+<div>
+    <h2 translate="try1App.busDetails.home.title">BusDetailss</h2>
+    <jh-alert></jh-alert>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <button class="btn btn-primary" ui-sref="busDetails.new">
+                    <span class="glyphicon glyphicon-flash"></span> <span translate="try1App.busDetails.home.createLabel">Create a new BusDetails</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th><span translate="global.field.id">ID</span></th>
+                    <th><span translate="try1App.busDetails.busNo">BusNo</span></th>
+                    <th><span translate="try1App.busDetails.route">Route</span></th>
+                    <th><span translate="try1App.busDetails.timing">Timing</span></th>
+                    <th><span translate="try1App.busDetails.driverName">DriverName</span></th>
+                    <th><span translate="try1App.busDetails.driverContactNo">DriverContactNo</span></th>
+                    <th><span translate="try1App.busDetails.schoolDetails">schoolDetails</span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="busDetails in busDetailss track by busDetails.id">
+                    <td><a ui-sref="busDetails.detail({id:busDetails.id})">{{busDetails.id}}</a></td>
+                    <td>{{busDetails.busNo}}</td>
+                    <td>{{busDetails.route}}</td>
+                    <td>{{busDetails.timing}}</td>
+                    <td>{{busDetails.driverName}}</td>
+                    <td>{{busDetails.driverContactNo}}</td>
+                    <td>
+                        <a ui-sref="schoolDetails.detail({id:busDetails.schoolDetails.id})">{{busDetails.schoolDetails.id}}</a>
+                    </td>
+                    <td>
+                        <button type="submit"
+                                ui-sref="busDetails.detail({id:busDetails.id})"
+                                class="btn btn-info btn-sm">
+                            <span class="glyphicon glyphicon-eye-open"></span>&nbsp;<span translate="entity.action.view"> View</span>
+                        </button>
+                        <button type="submit"
+                                ui-sref="busDetails.edit({id:busDetails.id})"
+                                class="btn btn-primary btn-sm">
+                            <span class="glyphicon glyphicon-pencil"></span>&nbsp;<span translate="entity.action.edit"> Edit</span>
+                        </button>
+                        <button type="submit"
+                                ui-sref="busDetails.delete({id:busDetails.id})"
+                                class="btn btn-danger btn-sm">
+                            <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;<span translate="entity.action.delete"> Delete</span>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,27 @@
+{
+    "try1App": {
+        "yearlyDairyDescription" : {
+            "home": {
+                "title": "YearlyDairyDescriptions",
+                "createLabel": "Créer un nouveau YearlyDairyDescription",
+                "createOrEditLabel": "Créer ou éditer un YearlyDairyDescription"
+            },
+            "created": "Un nouveau YearlyDairyDescription a été créé avec l'identifiant {{ param }}",
+            "updated": "Le YearlyDairyDescription avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le YearlyDairyDescription avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le YearlyDairyDescription {{ id }} ?"
+            },
+            "detail": {
+                "title": "YearlyDairyDescription"
+            },
+            "year": "Year",
+            "theme": "Theme",
+            "summerDressCode": "SummerDressCode",
+            "winterDressCode": "WinterDressCode",
+            "isEnabled": "IsEnabled",
+            "schoolDetails": "SchoolDetails"
+        }
+    }
+}
+

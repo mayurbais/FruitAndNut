@@ -1,0 +1,26 @@
+{
+    "try1App": {
+        "dairyDescription" : {
+            "home": {
+                "title": "DairyDescriptions",
+                "createLabel": "Create a new DairyDescription",
+                "createOrEditLabel": "Create or edit a DairyDescription"
+            },
+            "created": "A new DairyDescription is created with identifier {{ param }}",
+            "updated": "A DairyDescription is updated with identifier {{ param }}",
+            "deleted": "A DairyDescription is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete DairyDescription {{ id }}?"
+            },
+            "detail": {
+                "title": "DairyDescription"
+            },
+            "rules": "Rules",
+            "contactNoOfManagment": "ContactNoOfManagment",
+            "mission": "Mission",
+            "objective": "Objective",
+            "declaration": "Declaration",
+            "schoolDetails": "SchoolDetails"
+        }
+    }
+}

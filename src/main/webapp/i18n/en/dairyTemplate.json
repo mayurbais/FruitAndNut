@@ -1,0 +1,25 @@
+{
+    "try1App": {
+        "dairyTemplate" : {
+            "home": {
+                "title": "DairyTemplates",
+                "createLabel": "Create a new DairyTemplate",
+                "createOrEditLabel": "Create or edit a DairyTemplate"
+            },
+            "created": "A new DairyTemplate is created with identifier {{ param }}",
+            "updated": "A DairyTemplate is updated with identifier {{ param }}",
+            "deleted": "A DairyTemplate is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete DairyTemplate {{ id }}?"
+            },
+            "detail": {
+                "title": "DairyTemplate"
+            },
+            "date": "Date",
+            "entryType": "EntryType",
+            "course": "Course",
+            "student": "Student",
+            "teacher": "Teacher"
+        }
+    }
+}

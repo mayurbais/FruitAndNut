@@ -1,0 +1,62 @@
+
+<form name="editForm" role="form" novalidate ng-submit="save()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="clear()">&times;</button>
+        <h4 class="modal-title" id="myDairyDescriptionLabel" translate="try1App.dairyDescription.home.createOrEditLabel">Create or edit a DairyDescription</h4>
+    </div>
+    <div class="modal-body">
+        <jh-alert-error></jh-alert-error>
+        <div class="form-group">
+            <label for="id" translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="dairyDescription.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.dairyDescription.rules" for="field_rules">Rules</label>
+            <input type="text" class="form-control" name="rules" id="field_rules"
+                    ng-model="dairyDescription.rules"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.dairyDescription.contactNoOfManagment" for="field_contactNoOfManagment">ContactNoOfManagment</label>
+            <input type="text" class="form-control" name="contactNoOfManagment" id="field_contactNoOfManagment"
+                    ng-model="dairyDescription.contactNoOfManagment"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.dairyDescription.mission" for="field_mission">Mission</label>
+            <input type="text" class="form-control" name="mission" id="field_mission"
+                    ng-model="dairyDescription.mission"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.dairyDescription.objective" for="field_objective">Objective</label>
+            <input type="text" class="form-control" name="objective" id="field_objective"
+                    ng-model="dairyDescription.objective"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.dairyDescription.declaration" for="field_declaration">Declaration</label>
+            <input type="text" class="form-control" name="declaration" id="field_declaration"
+                    ng-model="dairyDescription.declaration"
+                     />
+        </div>
+
+        <div class="form-group">
+            <label translate="try1App.dairyDescription.schoolDetails" for="field_schoolDetails">schoolDetails</label>
+            <select class="form-control" id="field_schoolDetails" name="schoolDetails" ng-model="dairyDescription.schoolDetails" ng-options="schoolDetails as schoolDetails.id for schoolDetails in schooldetailss | orderBy:'id' track by schoolDetails.id">
+                <option value=""></option>
+            </select>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

@@ -1,0 +1,27 @@
+{
+    "try1App": {
+        "dairyDescription" : {
+            "home": {
+                "title": "DairyDescriptions",
+                "createLabel": "Créer un nouveau DairyDescription",
+                "createOrEditLabel": "Créer ou éditer un DairyDescription"
+            },
+            "created": "Un nouveau DairyDescription a été créé avec l'identifiant {{ param }}",
+            "updated": "Le DairyDescription avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le DairyDescription avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le DairyDescription {{ id }} ?"
+            },
+            "detail": {
+                "title": "DairyDescription"
+            },
+            "rules": "Rules",
+            "contactNoOfManagment": "ContactNoOfManagment",
+            "mission": "Mission",
+            "objective": "Objective",
+            "declaration": "Declaration",
+            "schoolDetails": "SchoolDetails"
+        }
+    }
+}
+

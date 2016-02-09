@@ -1,0 +1,60 @@
+<div>
+    <h2 translate="try1App.yearlyDairyDescription.home.title">YearlyDairyDescriptions</h2>
+    <jh-alert></jh-alert>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <button class="btn btn-primary" ui-sref="yearlyDairyDescription.new">
+                    <span class="glyphicon glyphicon-flash"></span> <span translate="try1App.yearlyDairyDescription.home.createLabel">Create a new YearlyDairyDescription</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th><span translate="global.field.id">ID</span></th>
+                    <th><span translate="try1App.yearlyDairyDescription.year">Year</span></th>
+                    <th><span translate="try1App.yearlyDairyDescription.theme">Theme</span></th>
+                    <th><span translate="try1App.yearlyDairyDescription.summerDressCode">SummerDressCode</span></th>
+                    <th><span translate="try1App.yearlyDairyDescription.winterDressCode">WinterDressCode</span></th>
+                    <th><span translate="try1App.yearlyDairyDescription.isEnabled">IsEnabled</span></th>
+                    <th><span translate="try1App.yearlyDairyDescription.schoolDetails">schoolDetails</span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="yearlyDairyDescription in yearlyDairyDescriptions track by yearlyDairyDescription.id">
+                    <td><a ui-sref="yearlyDairyDescription.detail({id:yearlyDairyDescription.id})">{{yearlyDairyDescription.id}}</a></td>
+                    <td>{{yearlyDairyDescription.year | date:'medium'}}</td>
+                    <td>{{yearlyDairyDescription.theme}}</td>
+                    <td>{{yearlyDairyDescription.summerDressCode}}</td>
+                    <td>{{yearlyDairyDescription.winterDressCode}}</td>
+                    <td>{{yearlyDairyDescription.isEnabled}}</td>
+                    <td>
+                        <a ui-sref="schoolDetails.detail({id:yearlyDairyDescription.schoolDetails.id})">{{yearlyDairyDescription.schoolDetails.id}}</a>
+                    </td>
+                    <td>
+                        <button type="submit"
+                                ui-sref="yearlyDairyDescription.detail({id:yearlyDairyDescription.id})"
+                                class="btn btn-info btn-sm">
+                            <span class="glyphicon glyphicon-eye-open"></span>&nbsp;<span translate="entity.action.view"> View</span>
+                        </button>
+                        <button type="submit"
+                                ui-sref="yearlyDairyDescription.edit({id:yearlyDairyDescription.id})"
+                                class="btn btn-primary btn-sm">
+                            <span class="glyphicon glyphicon-pencil"></span>&nbsp;<span translate="entity.action.edit"> Edit</span>
+                        </button>
+                        <button type="submit"
+                                ui-sref="yearlyDairyDescription.delete({id:yearlyDairyDescription.id})"
+                                class="btn btn-danger btn-sm">
+                            <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;<span translate="entity.action.delete"> Delete</span>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

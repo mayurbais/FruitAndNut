@@ -1,0 +1,64 @@
+
+<form name="editForm" role="form" novalidate ng-submit="save()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="clear()">&times;</button>
+        <h4 class="modal-title" id="myDairyEntryLabel" translate="try1App.dairyEntry.home.createOrEditLabel">Create or edit a DairyEntry</h4>
+    </div>
+    <div class="modal-body">
+        <jh-alert-error></jh-alert-error>
+        <div class="form-group">
+            <label for="id" translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="dairyEntry.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.dairyEntry.date" for="field_date">Date</label>
+            <input id="field_date" type="text" class="form-control" uib-datepicker-popup="{{dateformat}}" ng-model="dairyEntry.date" is-open="datePickerForDate.status.opened"
+            />
+            <span class="input-group-btn">
+                <button type="button" class="btn btn-default" ng-click="datePickerForDateOpen($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+            </span>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.dairyEntry.entryType" for="field_entryType">EntryType</label>
+            <select class="form-control" name="entryType" ng-model="dairyEntry.entryType" id="field_entryType">
+                <option value="HOMEWORK" translate="try1App.DairyEntryType.HOMEWORK">HOMEWORK</option>
+                <option value="PROJECT" translate="try1App.DairyEntryType.PROJECT">PROJECT</option>
+                <option value="GROUP_DISCUSSION" translate="try1App.DairyEntryType.GROUP_DISCUSSION">GROUP_DISCUSSION</option>
+                <option value="REMARK" translate="try1App.DairyEntryType.REMARK">REMARK</option>
+                <option value="OTHER" translate="try1App.DairyEntryType.OTHER">OTHER</option>
+                <option value="EXTRA_CURRICULAR" translate="try1App.DairyEntryType.EXTRA_CURRICULAR">EXTRA_CURRICULAR</option>
+                <option value="THOUGHT_OF_THE_DAY" translate="try1App.DairyEntryType.THOUGHT_OF_THE_DAY">THOUGHT_OF_THE_DAY</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label translate="try1App.dairyEntry.course" for="field_course">course</label>
+            <select class="form-control" id="field_course" name="course" ng-model="dairyEntry.course" ng-options="course as course.id for course in courses | orderBy:'id' track by course.id">
+                <option value=""></option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label translate="try1App.dairyEntry.teacher" for="field_teacher">teacher</label>
+            <select class="form-control" id="field_teacher" name="teacher" ng-model="dairyEntry.teacher" ng-options="teacher as teacher.id for teacher in teachers track by teacher.id">
+                <option value=""></option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label translate="try1App.dairyEntry.section" for="field_section">section</label>
+            <select class="form-control" id="field_section" name="section" ng-model="dairyEntry.section" ng-options="section as section.id for section in sections track by section.id">
+                <option value=""></option>
+            </select>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

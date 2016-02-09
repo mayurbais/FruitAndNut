@@ -1,0 +1,60 @@
+<div>
+    <h2 translate="try1App.dairyDescription.home.title">DairyDescriptions</h2>
+    <jh-alert></jh-alert>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <button class="btn btn-primary" ui-sref="dairyDescription.new">
+                    <span class="glyphicon glyphicon-flash"></span> <span translate="try1App.dairyDescription.home.createLabel">Create a new DairyDescription</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th><span translate="global.field.id">ID</span></th>
+                    <th><span translate="try1App.dairyDescription.rules">Rules</span></th>
+                    <th><span translate="try1App.dairyDescription.contactNoOfManagment">ContactNoOfManagment</span></th>
+                    <th><span translate="try1App.dairyDescription.mission">Mission</span></th>
+                    <th><span translate="try1App.dairyDescription.objective">Objective</span></th>
+                    <th><span translate="try1App.dairyDescription.declaration">Declaration</span></th>
+                    <th><span translate="try1App.dairyDescription.schoolDetails">schoolDetails</span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="dairyDescription in dairyDescriptions track by dairyDescription.id">
+                    <td><a ui-sref="dairyDescription.detail({id:dairyDescription.id})">{{dairyDescription.id}}</a></td>
+                    <td>{{dairyDescription.rules}}</td>
+                    <td>{{dairyDescription.contactNoOfManagment}}</td>
+                    <td>{{dairyDescription.mission}}</td>
+                    <td>{{dairyDescription.objective}}</td>
+                    <td>{{dairyDescription.declaration}}</td>
+                    <td>
+                        <a ui-sref="schoolDetails.detail({id:dairyDescription.schoolDetails.id})">{{dairyDescription.schoolDetails.id}}</a>
+                    </td>
+                    <td>
+                        <button type="submit"
+                                ui-sref="dairyDescription.detail({id:dairyDescription.id})"
+                                class="btn btn-info btn-sm">
+                            <span class="glyphicon glyphicon-eye-open"></span>&nbsp;<span translate="entity.action.view"> View</span>
+                        </button>
+                        <button type="submit"
+                                ui-sref="dairyDescription.edit({id:dairyDescription.id})"
+                                class="btn btn-primary btn-sm">
+                            <span class="glyphicon glyphicon-pencil"></span>&nbsp;<span translate="entity.action.edit"> Edit</span>
+                        </button>
+                        <button type="submit"
+                                ui-sref="dairyDescription.delete({id:dairyDescription.id})"
+                                class="btn btn-danger btn-sm">
+                            <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;<span translate="entity.action.delete"> Delete</span>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
