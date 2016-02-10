@@ -1,5 +1,6 @@
 package com.mycompany.myapp.domain;
 
+import io.swagger.annotations.ApiModelProperty;
 import org.hibernate.annotations.Cache;
 import org.hibernate.annotations.CacheConcurrencyStrategy;
 import java.time.ZonedDateTime;
@@ -31,6 +32,17 @@ public class DairyEntry implements Serializable {
     @Column(name = "entry_type")
     private DairyEntryType entryType;
 
+    /**
+     * <Enter note text here>
+     */
+    @ApiModelProperty(value = ""
+        + "<Enter note text here>")
+    @Column(name = "dairy_description")
+    private String dairyDescription;
+
+    @Column(name = "is_for_all")
+    private Boolean isForAll;
+
     @OneToOne
     private Course course;
 
@@ -41,6 +53,9 @@ public class DairyEntry implements Serializable {
     @ManyToOne
     @JoinColumn(name = "section_id")
     private Section section;
+
+    @OneToOne
+    private Student student;
 
     public Long getId() {
         return id;
@@ -64,6 +79,22 @@ public class DairyEntry implements Serializable {
 
     public void setEntryType(DairyEntryType entryType) {
         this.entryType = entryType;
+    }
+
+    public String getDairyDescription() {
+        return dairyDescription;
+    }
+
+    public void setDairyDescription(String dairyDescription) {
+        this.dairyDescription = dairyDescription;
+    }
+
+    public Boolean getIsForAll() {
+        return isForAll;
+    }
+
+    public void setIsForAll(Boolean isForAll) {
+        this.isForAll = isForAll;
     }
 
     public Course getCourse() {
@@ -90,6 +121,14 @@ public class DairyEntry implements Serializable {
         this.section = section;
     }
 
+    public Student getStudent() {
+        return student;
+    }
+
+    public void setStudent(Student student) {
+        this.student = student;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) {
@@ -113,6 +152,8 @@ public class DairyEntry implements Serializable {
             "id=" + id +
             ", date='" + date + "'" +
             ", entryType='" + entryType + "'" +
+            ", dairyDescription='" + dairyDescription + "'" +
+            ", isForAll='" + isForAll + "'" +
             '}';
     }
 }

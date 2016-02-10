@@ -21,6 +21,8 @@ angular.module('try1App')
             $scope.dairyEntry = {
                 date: null,
                 entryType: null,
+                dairyDescription: null,
+                isForAll: null,
                 id: null
             };
         };

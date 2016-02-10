@@ -18,9 +18,12 @@
                     <th><span translate="global.field.id">ID</span></th>
                     <th><span translate="try1App.dairyEntry.date">Date</span></th>
                     <th><span translate="try1App.dairyEntry.entryType">EntryType</span></th>
+                    <th><span translate="try1App.dairyEntry.dairyDescription">DairyDescription</span></th>
+                    <th><span translate="try1App.dairyEntry.isForAll">IsForAll</span></th>
                     <th><span translate="try1App.dairyEntry.course">course</span></th>
                     <th><span translate="try1App.dairyEntry.teacher">teacher</span></th>
                     <th><span translate="try1App.dairyEntry.section">section</span></th>
+                    <th><span translate="try1App.dairyEntry.student">student</span></th>
                     <th></th>
                 </tr>
             </thead>
@@ -29,6 +32,8 @@
                     <td><a ui-sref="dairyEntry.detail({id:dairyEntry.id})">{{dairyEntry.id}}</a></td>
                     <td>{{dairyEntry.date | date:'medium'}}</td>
                     <td translate="{{'try1App.DairyEntryType.' + dairyEntry.entryType}}">{{dairyEntry.entryType}}</td>
+                    <td>{{dairyEntry.dairyDescription}}</td>
+                    <td>{{dairyEntry.isForAll}}</td>
                     <td>
                         <a ui-sref="course.detail({id:dairyEntry.course.id})">{{dairyEntry.course.id}}</a>
                     </td>
@@ -37,6 +42,9 @@
                     </td>
                     <td>
                         <a ui-sref="section.detail({id:dairyEntry.section.id})">{{dairyEntry.section.id}}</a>
+                    </td>
+                    <td>
+                        <a ui-sref="student.detail({id:dairyEntry.student.id})">{{dairyEntry.student.id}}</a>
                     </td>
                     <td>
                         <button type="submit"

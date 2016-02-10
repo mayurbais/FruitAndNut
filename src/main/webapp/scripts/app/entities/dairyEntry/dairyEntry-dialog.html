@@ -31,7 +31,20 @@
                 <option value="OTHER" translate="try1App.DairyEntryType.OTHER">OTHER</option>
                 <option value="EXTRA_CURRICULAR" translate="try1App.DairyEntryType.EXTRA_CURRICULAR">EXTRA_CURRICULAR</option>
                 <option value="THOUGHT_OF_THE_DAY" translate="try1App.DairyEntryType.THOUGHT_OF_THE_DAY">THOUGHT_OF_THE_DAY</option>
+                <option value="HIGHENE" translate="try1App.DairyEntryType.HIGHENE">HIGHENE</option>
             </select>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.dairyEntry.dairyDescription" for="field_dairyDescription">DairyDescription</label>
+            <input type="text" class="form-control" name="dairyDescription" id="field_dairyDescription"
+                    ng-model="dairyEntry.dairyDescription"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="try1App.dairyEntry.isForAll" for="field_isForAll">IsForAll</label>
+            <input type="checkbox" class="form-control" name="isForAll" id="field_isForAll"
+                    ng-model="dairyEntry.isForAll"
+                     />
         </div>
 
         <div class="form-group">
@@ -49,6 +62,12 @@
         <div class="form-group">
             <label translate="try1App.dairyEntry.section" for="field_section">section</label>
             <select class="form-control" id="field_section" name="section" ng-model="dairyEntry.section" ng-options="section as section.id for section in sections track by section.id">
+                <option value=""></option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label translate="try1App.dairyEntry.student" for="field_student">student</label>
+            <select class="form-control" id="field_student" name="student" ng-model="dairyEntry.student" ng-options="student as student.id for student in students | orderBy:'id' track by student.id">
                 <option value=""></option>
             </select>
         </div>

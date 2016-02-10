@@ -56,6 +56,11 @@ public class DairyEntryResourceIntTest {
 
     private static final DairyEntryType DEFAULT_ENTRY_TYPE = DairyEntryType.HOMEWORK;
     private static final DairyEntryType UPDATED_ENTRY_TYPE = DairyEntryType.PROJECT;
+    private static final String DEFAULT_DAIRY_DESCRIPTION = "AAAAA";
+    private static final String UPDATED_DAIRY_DESCRIPTION = "BBBBB";
+
+    private static final Boolean DEFAULT_IS_FOR_ALL = false;
+    private static final Boolean UPDATED_IS_FOR_ALL = true;
 
     @Inject
     private DairyEntryRepository dairyEntryRepository;
@@ -85,6 +90,8 @@ public class DairyEntryResourceIntTest {
         dairyEntry = new DairyEntry();
         dairyEntry.setDate(DEFAULT_DATE);
         dairyEntry.setEntryType(DEFAULT_ENTRY_TYPE);
+        dairyEntry.setDairyDescription(DEFAULT_DAIRY_DESCRIPTION);
+        dairyEntry.setIsForAll(DEFAULT_IS_FOR_ALL);
     }
 
     @Test
@@ -105,6 +112,8 @@ public class DairyEntryResourceIntTest {
         DairyEntry testDairyEntry = dairyEntrys.get(dairyEntrys.size() - 1);
         assertThat(testDairyEntry.getDate()).isEqualTo(DEFAULT_DATE);
         assertThat(testDairyEntry.getEntryType()).isEqualTo(DEFAULT_ENTRY_TYPE);
+        assertThat(testDairyEntry.getDairyDescription()).isEqualTo(DEFAULT_DAIRY_DESCRIPTION);
+        assertThat(testDairyEntry.getIsForAll()).isEqualTo(DEFAULT_IS_FOR_ALL);
     }
 
     @Test
@@ -119,7 +128,9 @@ public class DairyEntryResourceIntTest {
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON))
                 .andExpect(jsonPath("$.[*].id").value(hasItem(dairyEntry.getId().intValue())))
                 .andExpect(jsonPath("$.[*].date").value(hasItem(DEFAULT_DATE_STR)))
-                .andExpect(jsonPath("$.[*].entryType").value(hasItem(DEFAULT_ENTRY_TYPE.toString())));
+                .andExpect(jsonPath("$.[*].entryType").value(hasItem(DEFAULT_ENTRY_TYPE.toString())))
+                .andExpect(jsonPath("$.[*].dairyDescription").value(hasItem(DEFAULT_DAIRY_DESCRIPTION.toString())))
+                .andExpect(jsonPath("$.[*].isForAll").value(hasItem(DEFAULT_IS_FOR_ALL.booleanValue())));
     }
 
     @Test
@@ -134,7 +145,9 @@ public class DairyEntryResourceIntTest {
             .andExpect(content().contentType(MediaType.APPLICATION_JSON))
             .andExpect(jsonPath("$.id").value(dairyEntry.getId().intValue()))
             .andExpect(jsonPath("$.date").value(DEFAULT_DATE_STR))
-            .andExpect(jsonPath("$.entryType").value(DEFAULT_ENTRY_TYPE.toString()));
+            .andExpect(jsonPath("$.entryType").value(DEFAULT_ENTRY_TYPE.toString()))
+            .andExpect(jsonPath("$.dairyDescription").value(DEFAULT_DAIRY_DESCRIPTION.toString()))
+            .andExpect(jsonPath("$.isForAll").value(DEFAULT_IS_FOR_ALL.booleanValue()));
     }
 
     @Test
@@ -156,6 +169,8 @@ public class DairyEntryResourceIntTest {
         // Update the dairyEntry
         dairyEntry.setDate(UPDATED_DATE);
         dairyEntry.setEntryType(UPDATED_ENTRY_TYPE);
+        dairyEntry.setDairyDescription(UPDATED_DAIRY_DESCRIPTION);
+        dairyEntry.setIsForAll(UPDATED_IS_FOR_ALL);
 
         restDairyEntryMockMvc.perform(put("/api/dairyEntrys")
                 .contentType(TestUtil.APPLICATION_JSON_UTF8)
@@ -168,6 +183,8 @@ public class DairyEntryResourceIntTest {
         DairyEntry testDairyEntry = dairyEntrys.get(dairyEntrys.size() - 1);
         assertThat(testDairyEntry.getDate()).isEqualTo(UPDATED_DATE);
         assertThat(testDairyEntry.getEntryType()).isEqualTo(UPDATED_ENTRY_TYPE);
+        assertThat(testDairyEntry.getDairyDescription()).isEqualTo(UPDATED_DAIRY_DESCRIPTION);
+        assertThat(testDairyEntry.getIsForAll()).isEqualTo(UPDATED_IS_FOR_ALL);
     }
 
     @Test

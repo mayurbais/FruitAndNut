@@ -65,6 +65,8 @@ angular.module('try1App')
                                 return {
                                     date: null,
                                     entryType: null,
+                                    dairyDescription: null,
+                                    isForAll: null,
                                     id: null
                                 };
                             }

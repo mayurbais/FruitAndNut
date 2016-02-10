@@ -1,8 +1,8 @@
 'use strict';
 
 angular.module('try1App').controller('DairyEntryDialogController',
-    ['$scope', '$stateParams', '$uibModalInstance', '$q', 'entity', 'DairyEntry', 'Course', 'Teacher', 'Section',
-        function($scope, $stateParams, $uibModalInstance, $q, entity, DairyEntry, Course, Teacher, Section) {
+    ['$scope', '$stateParams', '$uibModalInstance', '$q', 'entity', 'DairyEntry', 'Course', 'Teacher', 'Section', 'Student',
+        function($scope, $stateParams, $uibModalInstance, $q, entity, DairyEntry, Course, Teacher, Section, Student) {
 
         $scope.dairyEntry = entity;
         $scope.courses = Course.query({filter: 'dairyentry-is-null'});
@@ -16,6 +16,15 @@ angular.module('try1App').controller('DairyEntryDialogController',
         });
         $scope.teachers = Teacher.query();
         $scope.sections = Section.query();
+        $scope.students = Student.query({filter: 'dairyentry-is-null'});
+        $q.all([$scope.dairyEntry.$promise, $scope.students.$promise]).then(function() {
+            if (!$scope.dairyEntry.student || !$scope.dairyEntry.student.id) {
+                return $q.reject();
+            }
+            return Student.get({id : $scope.dairyEntry.student.id}).$promise;
+        }).then(function(student) {
+            $scope.students.push(student);
+        });
         $scope.load = function(id) {
             DairyEntry.get({id : id}, function(result) {
                 $scope.dairyEntry = result;

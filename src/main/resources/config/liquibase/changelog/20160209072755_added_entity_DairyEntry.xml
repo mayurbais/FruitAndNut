@@ -23,11 +23,16 @@
             </column>
             <column name="date" type="timestamp"/>
             <column name="entry_type" type="varchar(255)"/>
+            <column name="dairy_description" type="varchar(255)"/>
+            <column name="is_for_all" type="bit"/>
             <column name="course_id" type="bigint">
                 <constraints unique="true"/>
             </column>
             <column name="teacher_id" type="bigint"/>
             <column name="section_id" type="bigint"/>
+            <column name="student_id" type="bigint">
+                <constraints unique="true"/>
+            </column>
         </createTable>
         <dropDefaultValue tableName="dairy_entry" columnName="date" columnDataType="datetime"/>
 
@@ -49,6 +54,12 @@
                                  constraintName="fk_dairyentry_section_id"
                                  referencedColumnNames="id"
                                  referencedTableName="section"/>
+
+        <addForeignKeyConstraint baseColumnNames="student_id"
+                                 baseTableName="dairy_entry"
+                                 constraintName="fk_dairyentry_student_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="student"/>
 
     </changeSet>
 </databaseChangeLog>

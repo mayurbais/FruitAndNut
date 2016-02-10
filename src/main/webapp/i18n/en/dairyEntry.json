@@ -17,9 +17,12 @@
             },
             "date": "Date",
             "entryType": "EntryType",
+            "dairyDescription": "DairyDescription",
+            "isForAll": "IsForAll",
             "course": "Course",
             "teacher": "Teacher",
-            "section": "Section"
+            "section": "Section",
+            "student": "Student"
         }
     }
 }

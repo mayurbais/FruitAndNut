@@ -28,6 +28,22 @@
             </tr>
             <tr>
                 <td>
+                    <span translate="try1App.dairyEntry.dairyDescription">DairyDescription</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{dairyEntry.dairyDescription}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="try1App.dairyEntry.isForAll">IsForAll</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{dairyEntry.isForAll}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
                     <span translate="try1App.dairyEntry.course">course</span>
                 </td>
                 <td>
@@ -48,6 +64,14 @@
                 </td>
                 <td>
                     <a class="form-control-static" ui-sref="section.detail({id:dairyEntry.section.id})">{{dairyEntry.section.id}}</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="try1App.dairyEntry.student">student</span>
+                </td>
+                <td>
+                    <a class="form-control-static" ui-sref="student.detail({id:dairyEntry.student.id})">{{dairyEntry.student.id}}</a>
                 </td>
             </tr>
             </tbody>
